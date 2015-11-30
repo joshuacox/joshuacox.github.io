@@ -10,31 +10,37 @@
 {% if site.theme == "one" %}
   $color: #17baef;
   $color-2: #eebf3f;
+  $linkcolor: #33ff33;
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.theme == "two" %}
   $color: #b4ca65;
   $color-2: #dd7c4f;
+  $linkcolor: #33ff33;
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.theme == "three" %}
   $color: #6690b9;
   $color-2: #f46fa3;
+  $linkcolor: #33ff33;
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.theme == "four" %}
   $color: #50c8c9;
   $color-2: #ffbe57;
+  $linkcolor: #33ff33;
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.theme == "five" %}
   $color: #161616;
   $color-2: #f00000;
+  $linkcolor: #33ff33;
   $bgcolor: #5757e7;
   $bgcolor-2: #333;
 {% elsif site.theme == "six" %}
   $color: #ddd;
   $color-2: #ccc;
+  $linkcolor: #33ff33;
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.theme == "seven" %}
