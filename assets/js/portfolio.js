@@ -21,7 +21,7 @@ var sleep = function(ms, callback) {
             thing.innerHTML = favthings[i], removeClass(thing, "fadeOutRightBig"), addClass(thing, "fadeInLeftBig")
         })
     };
-    titlethings = ["Console Cowboy", "Serial Samurai", "Parallel Prognosticator", "Diabolical Diagnostician", "Embedded Systems Engineer", "Wetware Whisperer", "Meta Mercenary", "Neural-Network Ninja", "SysAdmin", "Linux Geek", "Techromancer"],
+    titlethings = ["The guys who brought Indy to Big Spring", "Who else put on Jaws at the shores of Commanche Trail?", "Who let the velociraptors loose on Scenic Mountain?", "Nobody steps on a church in my town!", "We're gonna need a bigger boat" ],
     removeTitleClass = function(el, className) {
         el.classList ? el.classList.remove(className) : el.className = el.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " ")
     },
