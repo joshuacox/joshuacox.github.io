@@ -7,7 +7,11 @@
 
   <body data-spy="scroll">
 
-  {% include facebook.html %}
+  {% if page.disqus %}
+    <script id="dsq-count-scr" src="//joshuacoxgithubio.disqus.com/count.js" async></script>
+  {% endif %}
+
+  {% include facebook-init.html %}
 
   {% include header.html %}
 
@@ -16,36 +20,65 @@
   <div class= container>
 
 
+  <div class="content{% if page.photo_url %} photo-post{% endif %}">
+   <div class="post single">
   {% unless page.title_hidden %}
     <h1>{{ page.title }}</h1>
     <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%b %d, %Y" }}
     </info>
     {% endunless %}
-    <div class="body">{{ content }}</div>
+    <div class="body posts">{{ content }}</div>
+   <!-- <div class="post single"></div> -->
+   </div> 
+  <!-- <div class="content"></div> -->
+  </div> 
     <!-- <div class="breaker"></div> -->
     <div class="breaker"></div>
     <!-- <info class="after">
 <div class="fb-like" data-href="http://rsms.me{{ page.url }}" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
     </info> -->
 
+<p id="post-meta">{{ tags_content }}</p>
 
     {% include facebook-like.html %}
-    {% if page.comments %}
-    <hr/>
-    <h4>Comments</h4>
-    <div class="fb-comments" data-href=http://bigspringfilm.github.io{{ page.url }} data-num-posts="4" data-width="706"></div>
+    {% if page.fbcomments %}
+      <hr/>
+      <h4>Comments</h4>
+      <div class="fb-comments" data-href="http://joshuacox.github.io{{ page.url }}" data-colorscheme="dark" data-num-posts="4" data-width="706"></div>
+    {% endif %}
+    {% if page.disqus %}
+      <div id="disqus_thread"></div>
+      <script>
+      /**
+      * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+      */
+      var disqus_config = function () {
+      this.page.url = "http://joshuacox.github.io{{ page.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "joshuacox.github.io{{ page.url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+
+      s.src = '//joshuacoxgithubio.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     {% endif %}
 
   </div>
 
-    {% include contact.html %}
-
   {% include socialicons.html %}
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-    {% include scripts.html %}
+  {% include scripts.html %}
+
+  {% include googleanalytics.html %}
 
   </body>
 

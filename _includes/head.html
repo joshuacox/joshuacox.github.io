@@ -1,6 +1,13 @@
 <head>
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.org_name }}{% endif %}</title>
     <!-- Meta -->
+    <title>{{ page.title }}</title>
+    <meta content="{{ page.title }}" property="og:title">
+    <meta content="{{ page.title }}" name="twitter:title">
+    <meta content="{{ site.org_name }}" property="og:site_name">
+    <meta content="{{ page.description }}" name="description">
+    <meta content="{{ page.description }}" property="og:description">
+    <meta content="{{ page.description }}" name="twitter:description">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.org_url | prepend: site.url  }}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% if site.publish == true %}
@@ -9,6 +16,7 @@
       <meta name="robots" content="noindex, nofollow">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:app_id"       content="978128892233940" />
     <meta name="description" content="{% if site.summary %}{{ site.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -19,10 +27,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Theme CSS -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/monokai_sublime.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>window.initFuncs = [];</script>
 </head>
