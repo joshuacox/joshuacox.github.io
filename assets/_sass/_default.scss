@@ -16,8 +16,9 @@ $divider: #00ef00;
 $heart: #ff765a;
 
 /* ======= Base ======= */
+  /*background-image: url("/img/Mandelbrot.jpg");*/
 html {
-  background-image: url("/img/Mandelbrot.jpg");
+  background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
