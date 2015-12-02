@@ -17,8 +17,9 @@ $heart: #ff765a;
 
 /* ======= Base ======= */
   /*background-image: url("/img/Mandelbrot.jpg");*/
+  /*background-color: $bgcolor;*/
 html {
-  background-color: $bgcolor;
+  background-image: url("/img/filmstripWB.svg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
