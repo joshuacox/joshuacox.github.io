@@ -50,11 +50,11 @@
   $bgcolor: rgba(42, 0, 42, 0.7);
   $bgcolor-2: rgba(14, 0, 14, 0.5);
 {% elsif site.theme == "bsfs" %}
-  $color: #ddd;
-  $color-2: #bbb;
+  $color: #000;
+  $color-2: #333;
   $linkcolor: #33f;
-  $bgcolor: rgba(42, 0, 42, 0.7);
-  $bgcolor-2: rgba(14, 0, 14, 0.5);
+  $bgcolor: #fff;
+  $bgcolor-2: #ddd;
 {% else %}
   $color: #6690b9;
   $color-2: #dd9d71;
