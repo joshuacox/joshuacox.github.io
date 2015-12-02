@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## Winged Freak Terrorizes Gotham Gangland
