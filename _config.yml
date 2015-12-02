@@ -64,6 +64,18 @@ sass:
     sass_dir: assets/_sass
     style: compressed
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      disqus: true
+      category: blog
+      tags:
+        - blog
+
 #Features under development
 #These are not yet fully supported, but should give you a head start if you know what you're doing
 paypal_button_id: #Not yet available
