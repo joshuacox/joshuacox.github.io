@@ -16,16 +16,21 @@ $divider: #000000;
 $heart: #ff765a;
 
 /* ======= Base ======= */
-  /*background-image: url("/img/Mandelbrot.jpg");*/
-  /*background-color: $bgcolor;*/
+/*background-image: url("/img/filmstripWB.svg");*/
+/*background-color: $bgcolor;*/
 html {
-  background-image: url("/img/filmstripWB.svg");
+  background-color: $bgcolor;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 body {
+  background-color: $bgcolor;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   font-family: 'Lato', arial, sans-serif;
   color: $text-color;
   font-size: 16px;
