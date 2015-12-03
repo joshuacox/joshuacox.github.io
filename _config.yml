@@ -2,6 +2,8 @@
 #Set up is quick and easy. Simply replace any example text with your nonprofit's information.
 #To leave a field blank, simply remove everything after the colon (:) or place a hashtag (#) at the start of the line.
 #If you see '> # Enter on the next line', be sure the next line remains indented two spaces.
+org_site: bigspringfilm.github.io
+url: http://bigspringfilm.github.io
 
 #REQUIRED
 org_name: Big Spring Film Society
@@ -47,7 +49,7 @@ publish: false
 
 #THEME
 #Select one of the five color schemes (default, one, two, three, or four)
-theme: one
+theme: bsfs
 
 # *** DO NOT CHANGE ANYTHING BELOW THIS LINE ***
 
@@ -61,6 +63,18 @@ kramdown:
 sass:
     sass_dir: assets/_sass
     style: compressed
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      disqus: true
+      category: blog
+      tags:
+        - blog
 
 #Features under development
 #These are not yet fully supported, but should give you a head start if you know what you're doing

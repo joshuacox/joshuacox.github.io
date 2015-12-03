@@ -7,7 +7,7 @@
 
   <body data-spy="scroll">
 
-  {% include facebook.html %}
+  {% include facebook-init.html %}
 
   {% include header.html %}
 
@@ -17,14 +17,15 @@
     {{ content }}
   </div>
 
-    {% include contact.html %}
-
   {% include socialicons.html %}
 
     {% include footer.html %}
 
     {% include scripts.html %}
 
+    {% include googleanalytics.html %}
+
+    <script>for (var k in window.initFuncs) { window.initFuncs[k](); } delete window.initFuncs;</script>
   </body>
 
 </html>

@@ -1,0 +1,28 @@
+---
+layout: page
+title: Categories
+---
+
+<ul class="category-cloud">
+{% for category in site.categories %}
+    <a style="font-size: {{ category | last | size | times: 100 | divided_by: site.categories.size | plus: 70  }}%" href="#{{ category | first | slugize }}">
+    &nbsp  {{ category | first | capitalize }} &nbsp
+    </a>
+{% endfor %}
+</ul>
+
+<h2>List</h2>
+<div id="category-list">
+{% for category in site.categories %}
+  <div class="category-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <h3 id="#{{ category_name | slugize }}">{{ category_name | capitalize }} /</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories[category_name] %}
+    <article class="category-item">
+      <h5>- <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h5>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>

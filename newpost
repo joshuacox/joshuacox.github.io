@@ -10,18 +10,10 @@ if [ $# -ne 1 ]; then
             exit 1
 fi
 NEWPOST=_posts/`date -I`-$1.md
-touch $NEWPOST
+TITLE=$(echo $1|sed "s/-/\ /g")
+cp -n post-template $NEWPOST
+sed -i "s/TITLE_REPLACEME/$TITLE/" $NEWPOST
 echo "
 you can now use your favorite editor to edit $NEWPOST
 "
-echo "
----
-title: "$1"
-layout: post
-og_image_url: ""
-description: ""
-comments: yes
-tags: [bsfs, blog]
----
-" >> $NEWPOST
 vim $NEWPOST
