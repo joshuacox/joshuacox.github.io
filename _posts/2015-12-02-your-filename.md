@@ -10,6 +10,8 @@ title: Let Me Add a Title
 ---
 
 
+![bsfs logos]({{site.baseurl}}/media/2015-12-01-143012_1920x1080_scrot.png)
+
 ## Winged Freak Terrorizes Gotham Gangland
 A man dressed up as a bat slipped on a bannana peel. 
 ### slipsum
