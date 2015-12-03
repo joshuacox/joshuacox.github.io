@@ -6,7 +6,7 @@ published: true
 category: blog
 tags: 
   - comedy
-title: ""
+title: Ghostbusters
 ---
 
 ## Ghostbusters are awesome
