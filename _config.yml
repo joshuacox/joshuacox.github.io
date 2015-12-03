@@ -102,10 +102,10 @@ prose:
           element: "text"
           label: "Title"
           value: ""
-      - name: "splash"
+      - name: "photo_url"
         field:
           element: "text"
-          label: "Splash image"
+          label: "450x450 Picture Thumb for index"
           value: ""
       - name: "disqus"
         field:
