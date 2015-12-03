@@ -47,7 +47,7 @@ publish: false
 
 #THEME
 #Select one of the five color schemes (default, one, two, three, or four)
-theme: six
+theme: one
 
 # *** DO NOT CHANGE ANYTHING BELOW THIS LINE ***
 
@@ -69,3 +69,56 @@ smartergiving_id: #Not yet available
 #mailchimp_embed_code: > # Enter Mailchimp post url on next line.
 #  //getkyn.us5.list-manage.com/subscribe/post?u=1407d7ee4cd0d47986cd54315&amp;id=cdc32b64fe
 #mailchimp_spam_guard: b_753395b9f963c9ea2d6980b7c_9e1559c2f0
+baseurl: /starter
+permalink: pretty
+markdown: rdiscount
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://bigspringfilm.github.io/'
+  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  media: 'media'
+  metadata:
+    _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Screening"
+              value: "screening"
+            - name: "Meeting"
+              value: "meeting"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
