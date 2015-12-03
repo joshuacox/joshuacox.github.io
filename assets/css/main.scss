@@ -93,6 +93,12 @@ div.posts div.end {
 /* post excerpt */
 /* Wrapped in a div.content.full-bleed */
 
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 a.post-excerpt {
   display: block;
   color: inherit;
