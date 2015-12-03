@@ -25,9 +25,9 @@ org_phone: > # Enter phone on next line. Be sure to indent by two spaces.
   (123) 456-7890
 
 #SOCIAL MEDIA
-org_twitter_username: smartergiving
-org_facebook_username: smartergiving
-org_instagram_username:
+twitter_username: bigspringfilm
+facebook_username: bigspringfilm
+instagram_username:
 
 #TAX STATUS
 #Your site will display an appropriate message below the Donate section
