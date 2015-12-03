@@ -89,18 +89,14 @@ markdown: rdiscount
 prose:
   rooturl: '_posts'
   siteurl: 'http://bigspringfilm.github.io/'
-  relativeLinks: 'http://prose.github.io/starter/links.jsonp'
+  relativeLinks: 'http://bigspringfilm.github.io/links.jsonp'
   media: 'media'
   metadata:
     _posts:
-      - name: "category"
-        field:
-          element: "hidden"
-          value: "blog"
       - name: "layout"
         field:
           element: "hidden"
-          value: "blog"
+          value: "post"
       - name: "title"
         field:
           element: "text"
@@ -111,16 +107,38 @@ prose:
           element: "text"
           label: "Splash image"
           value: ""
+      - name: "disqus"
+        field:
+          element: "checkbox"
+          label: "Disqus Comments"
+          value: true
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: false
+      - name: "category"
+        field:
+          element: "select"
+          label: "Select Category"
+          placeholder: "Choose Category"
+          options:
+            - name: "Screening"
+              value: "screening"
+            - name: "Meeting"
+              value: "meeting"
+            - name: "Blog Post"
+              value: "blog"
       - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
           options:
-            - name: "Screening"
-              value: "screening"
-            - name: "Meeting"
-              value: "meeting"
+            - name: "Horrow"
+              value: "horror"
+            - name: "Comedy"
+              value: "comedy"
     _posts/static:
       - name: "layout"
         field:
