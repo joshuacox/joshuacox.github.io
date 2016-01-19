@@ -13,6 +13,7 @@ author: Joshua Cox
 locale: eng-US
 
 disqus_id: joshuacoxgithubio
+google_analytics_track_id: UA-69335315-1
 #REQUIRED
 org_site: joshuacox.github.io
 org_url: https://joshuacox.github.io
