@@ -5,7 +5,7 @@ layout: post
 disqus: yes
 fbcomments: no
 category: blog
-tags: 
+tags:
   - linux
   - vim
   - git
@@ -24,14 +24,19 @@ has a very steep learning curve,
 but is extremely rewarding in terms of efficiency once
 you utilize its hands on keyboard nature.
 In that vein I have a site for you:
+
 <http://vim-adventures.com/>
 
 also
+
 <http://www.openvim.com/>
 
 lazy and just want to watch a video?
-http://derekwyatt.org/vim/tutorials/
+
+<http://derekwyatt.org/vim/tutorials/>
+
 and
+
 <http://vimcasts.org/>
 
 Also, don't forget to try out simply `vimtutor` it is usually installed alongside vim in most distributions
