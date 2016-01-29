@@ -97,8 +97,8 @@ and vim to behave like eclipse:
  vim helloworld.py
 ```
 
- and write at least one script that way (hint to run it afterwards just
- do `python helloworld.py`), you don't need all that GUI stuff, and can
+ and write at least one script that way (hint: to run it afterwards just
+ do `python helloworld.py`), you don't need all that GUI stuff, and it can
  actually hinder you much like crutches must be taken away at some
  point before the person can 'run'.
 
