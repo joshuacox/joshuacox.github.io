@@ -1,0 +1,16 @@
+# ~/.tmuxinator/blog.yml
+
+tmux_command: byobu
+
+name: blog
+root: /mnt/xyliss/git/joshuacox.github.io/
+
+windows:
+  - blog:
+    - echo "You are working on these drafts:"
+    - ls -lh _drafts
+    - git status
+  - serve:
+    - git pull
+    - git push
+    - jekyll serve -P4001 --drafts

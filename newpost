@@ -16,4 +16,5 @@ sed -i "s/TITLE_REPLACEME/$TITLE/" $NEWPOST
 echo "
 you can now use your favorite editor to edit $NEWPOST
 "
+# kate $NEWPOST
 vim $NEWPOST

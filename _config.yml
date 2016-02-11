@@ -5,6 +5,14 @@
 org_site: bigspringfilm.github.io
 url: http://bigspringfilm.github.io
 
+name: "The Blog of Joshua Cox"
+description: "Where I blog about Jekyll, techronmancy, docker, and other usually linux related stuff"
+url: http://joshuacox.github.io
+author: Joshua Cox
+locale: eng-US
+
+disqus_id: joshuacoxgithubio
+google_analytics_track_id: UA-69335315-1
 #REQUIRED
 org_name: Big Spring Film Society
 org_summary: > # Enter your summary on the next line. Be sure to indent by two spaces.
@@ -153,4 +161,3 @@ prose:
         field:
           element: "text"
           label: "Permalink"
-          value: ""

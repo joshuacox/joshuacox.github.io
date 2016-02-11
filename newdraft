@@ -1,0 +1,19 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+        # Print usage
+        echo 'wrong!!! bad operator!!!
+        usage:
+        ./newdraft $FILENAME_SAFE_SUBJECT
+        e.g.
+        ./newdraft my-subject-without-spaces
+        '
+            exit 1
+fi
+NEWDRAFT=_drafts/$1.md
+TITLE=$(echo $1|sed "s/-/\ /g")
+cp -n post-template $NEWDRAFT
+sed -i "s/TITLE_REPLACEME/$TITLE/" $NEWDRAFT
+echo "
+you can now use your favorite editor to edit $NEWDRAFT
+"
+vim $NEWDRAFT

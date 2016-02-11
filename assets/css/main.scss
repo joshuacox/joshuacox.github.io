@@ -70,11 +70,57 @@
 // Insert custom css below this line
 //
 
+.full-width {
+  margin: 0 -9999rem;
+  padding: 0 9999rem;
+}
 /* ------------------------------------------------------------------------------------------- */
+.textarea .textarea-wrapper .placeholder {
+    background: $bgcolor;
+    color: $color;
+  }
+.textarea-wrapper .placeholder {
+    background: $bgcolor;
+    color: $color;
+  }
+#disqus_thread {
+    background: $bgcolor;
+    color: $color;
+  }
+.sharediv {
+    text-align: center;
+    background: $bgcolor;
+    color: $color;
+    padding: 8px 15px;
+    border-radius: 5px;
+
+    a {
+        font-weight: 700;
+        color: $color;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+      }
+  }
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
 
 body {
    margin: 0 auto;
    width: 100%;
+}
+
+.body a{
+  text-decoration: underline;
 }
 
 .container .content {
@@ -241,7 +287,7 @@ div.content.photo-post {
     margin-top:0;
   }
   div.content.photo-post p, div.content.photo-post iframe {
-    padding: 40px 0 0 0;
+    padding: 10px 0 30px 0;
     margin:0;
   }
 /*div.content.photo-post {
