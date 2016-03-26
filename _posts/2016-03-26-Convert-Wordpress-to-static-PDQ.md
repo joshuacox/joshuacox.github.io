@@ -14,13 +14,13 @@ Ok, today let's kill off a wordpress site before it gets hacked and leave up a s
 note that using this method you can archive any publicly available site, be it wordpress, joomla, drupal, some proprietary
 CMS that you have grown to hate, whatever, whenever.
 
-There are a few ways to do this, the simplest being `wget -m`, e.g. let's 'mirror' bokbot.com
+There are a few ways to do this, the simplest being `wget -m`, e.g. let's 'mirror' example.com
 
 ```
- wget -m bokbot.com
+ wget -m example.com
 ```
 
-You now have a folder `bokbot.com` with a static version of your site that is nigh invulnerable to hackers
+You now have a folder `example.com` with a static version of your site that is nigh invulnerable to hackers
 and you can leave up for years without worrying about updating or maintenance.
 
 #### Templatize
