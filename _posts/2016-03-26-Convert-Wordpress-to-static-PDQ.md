@@ -138,7 +138,7 @@ https://github.com/prose/prose/issues/143
  Notice any of this can be done on ANY static template generator site,
  this is not exclusive to jekyll.  I just use it here as an example.
 
-###### E-commerce
+###### E-commerce? Check!
 
 Jekyll-Store:
 
@@ -148,7 +148,7 @@ or with amazon:
 
 http://joshuacox.github.io/amazon/
 
-###### Forms
+###### Forms? Check!
 
 formkeep:
 
