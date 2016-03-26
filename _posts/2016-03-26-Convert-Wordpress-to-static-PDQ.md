@@ -41,9 +41,9 @@ https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_lay
 
 where you'll see statements like this:
 
-```
+{% raw  %}
    {% include head.html %}
-```
+{% endraw  %}
 
 which points a file called `head.html` in the `_includes` directory here:
 
