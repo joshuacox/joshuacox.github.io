@@ -29,14 +29,17 @@ Now that we have a static version how do we make changes without having to rewri
 If you'll look at bokbot.com/index.html you'll notice we already have the base structure for our site.
 
 So let's fork this starter project:
+
 http://smartergiving.org/free-nonprofit-starter-website/
 
 go here to it's github home page:
+
 https://github.com/smartergiving/free-nonprofit-starter-website
 
 click 'fork' in the upper right hand corner (you'll need a free github account for this)
 
 then you'll notice this file:
+
 https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_layouts/default.html
 
 where you'll see statements like this:
@@ -52,6 +55,7 @@ https://github.com/smartergiving/free-nonprofit-starter-website/tree/master/_inc
 Alter that file to include the 'head' part of your theme (navbar and any other elements up top before the body)
 
 Then do the same for the footer:
+
 https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_includes/footer.html
 
 And you are done with theming!  It could not be simpler.
@@ -91,10 +95,15 @@ PHP and wordpress provide?  And do we have some alternatives?
 ###### commenting?  check!
 
  discource (open source DIY solution):
+
  http://www.discourse.org/
+
  or disqus:
+
  http://joshuacox.github.io/jekyll/2015/11/27/disqus-and-jekyll/
+
  or facebook:
+
  http://joshuacox.github.io/jekyll/2015/11/28/facebook-comments-and-jekyll/
 
  Of the three I can recommend both discource and disqus, facebook I found to be problematic on nearly half the browsers
@@ -114,9 +123,11 @@ PHP and wordpress provide?  And do we have some alternatives?
 ###### Ecommerce
 
 Jekyll-Store:
+
 http://www.jekyll-store.com/
 
 or with amazon:
+
 http://joshuacox.github.io/amazon/
 
 ###### Contact form
@@ -127,20 +138,25 @@ http://joshuacox.github.io/about/#contact
 
 or some more options
 formkeep:
+
 https://formkeep.com/guides/how-to-make-a-contact-form-in-jekyll?utm_source=github&utm_medium=jekyll-docs&utm_campaign=contact-form-jekyll
 
 simpleform:
+
 https://getsimpleform.com/
 
 http://sebastien.saunier.me/blog/2014/04/15/you-do-not-need-a-database-for-your-contact-form.html
 
 who recommends formspree:
+
 https://formspree.io/
 
 and wufoo:
+
 http://www.wufoo.com/
 
 stackoverflow question:
+
 http://stackoverflow.com/questions/17983972/github-contact-form-with-jekyll
 
 https://coderwall.com/p/8lq1ba/how-to-create-a-contact-form-for-a-github-pages-served-jekyll-website
