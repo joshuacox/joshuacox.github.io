@@ -58,7 +58,11 @@ Then do the same for the footer:
 
 https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_includes/footer.html
 
-And you are done with theming!  It could not be simpler.
+And you are done with theming!  It could not be simpler.  YMMV, of course you  might have issues
+getting all of your elements (CSS, images, galleries, etc), but removing the complexity of a wordpress theme is
+a smart idea.  If only because a good portion of the wordpress attacks I've seen relied upon known vulnerabilities
+introduced by very popular [themes](https://wpvulndb.com/themes).  
+Of all programmers, themers seem to be the least aware of security issues.
 
 #### Migrate old content
 
