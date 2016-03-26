@@ -26,7 +26,7 @@ and you can leave up for years without worrying about updating or maintenance.
 #### Templatize
 
 Now that we have a static version how do we make changes without having to rewrite every page?  We convert the static site into templates.
-If you'll look at bokbot.com/index.html you'll notice we already have the base structure for our site.
+If you'll look at example.com/index.html you'll notice we already have the base structure for our site.
 
 So let's fork this starter project:
 
