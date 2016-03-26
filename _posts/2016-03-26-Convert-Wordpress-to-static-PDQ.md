@@ -96,7 +96,7 @@ the savings over the long term will be substantial
 Ok, what does a person need on their website that dynamic things like
 PHP and MySQL provide?  And do we have some alternatives?
 
-##### GUI editor?  Check!
+###### GUI editor?  Check!
 
 http://prose.io/
 
