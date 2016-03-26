@@ -95,7 +95,6 @@ smartergiving_id: #Not yet available
 #  //getkyn.us5.list-manage.com/subscribe/post?u=1407d7ee4cd0d47986cd54315&amp;id=cdc32b64fe
 #mailchimp_spam_guard: b_753395b9f963c9ea2d6980b7c_9e1559c2f0
 permalink: pretty
-markdown: rdiscount
 prose:
   rooturl: '_posts'
   siteurl: 'http://joshuacox.github.io/'
