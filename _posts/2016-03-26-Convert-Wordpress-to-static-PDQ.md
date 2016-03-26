@@ -125,7 +125,10 @@ https://github.com/prose/prose/issues/143
  http://joshuacox.github.io/jekyll/2015/11/28/facebook-comments-and-jekyll/
 
  Of the three I can recommend both discource and disqus, facebook I found to be problematic on nearly half the browsers
- I tested on, and since disqus will let you login with your facebook account it is moot
+ I tested on, and since disqus will let you login with your facebook account and not vice versa disqus wins out in more people
+ being able to comment on your content, while blocking spammer, hackers, etc,
+ and they give you options for monetization, so I consider this one of the few
+ proprietary services to be  truly beneficial for the small time blogger.
 
 ###### Sharing with social media? Check!
 
