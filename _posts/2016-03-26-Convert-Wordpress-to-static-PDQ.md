@@ -148,13 +148,8 @@ or with amazon:
 
 http://joshuacox.github.io/amazon/
 
-###### Contact form
+###### Forms
 
-and a contact form that connects to tinyletter:
-
-http://joshuacox.github.io/about/#contact
-
-or some more options
 formkeep:
 
 https://formkeep.com/guides/how-to-make-a-contact-form-in-jekyll?utm_source=github&utm_medium=jekyll-docs&utm_campaign=contact-form-jekyll
