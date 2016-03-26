@@ -45,7 +45,7 @@ where you'll see statements like this:
    {% include head.html %}
 {% endraw  %}
 
-which points a file called `head.html` in the `_includes` directory here:
+which points to a file called `head.html` in the `_includes` directory here:
 
 https://github.com/smartergiving/free-nonprofit-starter-website/tree/master/_includes
 
