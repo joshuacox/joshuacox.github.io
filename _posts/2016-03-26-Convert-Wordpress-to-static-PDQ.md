@@ -94,9 +94,23 @@ the savings over the long term will be substantial
 #### Dynamic elements 
 
 Ok, what does a person need on their website that dynamic things like
-PHP and wordpress provide?  And do we have some alternatives?
+PHP and MySQL provide?  And do we have some alternatives?
 
-###### commenting?  check!
+##### GUI editor?  Check!
+
+http://prose.io/
+
+Also in the future we might see WYSIWYG support like:
+
+http://substance.io/
+
+see these posts:
+
+https://github.com/prose/prose/issues/139
+and 
+https://github.com/prose/prose/issues/143
+
+###### Commenting?  Check!
 
  discource (open source DIY solution):
 
@@ -113,18 +127,18 @@ PHP and wordpress provide?  And do we have some alternatives?
  Of the three I can recommend both discource and disqus, facebook I found to be problematic on nearly half the browsers
  I tested on, and since disqus will let you login with your facebook account it is moot
 
-###### sharing with social media? check!
+###### Sharing with social media? Check!
 
  http://joshuacox.github.io/jekyll/2015/12/01/Super-Simple-Sharing-Buttons/
 
-###### links, images, headings, etc:
+###### Links, images, headings, etc? Check!
 
  http://joshuacox.github.io/jekyll/2015/12/02/0-to-60-in-Markdown/
 
  Notice any of this can be done on ANY static template generator site,
  this is not exclusive to jekyll.  I just use it here as an example.
 
-###### Ecommerce
+###### E-commerce
 
 Jekyll-Store:
 
