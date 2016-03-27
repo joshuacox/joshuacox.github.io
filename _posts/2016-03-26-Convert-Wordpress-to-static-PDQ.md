@@ -30,17 +30,17 @@ If you'll look at example.com/index.html you'll notice we already have the base 
 
 So let's fork this starter project:
 
-http://smartergiving.org/free-nonprofit-starter-website/
+<http://smartergiving.org/free-nonprofit-starter-website/>
 
 go here to it's github home page:
 
-https://github.com/smartergiving/free-nonprofit-starter-website
+<https://github.com/smartergiving/free-nonprofit-starter-website>
 
 click 'fork' in the upper right hand corner (you'll need a free github account for this)
 
 then you'll notice this file:
 
-https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_layouts/default.html
+<https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_layouts/default.html>
 
 where you'll see statements like this:
 
@@ -50,13 +50,13 @@ where you'll see statements like this:
 
 which points to a file called `head.html` in the `_includes` directory here:
 
-https://github.com/smartergiving/free-nonprofit-starter-website/tree/master/_includes
+<https://github.com/smartergiving/free-nonprofit-starter-website/tree/master/_includes>
 
 Alter that file to include the 'head' part of your theme (navbar and any other elements up top before the body)
 
 Then do the same for the footer:
 
-https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_includes/footer.html
+<https://github.com/smartergiving/free-nonprofit-starter-website/blob/master/_includes/footer.html>
 
 And you are done with theming!  It could not be simpler.  YMMV, of course you  might have issues
 getting all of your elements (CSS, images, galleries, etc), but removing the complexity of a wordpress theme is
@@ -68,11 +68,11 @@ Of all programmers, themers seem to be the least aware of security issues.
 
 It may be easier to just migrate your content with one of the many migration utilities here:
 
-https://import.jekyllrb.com/docs/home/
+<https://import.jekyllrb.com/docs/home/>
 
 You'll notice on the right many links to "importers" including wordpress:
 
-https://import.jekyllrb.com/docs/home/
+<https://import.jekyllrb.com/docs/home/>
 
 As stated on that page: This importer only converts your posts and creates YAML front-matter. It does not import any layouts, styling, or external files (images, CSS, etc.).
 
@@ -98,31 +98,31 @@ PHP and MySQL provide?  And do we have some alternatives?
 
 ###### GUI editor?  Check!
 
-http://prose.io/
+<http://prose.io/>
 
 Also in the future we might see WYSIWYG support like:
 
-http://substance.io/
+<http://substance.io/>
 
 see these posts:
 
-https://github.com/prose/prose/issues/139
+<https://github.com/prose/prose/issues/139>
 and 
-https://github.com/prose/prose/issues/143
+<https://github.com/prose/prose/issues/143>
 
 ###### Commenting?  Check!
 
  discource (open source DIY solution):
 
- http://www.discourse.org/
+<http://www.discourse.org/>
 
  or disqus:
 
- http://joshuacox.github.io/jekyll/2015/11/27/disqus-and-jekyll/
+<http://joshuacox.github.io/jekyll/2015/11/27/disqus-and-jekyll/>
 
  or facebook:
 
- http://joshuacox.github.io/jekyll/2015/11/28/facebook-comments-and-jekyll/
+<http://joshuacox.github.io/jekyll/2015/11/28/facebook-comments-and-jekyll/>
 
  Of the three I can recommend both discource and disqus, facebook I found to be problematic on nearly half the browsers
  I tested on, and since disqus will let you login with your facebook account and not vice versa disqus wins out in more people
@@ -132,11 +132,11 @@ https://github.com/prose/prose/issues/143
 
 ###### Sharing with social media? Check!
 
- http://joshuacox.github.io/jekyll/2015/12/01/Super-Simple-Sharing-Buttons/
+<http://joshuacox.github.io/jekyll/2015/12/01/Super-Simple-Sharing-Buttons/>
 
 ###### Links, images, headings, etc? Check!
 
- http://joshuacox.github.io/jekyll/2015/12/02/0-to-60-in-Markdown/
+<http://joshuacox.github.io/jekyll/2015/12/02/0-to-60-in-Markdown/>
 
  Notice any of this can be done on ANY static template generator site,
  this is not exclusive to jekyll.  I just use it here as an example.
@@ -145,43 +145,43 @@ https://github.com/prose/prose/issues/143
 
 Jekyll-Store:
 
-http://www.jekyll-store.com/
+<http://www.jekyll-store.com/>
 
 or with amazon:
 
-http://joshuacox.github.io/amazon/
+<http://joshuacox.github.io/amazon/>
 
 ###### Forms? Check!
 
 formkeep:
 
-https://formkeep.com/guides/how-to-make-a-contact-form-in-jekyll?utm_source=github&utm_medium=jekyll-docs&utm_campaign=contact-form-jekyll
+<https://formkeep.com/guides/how-to-make-a-contact-form-in-jekyll?utm_source=github&utm_medium=jekyll-docs&utm_campaign=contact-form-jekyll>
 
 simpleform:
 
-https://getsimpleform.com/
+<https://getsimpleform.com/>
 
-http://sebastien.saunier.me/blog/2014/04/15/you-do-not-need-a-database-for-your-contact-form.html
+<http://sebastien.saunier.me/blog/2014/04/15/you-do-not-need-a-database-for-your-contact-form.html>
 
 who recommends formspree:
 
-https://formspree.io/
+<https://formspree.io/>
 
 and wufoo:
 
-http://www.wufoo.com/
+<http://www.wufoo.com/>
 
 stackoverflow question:
 
-http://stackoverflow.com/questions/17983972/github-contact-form-with-jekyll
+<http://stackoverflow.com/questions/17983972/github-contact-form-with-jekyll>
 
-https://coderwall.com/p/8lq1ba/how-to-create-a-contact-form-for-a-github-pages-served-jekyll-website
+<https://coderwall.com/p/8lq1ba/how-to-create-a-contact-form-for-a-github-pages-served-jekyll-website>
 
 ### Jekyll and the future
 
 You may know that:
 
-https://www.healthcare.gov/
+<https://www.healthcare.gov/>
 
 was built using jekyll. But this is ancient history now, the leader of jekyll has left to do
 other things and why continue to use Jekyll?  Because the principles
@@ -196,17 +196,17 @@ There are tons of great projects springing up based on these principles.
 dealing with a wordpress theme, and you can be up and rolling in three
 minutes if you follow this:
 
-http://jekyllbootstrap.com/
+<http://jekyllbootstrap.com/>
 
 and that guy went on to build ruhoh:
 
-http://ruhoh.com/
+<http://ruhoh.com/>
 
 which is very friendly and easy to use.
 
 or you can use ghost:
 
-https://ghost.org/
+<https://ghost.org/>
 
 there are hundreds of new platforms out there now.  And this does not
 mean you cannot have dynamic things in them, as I've already shown all
@@ -219,11 +219,11 @@ MMORPG through browser experience.
 You can even fire up a drupal instance and use it as a database
 backend API for your static site.
 
-https://groups.drupal.org/headless-drupal
+<https://groups.drupal.org/headless-drupal>
 
 which is how I envision some really cool stuff happening with D3 as a visualizer
 
-https://d3js.org/
+<https://d3js.org/>
 
 So the future is rich with options, get rid of wordpress now, stick to simple templates that generate static content
 and pull in the dynamic things you need using javascript and inhouse solutions or use many of the great truly free
