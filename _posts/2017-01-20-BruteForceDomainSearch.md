@@ -12,7 +12,7 @@ tags:
   - make
 ---
 
-[Brute Force Domain Search]http://thalhalla.github.io/BruteForceDomainSearch/
+[Brute Force Domain Search](http://thalhalla.github.io/BruteForceDomainSearch/)
 - Is a bit of perl to help you find open domain names that are available
 for purchase.
 
@@ -120,3 +120,8 @@ the `docker run` command
 `make clean`
 
 * kills and removes the docker container
+
+
+For questions, or other help, please post an issue at the github page:
+
+[Brute Force Domain Search](http://thalhalla.github.io/BruteForceDomainSearch/)
