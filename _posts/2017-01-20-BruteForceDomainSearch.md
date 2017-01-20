@@ -63,6 +63,10 @@ it will start dumping out available domain names into STDOUT and /tmp/domlog
 
 * This is the number of seconds to sleep once we hit the throttle
 
+`--forks`
+
+* This is the number of parallel processes to fork
+
 `--tld`
 
 * This is the Top Level Domain (e.g. '.com') to hit the Nameservers with before sleeping
