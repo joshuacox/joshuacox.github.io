@@ -127,6 +127,7 @@ the `docker run` command
 
 * kills and removes the docker container
 
+#### Support
 
 For the latest useage, see the github page:
 [Brute Force Domain Search](http://thalhalla.github.io/BruteForceDomainSearch/)
