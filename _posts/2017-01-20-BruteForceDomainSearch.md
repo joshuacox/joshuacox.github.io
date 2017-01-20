@@ -27,7 +27,7 @@ At which point someone inevitably looks up the domain in question and
 says "It's already taken", and the search continues.
 
 To alleviate this problem I thought I'd invert the process and brute
-force determine which domains were available.
+force determine which domains are available.
 
 Of note this is "brute force" and is likely to get you banned ten ways from Sunday!  Do not ever run this script as it will destroy your computer and set fire to whatever dwelling you currently inhabit!
 You've been warned (I've added some throttling and a block of public DNS servers but this is still a brute force script)
