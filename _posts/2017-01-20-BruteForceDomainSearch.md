@@ -12,6 +12,8 @@ tags:
   - make
 ---
 
+Brute forcing your next domain name
+
 [Brute Force Domain Search](http://thalhalla.github.io/BruteForceDomainSearch/)
 - Is a bit of perl to help you find open domain names that are available
 for purchase.
