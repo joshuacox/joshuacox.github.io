@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ $# -ne 1 ]; then
         # Print usage
-        echo 'wrong!!! bad operator!!!
+        echo 'publishdraft DRAFT
         usage:
-        ./newpost $FILENAME_SAFE_SUBJECT
+        ./publishdraft $FILENAME_SAFE_SUBJECT
         e.g.
-        ./newpost my-subject-without-spaces
+        ./publishdraft my-subject-without-spaces
         '
             exit 1
 fi
