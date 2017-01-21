@@ -38,12 +38,12 @@ Given you have perl properly installed (and it exists at
 `/usr/bin/perl`, and you are not on arch linux where everything is too
 new, then you you can do this
 
-`bruteforcedomainsearch.pl [--startingNumber 6 --finishingNumber 8 --throttle 10 --sleepthrottle 5 --tld '.com' -vvvvvvvvvv]`
+`bruteforcedomainsearch.pl [--startingNumber 6 --finishingNumber 8 --throttle 10 --sleepthrottle 5 --tld '.com' -v]`
 
 Not much to see here, does what it says on the tin , e.g.
 that will hunt down all available 6, 7, and 8 letter domains available
 and limit you to ten requests with each resolver before sleeping for five seconds  (roundabouts it was a simple throttle nothing fancy)
-it will start dumping out available domain names into STDOUT and /tmp/domlog
+it will start dumping out available domain names into STDOUT (at `-v` it will only print out errors and available domain names) and all successfull domain names will be recorded in /tmp/domlog
 
 #### Detailed Eplanations of the Arguments
 
