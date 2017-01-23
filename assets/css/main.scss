@@ -7,37 +7,37 @@
 // Set theme colors
 //
 
-{% if site.theme == "one" %}
+{% if site.mytheme == "one" %}
   $color: #17baef;
   $color-2: #eebf3f;
   $bgcolor: #000;
   $bgcolor-2: #333;
-{% elsif site.theme == "two" %}
+{% elsif site.mytheme == "two" %}
   $color: #b4ca65;
   $color-2: #dd7c4f;
   $bgcolor: #000;
   $bgcolor-2: #333;
-{% elsif site.theme == "three" %}
+{% elsif site.mytheme == "three" %}
   $color: #6690b9;
   $color-2: #f46fa3;
   $bgcolor: #000;
   $bgcolor-2: #333;
-{% elsif site.theme == "four" %}
+{% elsif site.mytheme == "four" %}
   $color: #50c8c9;
   $color-2: #ffbe57;
   $bgcolor: #000;
   $bgcolor-2: #333;
-{% elsif site.theme == "five" %}
+{% elsif site.mytheme == "five" %}
   $color: #161616;
   $color-2: #f00000;
   $bgcolor: #5757e7;
   $bgcolor-2: #333;
-{% elsif site.theme == "six" %}
+{% elsif site.mytheme == "six" %}
   $color: #ddd;
   $color-2: #ccc;
   $bgcolor: #000;
   $bgcolor-2: #333;
-{% elsif site.theme == "seven" %}
+{% elsif site.mytheme == "seven" %}
   $color: #33dd00;
   $color-2: #11bb00;
   $linkcolor: #33ff33;
