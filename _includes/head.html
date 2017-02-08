@@ -31,4 +31,23 @@
     <![endif]-->
     <script>window.initFuncs = [];</script>
     <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src='/assets/js/jquery.min.js'></script>
+		<script type="text/javascript" src='/assets/js/jquery.masonry.min.js'></script>
+		<script type="text/javascript" src='/assets/js/jquery.imagesloaded.min.js'></script>
+		<script type="text/javascript" src='/assets/js/highlight.pack.js'></script>
+		<script type="text/javascript">
+			hljs.initHighlightingOnLoad();
+			function applyTiles() {
+				var posts = $('#posts ul');
+				posts.imagesLoaded(function() {
+					$('#posts ul').masonry({ itemSelector : '.post' });;
+				});
+			}
+			$(function() {
+				applyTiles();
+			});
+			$(window).resize(function() {
+				applyTiles();
+			});
+		</script>
 </head>
