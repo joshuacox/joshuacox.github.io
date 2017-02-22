@@ -3,9 +3,9 @@ if [ $# -ne 1 ]; then
         # Print usage
         echo 'publishdraft DRAFT
         usage:
-        ./publishdraft $FILENAME_SAFE_SUBJECT
+        ./publishdraft _drafts/$FILENAME_SAFE_SUBJECT
         e.g.
-        ./publishdraft my-subject-without-spaces
+        ./publishdraft _drafts/my-subject-without-spaces
         '
             exit 1
 fi
