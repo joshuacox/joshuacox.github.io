@@ -484,9 +484,93 @@ body {
   margin-top: 10px;
 }
 
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
 .grid-item {
+  position: relative;
   float: left;
-  width: 80px;
-  height: 60px;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524;
+  width:  450px;
+  height: 400px;
   border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.grid-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.grid-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.grid-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.grid-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.grid-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.grid-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.grid-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.grid-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.grid-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.grid-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.grid-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.grid-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.grid-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+
+.itemtitle {
+  color: #ffffff;
+  position: relative;
+  width: 100%;
+  top: 115px;
+  text-align: center;
+}
+
+th, td, table {
+  background: $bgcolor;
+  color: $color;
+  padding: 10px;
+  border: 10px solid #030023;
+  text-align: left;
+}
+
+.wideimg {
+  max-width: 100%;
+  height: auto;
 }

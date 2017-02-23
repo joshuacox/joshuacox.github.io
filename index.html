@@ -1,71 +1,18 @@
 ---
 layout: default
 ---
-<!-- <div class="content full-bleed intro">
-  Welcome to my homepage!!1
-</div> -->
 <section id="posts" class="posts section">
 </section>
-<div class="grid posts">
+<div class="posts grid" >
   <div class="content full-bleed" id="recent-posts">
-			<div id='posts'>
-				<ul>
-					{% for post in site.categories.blog %}
-						<li class='post'>
-							{% if post.image %}
-								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
-							{% endif %}
-							<div class="postcontent">
-								<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
-								<div class='post-date'>{{ post.date | date: "%B %d, %Y"}}</div>
-								
-								<div class='post-content'>{{post.summary}}</div>
-							</div>
-						</li>
-					{% endfor %}
-				</ul>
-			</div>
-  {% for post in site.posts limit:50 %}<a
-    href="{{ post.url }}" class="post-excerpt{% if post.photo_url %} photo{% endif %}">
-      <div class="padded-content grid-item">
-      {% if post.photo_url %}
-      <div class="title shadow"><h5>{{ post.title }}</h5> &nbsp <strong><p>{{ post.description | strip_html }}</p></strong></div>
-      {% else %}
-        <div class="title shadow"><h5>{{ post.title }}</h5></div>
-      {% endif %}<!-- post.photo_url -->
-      {% if post.photo_url %}
-        <div class="image" style="background-image:url('{{ post.photo_url }}')"></div>
-      {% else %}
-        <!-- <div class="title">{{ post.title }}</div> -->
-        <info datetime="{{ page.date | date: "%Y-%m-%d" }}">
-          {{ post.date | date: "%b %Y" }} &nbsp - &nbsp
-        </info>
-        {% if post.description %}
-        <span class="body">{{ post.description | strip_html }}</span>
-        {% else %}
-        <span class="body">{{ post.excerpt | strip_html }}</span>
-        {% endif %}
-      {% endif %}<!-- post.photo_url -->
+    {% for post in site.posts limit:50 %}<a
+    href="{{ post.url }}" class="{% if post.photo_url %} photo{% endif %}">
+      <div class="grid-item" data-price="{{ post.price }}" data-name="{{ post.title }}" data-type="{{ post.type }}" data-watts="{{ post.watts }}" {% if post.photo_url %} style="background-image:url('{{ post.photo_url }}')"{% else %} style="background-image:url('/img/default.jpg')" {% endif %}>
       </div>
     </a>{% endfor %}
     <hr>
     <div class="breaker"></div>
     <div class="end">
-      <a href="/archive/">More...</a>
     </div>
   </div>
 </div>
-<script type="text/javascript">
-(function(){
-  var grid = document.querySelector('.grid');
-  var msnry = new Masonry( grid, {
-    // options...
-    itemSelector: '.grid-item',
-    columnWidth: 50
-  });
-  // init with selector
-  var msnry = new Masonry( '.grid', {
-    // options...
-  });
-})();
-</script>
