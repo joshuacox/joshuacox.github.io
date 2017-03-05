@@ -38,11 +38,11 @@
   $bgcolor: #000;
   $bgcolor-2: #333;
 {% elsif site.mytheme == "seven" %}
-  $color: #33dd00;
-  $color-2: #11bb00;
-  $linkcolor: #33ff33;
-  $bgcolor: rgba(42, 0, 42, 0.7);
-  $bgcolor-2: rgba(14, 0, 14, 0.5);
+  $color: #000000;
+  $color-2: #000000;
+  $linkcolor: #2222FF;
+  $bgcolor: rgba(255, 255, 255, 1);
+  $bgcolor-2: rgba(255, 255, 255, 1);
 {% else %}
   $color: #6690b9;
   $color-2: #dd9d71;
@@ -52,7 +52,7 @@
 // Import partials from `_sass` folder
 //
 
-@import "default";
+@import "print";
 
 //
 // Insert custom css below this line
@@ -61,9 +61,6 @@
 button, input, select, optgroup {
     background: $bgcolor;
     color: $color;
-    background-color: $bgcolor;
-    border: 1px solid;
-    border-color: $bgcolor;
 }
 
 .full-width {

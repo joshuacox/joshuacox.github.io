@@ -23,10 +23,18 @@
           <li class="nav-item"><a href="/tags/">Tags</a></li>
           <li class="nav-item"><a href="/about/#about">About</a></li>
           <li class="nav-item"><a href="/about/#contact">Contact</a></li>
-          <form>
-            <input type="submit" onclick="switch_style('print');return false;" name="theme" value="print Theme" id="print">
-            <input type="submit" onclick="switch_style('main');return false;" name="theme" value="main Theme" id="main">
-          </form>
+          <li class= "nav-item">
+            <label for="themeswitcher">
+                   Choose theme
+                  </label>
+            <br />
+            <select id="themeswitcher" name="themeswitcher">
+              <optgroup label="ThemeSwitcher">
+                <option onclick="switch_style('main');return false;" value="1">Main</option>
+                <option onclick="switch_style('print');return false;" value="1">Print</option>
+              </optgroup>
+            </select>
+          </li>
         </ul><!--//nav-->
       </div><!--//navabr-collapse-->
     </nav><!--//main-nav-->
