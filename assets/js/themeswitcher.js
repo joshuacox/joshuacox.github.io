@@ -36,6 +36,11 @@ $(document).ready(function(){
     return false;
   });
 });
+$(document).ready(function(){
+  $('li').each(function(){
+        this.onclick = function() {}
+  });
+});
 
 function switch_style ( css_title )
 {
