@@ -1,8 +1,8 @@
 // *** TO BE CUSTOMISED ***
 
 var style_cookie_name = "style" ;
-var style_cookie_duration = 30 ;
-var style_domain = "joshuacox.github.io" ;
+var style_cookie_duration = 300 ;
+var style_domain = "joshuacox.github.io";
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
@@ -12,20 +12,9 @@ $(document).ready(function(){
     $(".hidden-div").css("display","block");
   });
 });
-jQuery(document).on('touchstart click',
-  '#mainTheme', function() { switch_style('main');
-  return false;
-});
-jQuery(document).on('touchstart click',
-  '#printTheme', function() { switch_style('print');
-  return false;
-});
-jQuery(document).on('touchstart click',
-  '#altTheme', function() { switch_style('alt');
-  return false;
-});
-jQuery(document).on('touchstart click',
-  '#midniteTheme', function() { switch_style('midnite');
+$('#themeswitcher').on('change', function() {
+  var thistheme = $('option:selected', this).attr('mytheme');
+  switch_style(thistheme);
   return false;
 });
 
