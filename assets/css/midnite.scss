@@ -1,0 +1,468 @@
+---
+# Do not remove the triple dashes
+---
+@charset "utf-8";
+
+//
+// Set theme colors
+//
+
+{% if site.mytheme == "seven" %}
+  $color: #FFFFFF;
+  $color-2: #00FF00;
+  $linkcolor: #2222FF;
+  $bgcolor: rgba(0, 0, 0, 1);
+  $bgcolor-2: rgba(0, 0, 0, 1);
+{% else %}
+  $color: #6690b9;
+  $color-2: #dd9d71;
+{% endif %}
+
+//
+// Import partials from `_sass` folder
+//
+
+@import "midnite";
+
+//
+// Insert custom css below this line
+//
+
+button, input, select, optgroup {
+    background: $bgcolor;
+    color: $color;
+}
+
+.full-width {
+  margin: 0 -9999rem;
+  padding: 0 9999rem;
+}
+/* ------------------------------------------------------------------------------------------- */
+.textarea .textarea-wrapper .placeholder {
+    background: $bgcolor;
+    color: $color;
+  }
+.textarea-wrapper .placeholder {
+    background: $bgcolor;
+    color: $color;
+  }
+#disqus_thread {
+    background: $bgcolor;
+    color: $color;
+  }
+.sharediv {
+    text-align: center;
+    background: $bgcolor;
+    color: $color;
+    padding: 8px 15px;
+    border-radius: 5px;
+
+    a {
+        font-weight: 700;
+        color: $color;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+      }
+  }
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+body {
+   margin: 0 auto;
+   width: 100%;
+}
+
+.body a{
+  text-decoration: underline;
+}
+
+.container .content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* posts */
+
+div.posts div.end {
+  padding:40px;
+  text-align:center;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* post excerpt */
+/* Wrapped in a div.content.full-bleed */
+
+a.post-excerpt {
+  display: block;
+  color: inherit;
+  border-bottom: 8px solid #ddd;
+}
+  a.post-excerpt div.padded-content {
+    display: block;
+    padding: 5px 7px;
+  }
+  a.post-excerpt:nth-child(1) div.padded-content,
+  a.post-excerpt:nth-child(2) div.padded-content {
+    padding-top: 60px;
+  }
+  a.post-excerpt:nth-child(odd) div.padded-content {
+    padding-right:40px;
+  }
+  a.post-excerpt:nth-child(even) div.padded-content {
+    padding-left:40px;
+  }
+  a.post-excerpt.photo {
+    height:400px;
+    position:relative;
+  }
+    /*a.post-excerpt.photo div.padded-content {
+      display: -webkit-box; display: -moz-box; display: box;
+      -webkit-box-orient: vertical; -moz-box-orient: vertical; box-orient: vertical;
+      -webkit-box-pack: end; -moz-box-pack: end; box-pack: end;
+    }*/
+    a.post-excerpt.photo div.title {
+      padding:10px 40px;
+      font-size: 100%;
+      font-weight: 100;
+      color: $color;
+      /*background:rgba(255,200,0,0.1);*/
+      -webkit-text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.9),
+         1px -1px 0 rgba(0, 0, 0, 0.9),
+        -1px  1px 0 rgba(0, 0, 0, 0.9),
+         1px  1px 0 rgba(0, 0, 0, 0.9);
+      -moz-text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.9),
+         1px -1px 0 rgba(0, 0, 0, 0.9),
+        -1px  1px 0 rgba(0, 0, 0, 0.9),
+         1px  1px 0 rgba(0, 0, 0, 0.9);
+      text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.9),
+         1px -1px 0 rgba(0, 0, 0, 0.9),
+        -1px  1px 0 rgba(0, 0, 0, 0.9),
+         1px  1px 0 rgba(0, 0, 0, 0.9);
+      position: absolute;
+      left:0; right:0; bottom:0;
+      z-index:2;
+      font-family:inherit;
+      text-transform: none;
+      /*font-weight:400;*/
+      line-height:1.1;
+      padding-bottom:1em;
+    }
+    a.post-excerpt.photo div.padded-content {
+      padding:0;
+      background: transparent no-repeat center center scroll;
+      position: absolute;
+      left:0; top:0; right:0; bottom:0;
+    }
+    a.post-excerpt.photo div.padded-content div.image {
+      position: absolute;
+      left:0; top:0; right:0; bottom:0;
+      z-index:1;
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    a.post-excerpt.photo:hover div.padded-content {
+      opacity: 1;
+    }
+    a.post-excerpt.photo:hover div.padded-content div.image {
+      opacity:0.5;
+    }
+
+  @media screen and (min-width: 890px) {
+    body { width: 100%; }
+    header { margin:0; }
+    footer { margin:5% 0; }
+    a.post-excerpt {
+      position:relative;
+      display: block;
+      width:50%; /* 680/2 */
+      overflow-y: hidden;
+      float:left;
+      border:none;
+      /*margin-bottom:10px;*/
+    }
+      /*a.post-excerpt.photo div.padded-content {
+        padding:0;
+        width:100%;
+        height:100%;
+        background: transparent no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }*/
+      a.post-excerpt.photo:hover div.padded-content {
+        opacity:0.9;
+      }
+  }
+
+  a.post-excerpt:hover {
+    color:black;
+    /*background-color:#444;*/
+    background-color:#fff933;
+    text-decoration:none;
+  }
+
+  a.post-excerpt div.title {
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:18px;
+    /*letter-spacing:0.02em;*/
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  a.post-excerpt info {
+    display:inline-block;
+    padding-right:8px;
+    font-style:italic;
+    /*margin-bottom:3em;*/
+  }
+
+/* ------------------------------------------------------------------------------------------- */
+/* photo post */
+
+div.content.photo-post {
+  padding-top: 60px;
+}
+  div.content.photo-post p:first-child, div.content.photo-post img:first-child {
+    padding-top:0;
+    margin-top:0;
+  }
+  div.content.photo-post p, div.content.photo-post iframe {
+    padding: 10px 0 30px 0;
+    margin:0;
+  }
+/*div.content.photo-post {
+  padding: 0 0 30px 0;
+  margin:0 0 70px 0;
+}
+  div.content.photo-post p, div.content.photo-post iframe {
+    padding: 40px 40px 0 40px;
+    margin:0;
+  }
+  div.content.photo-post img {
+    display:block;
+    padding:0 0 10px 0;
+    margin:0;
+  }
+  div.content.photo-post p.datetime {
+    color:#ccc;
+  }*/
+
+/* ------------------------------------------------------------------------------------------- */
+/* posts */
+
+div.post {
+  padding-bottom: 0em;
+  /*margin-bottom:-70px;*/
+  page-break-before: always;
+}
+  div.post.single, div.post:last-child { border-bottom:none; }
+  /*div.post h1:first-child, div.post h2:first-child { margin-top:0; }
+  div.post h2.title, div.post h1:first-child { font-size:42px; }*/
+  /*div.post h1 { margin-top: 1.618em; }*/
+  
+  div.post actions, div.post info {
+    color: $color;
+  }
+  
+  div.post actions {
+    display:inline-block;
+    float:right;
+  }
+  
+  div.post info {
+    display:inline-block;
+    /*xbackground:#DDF5EB;
+    xborder-left:2px solid rgba(0,0,0,0.2);*/
+    border:1px solid rgba(0,0,0,0.05);
+    border-left:none; border-right:none;
+    padding:8px 0px 8px 60px;
+    margin-left:-60px;
+    margin-bottom:3em;
+  }
+  div.post.photo info {
+    margin:0;
+    padding:0;
+    border:0;
+    display:block;
+  }
+  
+  div.post info.after {
+    margin-top:30px;
+    margin-right:-60px;
+    margin-bottom:0;
+    padding-top:25px;
+    padding-right:60px;
+    padding-bottom:25px;
+    opacity:0.6;
+    border-color:rgba(0,0,0,0.08);
+    border-bottom:none;
+  }
+  div.post info.after:hover {
+    opacity:1;
+  }
+
+  div.post iframe[width="640"] {
+    /*zoom:0.87;*/
+  }
+//photo
+div.content.photo {
+  padding: 0;
+  margin:0;
+}
+
+//endphoto
+
+#recent-posts {
+    position: relative;
+}
+
+.favthing {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+hr {
+  color: rgba(242, 0, 242, 1.0);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #420042;
+}
+code {
+  color: #F22;
+  background-color: $bgcolor-2;
+  border: 1px solid $bgcolor;
+  border-radius: 4px;
+}
+pre {
+  color: #22FF22;
+  background-color: $bgcolor-2;
+  border: 1px solid $bgcolor;
+  border-radius: 4px;
+}
+.form-control {
+  color: #22FF22;
+  background-color: $bgcolor-2;
+  border: 1px solid $bgcolor;
+  border-radius: 4px;
+}
+.placeholder {
+  color: #22FF22;
+  background-color: $bgcolor-2;
+  border: 1px solid $bgcolor;
+  border-radius: 4px;
+}
+
+.posts {
+  background-color: $bgcolor-2;
+  border: 1px solid $bgcolor;
+  border-radius: 4px;
+}
+body {
+  background-color: transparent;
+}
+.disabled-link {
+  pointer-events: none;
+}
+.logo-title:hover {
+  text-decoration: none;
+}
+.promo .title {
+  font-size: 65px;
+  color: $color;
+  margin-top: 0;
+}
+.btns {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.promo .meta {
+    margin-top: 30px;
+}
+.donorbox {
+  margin-top: 60px;
+}
+.join-us-intro {
+  margin-top: 0;
+  color: $color-2 !important;
+}
+.highlight {
+  color: $color-2 !important;
+}
+.promo .social-icons a {
+    display: inline-block;
+    background: darken($bgcolor, 20%);
+    color: $color;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    padding-top: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin-right: 8px;
+    float: left;
+}
+.btn-outline, .btn-outline:link, .btn-outline:visited {
+    background-color: transparent;
+    border-radius: 5px;
+    &.btn-outline-primary {
+      border: 2px solid $color;
+      color: $color-2;
+    }
+    &.btn-outline-secondary {
+      border: 2px solid $color-2;
+      color: $color-2;
+    }
+    &.btn-outline-medium {
+      border: 2px solid darken($color-2, 15%);
+      color: darken($color-2, 15%);
+    }
+}
+.btn-outline:hover {
+    color: $color-2 !important;
+    &.btn-outline-primary {
+      background-color: $bgcolor;
+    }
+    &.btn-outline-secondary {
+      background-color: $color-2;
+    }
+    &.btn-outline-medium {
+      background-color: darken($color, 15%);
+    }
+}
+.features .form-inline {
+  margin-top: 10px;
+}
+
+.container {
+  width: 960px;
+}
+
+.hidden-div {
+  display: none;
+}

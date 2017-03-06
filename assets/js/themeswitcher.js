@@ -19,6 +19,18 @@ $(document).ready(function(){
   });
 });
 $(document).ready(function(){
+  $("#altTheme").on('click touchstart',function(){
+    switch_style('alt');
+    return false;
+  });
+});
+$(document).ready(function(){
+  $("#midniteTheme").on('click touchstart',function(){
+    switch_style('midnite');
+    return false;
+  });
+});
+$(document).ready(function(){
   $("#printTheme").on('click touchstart',function(){
     switch_style('print');
     return false;
