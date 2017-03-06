@@ -12,34 +12,21 @@ $(document).ready(function(){
     $(".hidden-div").css("display","block");
   });
 });
-$(document).ready(function(){
-  $("#mainTheme").on('click touchstart',function(){
-    switch_style('main');
-    return false;
-  });
+jQuery(document).on('touchstart click',
+  '#mainTheme', function() { switch_style('main');
+  return false;
 });
-$(document).ready(function(){
-  $("#altTheme").on('click touchstart',function(){
-    switch_style('alt');
-    return false;
-  });
+jQuery(document).on('touchstart click',
+  '#printTheme', function() { switch_style('print');
+  return false;
 });
-$(document).ready(function(){
-  $("#midniteTheme").on('click touchstart',function(){
-    switch_style('midnite');
-    return false;
-  });
+jQuery(document).on('touchstart click',
+  '#altTheme', function() { switch_style('alt');
+  return false;
 });
-$(document).ready(function(){
-  $("#printTheme").on('click touchstart',function(){
-    switch_style('print');
-    return false;
-  });
-});
-$(document).ready(function(){
-  $('li').each(function(){
-        this.onclick = function() {}
-  });
+jQuery(document).on('touchstart click',
+  '#midniteTheme', function() { switch_style('midnite');
+  return false;
 });
 
 function switch_style ( css_title )
