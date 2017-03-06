@@ -24,16 +24,22 @@
           <li class="nav-item"><a href="/about/#about">About</a></li>
           <li class="nav-item"><a href="/about/#contact">Contact</a></li>
           <li class= "nav-item">
-            <label for="themeswitcher">
-                   Choose theme
-            </label>
-            <br />
-            <select id="themeswitcher" name="themeswitcher">
-              <optgroup label="ThemeSwitcher">
-                <option onclick="switch_style('main');return false;" value="1">Main</option>
-                <option onclick="switch_style('print');return false;" value="1">Print</option>
-              </optgroup>
-            </select>
+            <div class="themeEvent">
+              <input type="hidden" name="type" value="" />
+              <div class="hidden-div" id="hidden-div">
+                <label for="themeswitcher">
+                       Choose theme
+                </label>
+                <br />
+                <select id="themeswitcher" name="themeswitcher">
+                  <optgroup label="ThemeSwitcher">
+                    <option id="mainTheme" value="1">Main</option>
+                    <option onclick="switch_style('print');return false;" value="1">Print</option>
+                  </optgroup>
+                </select>
+              </div>
+              <span style="display:block"><button id="themeEvent" class="btn btn-applyevent">Change Theme</button></span>
+            </div>
           </li>
         </ul><!--//nav-->
       </div><!--//navabr-collapse-->

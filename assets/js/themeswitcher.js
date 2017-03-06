@@ -6,6 +6,24 @@ var style_domain = "joshuacox.github.io" ;
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
+$(document).ready(function(){
+  $("#themeEvent").on('click touchstart',function(){
+    $(this).hide();
+    $(".hidden-div").css("display","block");
+  });
+});
+$(document).ready(function(){
+  $("#mainTheme").on('click touchstart',function(){
+    switch_style('main');
+    return false;
+  });
+});
+$(document).ready(function(){
+  $("#printTheme").on('click touchstart',function(){
+    switch_style('print');
+    return false;
+  });
+});
 
 function switch_style ( css_title )
 {
