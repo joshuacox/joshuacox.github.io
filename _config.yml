@@ -7,7 +7,7 @@ gems:
   - jekyll-feed
 
 name: "The Blog of Joshua Cox"
-description: "Where I blog about Jekyll, techronmancy, docker, and other usually linux related stuff"
+description: "Where I blog about Jekyll, techromancy, docker, and other usually linux related stuff"
 url: http://joshuacox.github.io
 author: Joshua Cox
 locale: eng-US
