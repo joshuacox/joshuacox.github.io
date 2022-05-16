@@ -19,7 +19,6 @@ photo_url: /img/thumbs/spacevim.png
 
 ![](/img/vim_drill_small.jpeg)
 
-
 This is an ode to Tom Preston Werner's incecption [post](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) to Jekyll.
 While I am very impressed with what prose.io is doing for people who want 'simple', I on the other hand have put in my time
 steep learning curves of vim, bash, git, screen, tmux, byobu are behind me. I have these skills so I want to use them, right?
@@ -41,9 +40,6 @@ curl -sLf https://spacevim.org/install.sh | bash
 
 You will then have the most advanced hacker text editor on the planet
 
-
-
 [Tmuxinator](https://github.com/tmuxinator/tmuxinator) is a 
 
-{% raw  %}
-{% endraw  %}
+
