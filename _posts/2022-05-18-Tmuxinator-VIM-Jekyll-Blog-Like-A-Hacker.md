@@ -37,7 +37,7 @@ Let me hook the rest of you up with the secret to destroy all other editors and 
 
 [spacevim.org/](http://spacevim.org/)
 
-If you install that with simply:
+You can install SpaceVIM with a curl oneliner::
 
 ```
 curl -sLf https://spacevim.org/install.sh | bash
