@@ -26,7 +26,7 @@ I don't have time to click buttons and wait on submit times, my text editor is m
 and is intrinsically part of my personality.  Ok, enough ranting I should have driven off all but the resilient.  Let's get started.
 
 If you're here I most likely either don't need to tell you the virtues of VIM or you're an EMACS fan looking to troll.
-In which case I have one thing to tell you "EMACS is a fantastic Operating System, that is lacking a decent text editor",  zing!
+In which case I have one thing to tell you `EMACS is a fantastic Operating System, that is lacking a decent text editor`,  zing!
 And we're gonna flat out ignore people who pay for their text editor.  Ok, everyone gone?
 
 Let me hook the rest of you up with the secret to destroy all other editors and IDEs:
