@@ -1,5 +1,5 @@
 ---
-title: Tmuxinator VIM Jekyll Blog Like A Hacker
+title: Blog Like A Hacker with Tmuxinator + SpaceVIM + Jekyll 
 published: true
 layout: post
 disqus: yes
