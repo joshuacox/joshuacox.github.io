@@ -2,7 +2,7 @@
 #Set up is quick and easy. Simply replace any example text with your nonprofit's information.
 #To leave a field blank, simply remove everything after the colon (:) or place a hashtag (#) at the start of the line.
 #If you see '> # Enter on the next line', be sure the next line remains indented two spaces.
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-feed
 
