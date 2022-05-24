@@ -7,10 +7,7 @@ fbcomments: no
 category: blog
 tags: 
   - linux
-photo_url: /img/thumbs/DELETE_THIS_LINE_IF_UNUSED.jpg
 ---
-
-![](/img/PICTURE_EXAMPLE.jpg)
 
 [root](http://forum.xda-developers.com/amazon-fire/orig-development/root-t3272362)
 
@@ -28,5 +25,3 @@ XDA dev thread for [CM 12.1 for Amazon Fire Kindle 2015](http://forum.xda-develo
 
 [bricked?](http://forum.xda-developers.com/amazon-fire/general/fireos-5-1-1-attempted-downgrade-t3263960/page9)
 
-{% raw  %}
-{% endraw  %}
