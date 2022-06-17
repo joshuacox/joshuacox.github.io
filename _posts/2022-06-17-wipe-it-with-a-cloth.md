@@ -23,7 +23,7 @@ photo_url: /img/thumbs/cloth_or_something3.jpg
 
 Now, you can download [bleachbit](https://www.bleachbit.org/download) for free, but we can also do the same thing given some of the basic tools available in every linux distro. Let's explore some of this.
 
-# Identity your disks
+## Identify your disks
 
 First let's identify the disk in question. If you have the convenience of having already popped the drive in question out of whatever machine it was in, 
 then let's connect the device to our local machine for erasure using a device like [this](https://amzn.to/3xYCcDS).
@@ -126,7 +126,7 @@ $ sudo lsblk
 $ sudo parted -l
 ```
 
-# dd
+### dd
 
 Ok, now that we have identified the disk let's erase it.  The steps above are very important as these next commands are very dangerous and will happily erase your running system if you ask it to, so double check and make sure we have the correct disk in question.
 
@@ -140,7 +140,7 @@ Some of the main options we'll be using are:
 
 I am going to be using a low `count` on the below commands so that they don't take that long on this usb drive I am using as an example. To zero and/or random the entire disk leave out the `count` option entirely and the `dd` command will continue writing to the end of the disk.
 
-### /dev/zero
+#### /dev/zero
 
 `/dev/zero` is a special 'device' in `/dev` that returns an unlimited amount of zeros.
 
@@ -158,7 +158,7 @@ That will write 128M of zeros to the first sectors of the disk `/dev/sdd`, note 
 
 But let's explore further...
 
-### /dev/random
+#### /dev/random
 
 `/dev/random` is a special 'device' in `/dev` that returns an unlimited amount of pseudo random data, as it is 'pseudo' random it should not be used where real randomness is required.  But for the purposes of obfuscating what was previously on the disk this is will make it very difficult to retrieve data from magnetic media* (*solid state media is a different story).
 
@@ -169,7 +169,7 @@ $ time sudo dd if=/dev/random bs=4M count=1 of=/dev/sdd
 4194304 bytes (4.2 MB, 4.0 MiB) copied, 0.282267 s, 14.9 MB/s
 ```
 
-### /dev/urandom
+#### /dev/urandom
 
 `/dev/urandom` is a special 'device' in `/dev` that returns an unlimited amount of random data (that has a higher quality of randomness than `/dev/random`, of note, it is made by a computer so pure randomness is up for debate).
 
@@ -274,6 +274,3 @@ Permissions Size User  Date Modified Name
 Which while 4.73MiB/s is slower than the 2.2GB/s above this was sustained over six minutes, whereas the dd command was over a very short period of time.
 
 If you just want to securely delete a single file you can use other commands like [shred](https://linux.die.net/man/1/shred), but for a whole blockdevice I prefer one of the above methods.
-
-{% raw  %}
-{% endraw  %}
