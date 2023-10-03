@@ -1,5 +1,5 @@
 ---
-title: text editors revisited 2022
+title: text editors revisited 2023
 published: true
 layout: post
 disqus: yes
