@@ -13,7 +13,16 @@
     {
       devShells = forEachSupportedSystem ({ pkgs }: {
         default = pkgs.mkShell {
-          packages = with pkgs; [ ruby_3_2 ];
+          packages = with pkgs; [ 
+            ruby_3_2
+            rubyPackages_3_2.bigdecimal
+            rubyPackages_3_2.github-pages
+            rubyPackages_3_2.jekyll
+            rubyPackages_3_2.jekyll-feed
+            rubyPackages_3_2.jekyll-redirect-from
+            rubyPackages_3_2.racc
+            rubyPackages_3_2.webrick
+          ];
         };
       });
     };

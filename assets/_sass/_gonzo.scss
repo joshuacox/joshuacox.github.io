@@ -7,8 +7,8 @@
 */
 /* Default */
 /* ======= Colors ======= */
-$text-color: #5f5;
-$text-secondary: #3d3;
+$text-color: #0e0;
+$text-secondary: #0d0;
 $grey: #999;
 $darker-grey: #666;
 $smoky-white: #f5f5f5;
@@ -17,8 +17,8 @@ $heart: #ff765a;
 
 /* ======= Base ======= */
 html {
-  background-color: #2a002a !important;
- // background-image: url("/img/Mandelbrot.jpg");
+  background-color: #222 !important;
+  background-image: url("/img/Mandelbrot.jpg");
   background-clip: border-box !important;
   background-origin: padding-box !important;
   background-repeat: repeat !important;
