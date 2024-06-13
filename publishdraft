@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -eu
 if [ $# -ne 1 ]; then
         # Print usage
         echo 'publishdraft DRAFT
@@ -9,12 +10,10 @@ if [ $# -ne 1 ]; then
         '
             exit 1
 fi
-DRAFT=$1
-DRAFT_NAME=$(echo $1|sed "s/_drafts\///")
-NEWPOST=_posts/`date -I`-$DRAFT_NAME
-mv $DRAFT $NEWPOST
-echo "mv $DRAFT $NEWPOST"
-echo "
-you can now use your favorite editor to edit $NEWPOST
-"
-# vim $NEWPOST
+DRAFT_NAME=$1
+DRAFT_FULLPATH=_drafts/${DRAFT_NAME}.md
+NEWPOST=_posts/`date -I`-${DRAFT_NAME}.md
+set -x
+mv ${DRAFT_FULLPATH} ${NEWPOST}
+set +x
+${EDITOR} ${NEWPOST}

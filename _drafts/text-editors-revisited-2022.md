@@ -17,3 +17,8 @@ photo_url: /img/thumbs/spacevim.png
 
 {% raw  %}
 {% endraw  %}
+
+Lunarvim
+neovim
+helix
+kakoune

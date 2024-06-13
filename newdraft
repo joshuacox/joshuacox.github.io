@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 if [ $# -ne 1 ]; then
         # Print usage
-        echo 'wrong!!! bad operator!!!
+        echo '
         usage:
         ./newdraft $FILENAME_SAFE_SUBJECT
         e.g.
