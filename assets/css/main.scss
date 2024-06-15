@@ -126,6 +126,16 @@ body {
 
 /* posts */
 
+div.posts img{
+  width: calc(100% + 20px);
+  margin-left: calc(-10px);
+  margin-right: calc(-10px);
+}
+div.posts {
+  padding:0.5em;
+  text-align:center;
+}
+
 div.posts div.end {
   padding:40px;
   text-align:center;
