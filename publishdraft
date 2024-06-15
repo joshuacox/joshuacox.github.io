@@ -17,3 +17,5 @@ set -x
 mv ${DRAFT_FULLPATH} ${NEWPOST}
 set +x
 ${EDITOR} ${NEWPOST}
+git add .
+lazygit
