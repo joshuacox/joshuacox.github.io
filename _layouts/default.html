@@ -4,6 +4,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 
   {% include head.html %}
+  {% include googleanalytics.html %}
 
   <body onload="set_style_from_cookie()" data-spy="scroll">
 
@@ -23,7 +24,6 @@
 
     {% include scripts.html %}
 
-    {% include googleanalytics.html %}
 
     <script>for (var k in window.initFuncs) { window.initFuncs[k](); } delete window.initFuncs;</script>
   </body>
