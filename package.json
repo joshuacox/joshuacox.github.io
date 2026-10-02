@@ -2,6 +2,7 @@
   "name": "joshuacox-github-io",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.24.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build && node scripts/generate-redirects.mjs",
