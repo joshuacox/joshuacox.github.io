@@ -1,5 +1,21 @@
-_site/
-.sass-cache/
-Gemfile.lock
-port
-.direnv
+# Next.js
+.next/
+out/
+node_modules/
+
+# Environment files
+.env*.local
+.env
+
+# Logs & temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+*.swp
+*.swo
+
+# TypeScript build info
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0a010d;
+    --bg-secondary: #14031a;
+    --bg-card: rgba(22, 5, 32, 0.85);
+    --border-color: #3b104c;
+    --neon-accent: #33dd00;
+    --neon-hover: #44ff11;
+    --neon-dim: #11bb00;
+    --text-primary: #e5e7eb;
+    --text-muted: #9ca3af;
+    --terminal-font: 'JetBrains Mono', 'Fira Code', Menlo, Monaco, Consolas, monospace;
+  }
+
+  [data-theme='midnite'] {
+    --bg-primary: #09090b;
+    --bg-secondary: #121217;
+    --bg-card: rgba(20, 20, 26, 0.9);
+    --border-color: #27272a;
+    --neon-accent: #38bdf8;
+    --neon-hover: #7dd3fc;
+    --neon-dim: #0284c7;
+    --text-primary: #f4f4f5;
+    --text-muted: #a1a1aa;
+  }
+
+  [data-theme='alt'] {
+    --bg-primary: #050b14;
+    --bg-secondary: #0a1526;
+    --bg-card: rgba(14, 28, 48, 0.85);
+    --border-color: #1e3a5f;
+    --neon-accent: #eebf3f;
+    --neon-hover: #fcd34d;
+    --neon-dim: #d97706;
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+  }
+
+  [data-theme='print'] {
+    --bg-primary: #f9fafb;
+    --bg-secondary: #f3f4f6;
+    --bg-card: #ffffff;
+    --border-color: #e5e7eb;
+    --neon-accent: #0f766e;
+    --neon-hover: #115e59;
+    --neon-dim: #134e4a;
+    --text-primary: #111827;
+    --text-muted: #4b5563;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--terminal-font);
+    overflow-x: hidden;
+  }
+}
+
+/* Monokai Sublime / Cyberpunk syntax highlighting */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1rem;
+  background: var(--bg-secondary) !important;
+  color: #f8f8f2 !important;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.hljs-tag,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-strong,
+.hljs-name {
+  color: #f92672 !important;
+}
+
+.hljs-code {
+  color: #66d9ef !important;
+}
+
+.hljs-class .hljs-title {
+  color: #ffffff !important;
+}
+
+.hljs-attribute,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-link {
+  color: #bf79db !important;
+}
+
+.hljs-string,
+.hljs-bullet,
+.hljs-subst,
+.hljs-title,
+.hljs-section,
+.hljs-emphasis,
+.hljs-type,
+.hljs-built_in,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #a6e22e !important;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion,
+.hljs-meta {
+  color: #75715e !important;
+}
+
+.hljs-number {
+  color: #ae81ff !important;
+}
+
+/* Custom terminal prompt styling */
+.terminal-glow {
+  text-shadow: 0 0 10px rgba(51, 221, 0, 0.5), 0 0 20px rgba(51, 221, 0, 0.2);
+}
+
+.scanline {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.06),
+    rgba(0, 255, 0, 0.02),
+    rgba(0, 0, 255, 0.06)
+  );
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
