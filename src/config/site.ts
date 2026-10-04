@@ -31,11 +31,11 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: 'Joshua Cox',
   title: 'The Blog of Joshua Cox',
-  description: 'Where I blog about Jekyll, techromancy, docker, and other usually linux related stuff',
+  description: 'Where I blog about Jekyll, tekromancy, docker, and other usually linux related stuff',
   url: 'https://joshuacox.github.io',
   author: 'Joshua Cox',
   locale: 'en-US',
-  orgSummary: 'Techromancer',
+  orgSummary: 'Tekromancer',
   orgFullDescription: 'Have Portable Penetration Testing Hardware - will travel',
   disqusShortname: 'joshuacoxgithubio',
   googleAnalyticsId: '',

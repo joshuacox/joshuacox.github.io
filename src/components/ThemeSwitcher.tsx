@@ -16,7 +16,7 @@ export function ThemeSwitcher() {
         className="bg-transparent text-[var(--neon-accent)] text-xs focus:outline-none cursor-pointer"
         aria-label="Select Theme"
       >
-        <option value="techromancer" className="bg-[#14031a] text-[#33dd00]">Techromancer (Matrix)</option>
+        <option value="tekromancer" className="bg-[#14031a] text-[#33dd00]">Tekromancer (Matrix)</option>
         <option value="midnite" className="bg-[#121217] text-[#38bdf8]">Midnite (Cyan)</option>
         <option value="alt" className="bg-[#0a1526] text-[#eebf3f]">Alt (Gold/Navy)</option>
         <option value="print" className="bg-[#ffffff] text-[#0f766e]">Print (Clean Light)</option>

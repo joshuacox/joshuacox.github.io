@@ -23,7 +23,7 @@ export default function ArchivePage() {
           Post Archive
         </h1>
         <p className="text-sm sm:text-base text-[var(--text-muted)] font-sans">
-          Search and browse through all {posts.length} articles on Docker, Linux, Jekyll, Penetration Testing, and Techromancy.
+          Search and browse through all {posts.length} articles on Docker, Linux, Jekyll, Penetration Testing, and Tekromancy.
         </p>
       </div>
 

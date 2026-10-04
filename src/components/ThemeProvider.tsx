@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-type Theme = 'techromancer' | 'midnite' | 'alt' | 'print';
+type Theme = 'tekromancer' | 'techromancer' | 'midnite' | 'alt' | 'print';
 
 interface ThemeContextType {
   theme: Theme;
@@ -10,18 +10,19 @@ interface ThemeContextType {
 }
 
 const ThemeContext = createContext<ThemeContextType>({
-  theme: 'techromancer',
+  theme: 'tekromancer',
   setTheme: () => {},
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>('techromancer');
+  const [theme, setThemeState] = useState<Theme>('tekromancer');
 
   useEffect(() => {
     const saved = localStorage.getItem('jc-theme') as Theme;
-    if (saved && ['techromancer', 'midnite', 'alt', 'print'].includes(saved)) {
-      setThemeState(saved);
-      document.documentElement.setAttribute('data-theme', saved);
+    if (saved && ['tekromancer', 'techromancer', 'midnite', 'alt', 'print'].includes(saved)) {
+      const normalizedTheme = saved === 'techromancer' ? 'tekromancer' : saved;
+      setThemeState(normalizedTheme);
+      document.documentElement.setAttribute('data-theme', normalizedTheme);
     }
   }, []);
 
