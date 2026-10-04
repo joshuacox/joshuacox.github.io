@@ -11,7 +11,10 @@ tags:
   - vpn
   - networking
   - bash
+photo_url: /img/wgu-banner.png
 ---
+
+![](/img/wgu-banner.png)
 
 If you manage a large collection of WireGuard VPN configurations—such as the hundreds of endpoint profiles provided by VPN services like Mullvad—switching between endpoints or rotating servers cleanly from the terminal can quickly become tedious.
 
