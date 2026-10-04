@@ -14,8 +14,6 @@ tags:
 photo_url: /img/wgu-banner.png
 ---
 
-![](/img/wgu-banner.png)
-
 If you manage a large collection of WireGuard VPN configurations—such as the hundreds of endpoint profiles provided by VPN services like Mullvad—switching between endpoints or rotating servers cleanly from the terminal can quickly become tedious.
 
 To solve this, I built **[wgu](https://joshuacox.github.io/wgu/)** ([GitHub repository](https://github.com/joshuacox/wgu)), a lightweight, zero-dependency command-line assistant and companion daemon utility designed to effortlessly manage and randomly rotate WireGuard connections across server profiles worldwide or filtered by country code.
