@@ -12,6 +12,7 @@ tags:
   - hyprland
   - neovim
   - tmux
+photo_url: /img/stowfiles-banner.png
 ---
 
 Managing configuration files across multiple Linux installations can quickly turn messy. While monolithic Git repositories tracking `~` directly or throwing everything into `~/.config` are common, they often make it difficult to selectively enable or test configurations per machine without polluting your home directory.
