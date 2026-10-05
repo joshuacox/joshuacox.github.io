@@ -38,7 +38,7 @@ export const siteConfig: SiteConfig = {
   orgSummary: 'Tekromancer',
   orgFullDescription: 'Have Portable Penetration Testing Hardware - will travel',
   disqusShortname: 'joshuacoxgithubio',
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'G-L1H2CLH4R3',
   googleAdsenseId: 'ca-pub-8973108060277483',
   social: {
     github: 'joshuacox',
