@@ -1,12 +1,11 @@
 'use client';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
-
-type Theme = 'tekromancer' | 'techromancer' | 'midnite' | 'alt' | 'print';
+import { SITE_THEMES, ThemeId } from '@/config/themes';
 
 interface ThemeContextType {
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
+  theme: string;
+  setTheme: (theme: string) => void;
 }
 
 const ThemeContext = createContext<ThemeContextType>({
@@ -14,22 +13,28 @@ const ThemeContext = createContext<ThemeContextType>({
   setTheme: () => {},
 });
 
+const VALID_THEME_IDS = new Set<string>([
+  'techromancer',
+  ...SITE_THEMES.map((t) => t.id),
+]);
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>('tekromancer');
+  const [theme, setThemeState] = useState<string>('tekromancer');
 
   useEffect(() => {
-    const saved = localStorage.getItem('jc-theme') as Theme;
-    if (saved && ['tekromancer', 'techromancer', 'midnite', 'alt', 'print'].includes(saved)) {
+    const saved = localStorage.getItem('jc-theme');
+    if (saved && VALID_THEME_IDS.has(saved)) {
       const normalizedTheme = saved === 'techromancer' ? 'tekromancer' : saved;
       setThemeState(normalizedTheme);
       document.documentElement.setAttribute('data-theme', normalizedTheme);
     }
   }, []);
 
-  const setTheme = (newTheme: Theme) => {
-    setThemeState(newTheme);
-    localStorage.setItem('jc-theme', newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
+  const setTheme = (newTheme: string) => {
+    const normalized = newTheme === 'techromancer' ? 'tekromancer' : newTheme;
+    setThemeState(normalized);
+    localStorage.setItem('jc-theme', normalized);
+    document.documentElement.setAttribute('data-theme', normalized);
   };
 
   return (
