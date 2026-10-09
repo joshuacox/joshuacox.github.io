@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { siteConfig } from '@/config/site';
 import { ThemeSwitcher } from './ThemeSwitcher';
+import { Search } from './Search';
 import { Terminal, Menu, X, BookOpen, Tag, Folder, Archive, User, Mail } from 'lucide-react';
 
 export function Header() {
@@ -44,13 +45,15 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <div className="pl-2 border-l border-[var(--border-color)]">
+            <div className="pl-2 flex items-center space-x-2 border-l border-[var(--border-color)]">
+              <Search />
               <ThemeSwitcher />
             </div>
           </nav>
 
           {/* Mobile menu button */}
           <div className="flex md:hidden items-center space-x-3">
+            <Search />
             <ThemeSwitcher />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
