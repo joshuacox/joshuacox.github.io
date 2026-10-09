@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import '@/styles/globals.css';
 import { siteConfig } from '@/config/site';
 import { ThemeProvider } from '@/components/ThemeProvider';
@@ -43,21 +44,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {siteConfig.googleAnalyticsId && (
-          <>
-            <Script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalyticsId}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${siteConfig.googleAnalyticsId}');
-              `}
-            </Script>
-          </>
+          <GoogleAnalytics gaId={siteConfig.googleAnalyticsId} />
         )}
         {siteConfig.googleAdsenseId && (
           <Script
