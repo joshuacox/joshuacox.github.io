@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import readingTime from 'reading-time';
 
 const POSTS_DIRECTORY = path.join(process.cwd(), '_posts');
 const DRAFTS_DIRECTORY = path.join(process.cwd(), '_drafts');
@@ -36,6 +37,7 @@ export interface Post {
   content: string;
   url: string;
   isDraft?: boolean;
+  readingTime?: string;
 }
 
 function parseFilename(filename: string): { year: string; month: string; day: string; slug: string; date: string } | null {
@@ -91,6 +93,8 @@ export function getAllPosts(includeDrafts = process.env.SHOW_DRAFTS === 'true'):
 
     const url = `/${category}/${parsed.year}/${parsed.month}/${parsed.day}/${parsed.slug}/`;
 
+    const stats = readingTime(content);
+
     posts.push({
       slug: parsed.slug,
       title: data.title || parsed.slug,
@@ -107,6 +111,7 @@ export function getAllPosts(includeDrafts = process.env.SHOW_DRAFTS === 'true'):
       content,
       url,
       isDraft: false,
+      readingTime: stats.text,
     });
   }
 
@@ -128,6 +133,8 @@ export function getAllPosts(includeDrafts = process.env.SHOW_DRAFTS === 'true'):
       const tags = normalizeTags(data.tags);
       const url = `/${category}/${year}/${month}/${day}/${slug}/`;
 
+      const stats = readingTime(content);
+
       posts.push({
         slug,
         title: `[DRAFT] ${data.title || slug}`,
@@ -144,6 +151,7 @@ export function getAllPosts(includeDrafts = process.env.SHOW_DRAFTS === 'true'):
         content,
         url,
         isDraft: true,
+        readingTime: stats.text,
       });
     }
   }
