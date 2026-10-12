@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Joshua Cox</title>
+    <link>https://joshuacox.github.io</link>
+    <description>Joshua Cox Blog and Portfolio</description>
+    <item>
+      <title><![CDATA[Incantations - 3,371 Arcane Design Patterns Across 146 Languages & Latent Space Constructs]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/12/incantations-polyglot-design-patterns-esoteric-grimoire-and-latent-space/</link>
+      <description><![CDATA[A deep dive into incantations.tekromancy.com and the open-source Grimoire: exploring 3,371 design patterns implemented across 146 languages—from Whitespace and Malbolge to Lean, Rust, and AI prompt architectures.]]></description>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/12/incantations-polyglot-design-patterns-esoteric-grimoire-and-latent-space/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Announcing Tekromancy.com - Systems Engineering, Infrastructure & Digital Sovereignty]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/announcing-tekromancy-systems-engineering-infrastructure-and-digital-sovereignty/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/announcing-tekromancy-systems-engineering-infrastructure-and-digital-sovereignty/</guid>
+    </item>
+    <item>
+      <title><![CDATA[bl - Lightweight Linux Screen Brightness Control via Sysfs]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/bl-lightweight-linux-screen-brightness-control-via-sysfs/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/bl-lightweight-linux-screen-brightness-control-via-sysfs/</guid>
+    </item>
+    <item>
+      <title><![CDATA[blossom - Merriam-Webster Blossom Word Game Solver & Multiplier Engine]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/blossom-merriam-webster-word-game-solver-and-cli-engine/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/blossom-merriam-webster-word-game-solver-and-cli-engine/</guid>
+    </item>
+    <item>
+      <title><![CDATA[bomsaway - Make UTF-8 Byte Order Marks (BOM) Go Away]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/bomsaway-make-utf-8-byte-order-marks-go-away/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/bomsaway-make-utf-8-byte-order-marks-go-away/</guid>
+    </item>
+    <item>
+      <title><![CDATA[clip - Universal POSIX Clipboard for Linux, macOS & SSH]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/clip-universal-posix-clipboard-for-linux-macos-and-ssh/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/clip-universal-posix-clipboard-for-linux-macos-and-ssh/</guid>
+    </item>
+    <item>
+      <title><![CDATA[cloner - Git Worktree Repository Scaffolding Tool]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/cloner-git-worktree-repository-scaffolder/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/cloner-git-worktree-repository-scaffolder/</guid>
+    </item>
+    <item>
+      <title><![CDATA[loopster - Resilient Worker & Test Automation Retry Engine]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/loopster-resilient-worker-and-test-automation-retry-engine/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/loopster-resilient-worker-and-test-automation-retry-engine/</guid>
+    </item>
+    <item>
+      <title><![CDATA[mirror - Robust Offline Website Mirroring with Wget]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/mirror-robust-offline-website-mirroring-with-wget/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/mirror-robust-offline-website-mirroring-with-wget/</guid>
+    </item>
+    <item>
+      <title><![CDATA[namgen - Blazing Fast Procedural Name & Lore Engine]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/namgen-blazing-fast-procedural-name-and-lore-engine/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/namgen-blazing-fast-procedural-name-and-lore-engine/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Nu - Server Connection Manager for SSH, SSHFS & Remote Pipelines]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/nu-server-connection-manager-for-ssh-sshfs-and-remote-pipelines/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/nu-server-connection-manager-for-ssh-sshfs-and-remote-pipelines/</guid>
+    </item>
+    <item>
+      <title><![CDATA[passgen - Fast, Secure Password & Passphrase Generator]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/passgen-fast-secure-password-and-passphrase-generator/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/passgen-fast-secure-password-and-passphrase-generator/</guid>
+    </item>
+    <item>
+      <title><![CDATA[randosay - Random ASCII Art, Fortunes, and Stylized Terminal Rules]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/randosay-random-ascii-art-and-fortunes/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/randosay-random-ascii-art-and-fortunes/</guid>
+    </item>
+    <item>
+      <title><![CDATA[roustabout - Streamlined Docker Operations & Container Wrangling]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/roustabout-streamlined-docker-operations-and-container-wrangling/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/roustabout-streamlined-docker-operations-and-container-wrangling/</guid>
+    </item>
+    <item>
+      <title><![CDATA[SSShutdown - Safe Power Management, Update Automation & CPU Control]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/ssshutdown-safe-power-management-update-automation-and-cpu-control/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/ssshutdown-safe-power-management-update-automation-and-cpu-control/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Modular Dotfiles Management with GNU Stow and stowfiles]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/stowfiles-dotfiles-management-with-gnu-stow/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/stowfiles-dotfiles-management-with-gnu-stow/</guid>
+    </item>
+    <item>
+      <title><![CDATA[swappy - Create a Linux Swapfile Pretty Darn Quick (PDQ)]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/swappy-create-a-linux-swapfile-pdq/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/swappy-create-a-linux-swapfile-pdq/</guid>
+    </item>
+    <item>
+      <title><![CDATA[touchy - Intelligent Touchpad Disable-While-Typing for Hyprland]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/touchy-intelligent-touchpad-disable-while-typing-for-hyprland/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/touchy-intelligent-touchpad-disable-while-typing-for-hyprland/</guid>
+    </item>
+    <item>
+      <title><![CDATA[vv - The Polite CLI Task Wrapper with Audio & Desktop Alerts]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/vv-the-polite-cli-task-wrapper/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/vv-the-polite-cli-task-wrapper/</guid>
+    </item>
+    <item>
+      <title><![CDATA[wg-init - Automated WireGuard Client Key Generation & Bootstrapping]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/wg-init-automated-wireguard-client-key-generation-and-bootstrapping/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/wg-init-automated-wireguard-client-key-generation-and-bootstrapping/</guid>
+    </item>
+    <item>
+      <title><![CDATA[wgu - WireGuard Configuration Assistant and Rotation Tool]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/04/wgu-wireguard-configuration-assistant/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/04/wgu-wireguard-configuration-assistant/</guid>
+    </item>
+    <item>
+      <title><![CDATA[containerization2kubernetes]]></title>
+      <link>https://joshuacox.github.io/blog/2024/06/14/containerization2kubernetes/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2024/06/14/containerization2kubernetes/</guid>
+    </item>
+    <item>
+      <title><![CDATA[AI in the chicken coop]]></title>
+      <link>https://joshuacox.github.io/blog/2024/06/13/coop_AI/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2024/06/13/coop_AI/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Wipe it with a cloth]]></title>
+      <link>https://joshuacox.github.io/blog/2022/06/17/wipe-it-with-a-cloth/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Fri, 17 Jun 2022 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2022/06/17/wipe-it-with-a-cloth/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Blog Like A Hacker with Tmuxinator + SpaceVIM + Jekyll]]></title>
+      <link>https://joshuacox.github.io/jekyll/2022/05/18/Tmuxinator-VIM-Jekyll-Blog-Like-A-Hacker/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Wed, 18 May 2022 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2022/05/18/Tmuxinator-VIM-Jekyll-Blog-Like-A-Hacker/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Cyanogenmod Amazon Kindle Fire 2015]]></title>
+      <link>https://joshuacox.github.io/blog/2017/03/01/Cyanogenmod-Amazon-Kindle-Fire-2015/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2017/03/01/Cyanogenmod-Amazon-Kindle-Fire-2015/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Repackt]]></title>
+      <link>https://joshuacox.github.io/blog/2017/02/22/repackt/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Wed, 22 Feb 2017 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2017/02/22/repackt/</guid>
+    </item>
+    <item>
+      <title><![CDATA[BruteForceDomainSearch]]></title>
+      <link>https://joshuacox.github.io/blog/2017/01/20/BruteForceDomainSearch/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Fri, 20 Jan 2017 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2017/01/20/BruteForceDomainSearch/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Convert Wordpress to static PDQ]]></title>
+      <link>https://joshuacox.github.io/blog/2016/03/26/Convert-Wordpress-to-static-PDQ/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sat, 26 Mar 2016 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2016/03/26/Convert-Wordpress-to-static-PDQ/</guid>
+    </item>
+    <item>
+      <title><![CDATA[aria2c]]></title>
+      <link>https://joshuacox.github.io/blog/2016/02/11/aria2c/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Thu, 11 Feb 2016 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2016/02/11/aria2c/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Text Editors And Code]]></title>
+      <link>https://joshuacox.github.io/blog/2016/01/29/Text-Editors-And-Code/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Fri, 29 Jan 2016 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2016/01/29/Text-Editors-And-Code/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Persistent Icinga2 Docker on RaspberryPi Cluster]]></title>
+      <link>https://joshuacox.github.io/monitoring/2016/01/05/Persistent-Icinga2-Docker/</link>
+      <description><![CDATA[Icinga2 is a next gen fork of Nagios, to continue playing with it you might want a little bit of persistence]]></description>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/monitoring/2016/01/05/Persistent-Icinga2-Docker/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Happy Habitica]]></title>
+      <link>https://joshuacox.github.io/blog/2016/01/01/Happy-Habitica/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2016/01/01/Happy-Habitica/</guid>
+    </item>
+    <item>
+      <title><![CDATA[BOMs Away!!! ï»¿]]></title>
+      <link>https://joshuacox.github.io/cli/2015/12/29/BOMs-Away/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Tue, 29 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/cli/2015/12/29/BOMs-Away/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Proseio as CMS]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/20/Proseio-as-CMS/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/20/Proseio-as-CMS/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Local Jessie for Raspberrypi ARM and the tinfoil hat sporting security nuts]]></title>
+      <link>https://joshuacox.github.io/docker/2015/12/19/local-jessie/</link>
+      <description><![CDATA[Create a local jessie base image from which to stem your debian based containers so they’ll work on ARM and other platforms and for increased security]]></description>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/docker/2015/12/19/local-jessie/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Build your own Drone]]></title>
+      <link>https://joshuacox.github.io/embedded/2015/12/18/Drone-Buying-Guide/</link>
+      <description><![CDATA[Why pay lots of money for a toy you KNOW you are going to break?]]></description>
+      <pubDate>Fri, 18 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/embedded/2015/12/18/Drone-Buying-Guide/</guid>
+    </item>
+    <item>
+      <title><![CDATA[OpenStack Summit 2015]]></title>
+      <link>https://joshuacox.github.io/blog/2015/12/13/OpenStack-Summit-2015/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 13 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2015/12/13/OpenStack-Summit-2015/</guid>
+    </item>
+    <item>
+      <title><![CDATA[PhantomJS on ARM]]></title>
+      <link>https://joshuacox.github.io/blog/2015/12/13/PhantomJS-on-ARM/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Sun, 13 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2015/12/13/PhantomJS-on-ARM/</guid>
+    </item>
+    <item>
+      <title><![CDATA[RaspberryPi Docker Cluster Consul Swarm]]></title>
+      <link>https://joshuacox.github.io/docker/2015/12/13/RaspberryPi-Docker-Cluster-Consul-Swarm/</link>
+      <description><![CDATA[build a raspberrypi docker swarm cluster with ease repeatably]]></description>
+      <pubDate>Sun, 13 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/docker/2015/12/13/RaspberryPi-Docker-Cluster-Consul-Swarm/</guid>
+    </item>
+    <item>
+      <title><![CDATA[scrapture SCReen cAPTURE]]></title>
+      <link>https://joshuacox.github.io/cli/2015/12/09/scrapture-SCReen-cAPTURE/</link>
+      <description><![CDATA[Record your desktop using avconv right from x11grab]]></description>
+      <pubDate>Wed, 09 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/cli/2015/12/09/scrapture-SCReen-cAPTURE/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Getting Started With Jekyll]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/05/Getting-Started-With-Jekyll/</link>
+      <description><![CDATA[Build a modern website using the static generator from Ruby]]></description>
+      <pubDate>Sat, 05 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/05/Getting-Started-With-Jekyll/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Prose Configuration]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/04/Prose-Configuration/</link>
+      <description><![CDATA[Once you configure prose it becomes much more user friendly.]]></description>
+      <pubDate>Fri, 04 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/04/Prose-Configuration/</guid>
+    </item>
+    <item>
+      <title><![CDATA[0 to 60 in Markdown]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/02/0-to-60-in-Markdown/</link>
+      <description><![CDATA[What is markdown?]]></description>
+      <pubDate>Wed, 02 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/02/0-to-60-in-Markdown/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Changing Jekyll Categories And Redirects]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/02/Changing-Categories-And-Redirects/</link>
+      <description><![CDATA[Who gets the category right the first time around?]]></description>
+      <pubDate>Wed, 02 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/02/Changing-Categories-And-Redirects/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Jekyll Debug]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/02/Jekyll-Debug/</link>
+      <description><![CDATA[Let’s pick apart Jekyll’s brain today]]></description>
+      <pubDate>Wed, 02 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/02/Jekyll-Debug/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Jekyll Default Configs]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/02/Jekyll-Default-Configs/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Wed, 02 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/02/Jekyll-Default-Configs/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Super Simple Sharing Buttons]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/12/01/Super-Simple-Sharing-Buttons/</link>
+      <description><![CDATA[Easily generate and add social media share buttons to your site]]></description>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/12/01/Super-Simple-Sharing-Buttons/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Two Column Content Rasmus Style]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/11/30/Two-Column-Content-Rasmus-Style/</link>
+      <description><![CDATA[Rasmus Andersson has a great two column stack of his posts let’s duplicate it]]></description>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/11/30/Two-Column-Content-Rasmus-Style/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Zooming Text just like JessFraz.com]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/11/30/Zooming-Text/</link>
+      <description><![CDATA[Let’s add the zooming text up top for eye catching animation on our main index page]]></description>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/11/30/Zooming-Text/</guid>
+    </item>
+    <item>
+      <title><![CDATA[vv]]></title>
+      <link>https://joshuacox.github.io/cli/2015/11/30/vv/</link>
+      <description><![CDATA[Best practices for long running commands]]></description>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/cli/2015/11/30/vv/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Tags and Cats]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/11/29/Tags-and-Cats/</link>
+      <description><![CDATA[Let's make an index page for both our categories and tags for our jekyll blog]]></description>
+      <pubDate>Sun, 29 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/11/29/Tags-and-Cats/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Hilightjs]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/11/28/Hilightjs/</link>
+      <description><![CDATA[Here’s an easy one, to add code hilighting to your jekyll site...]]></description>
+      <pubDate>Sat, 28 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/11/28/Hilightjs/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Icinga2 Docker]]></title>
+      <link>https://joshuacox.github.io/docker/2015/11/28/Icinga2-Docker/</link>
+      <description><![CDATA[Today we’re going to be experimenting with adding Icinga2 to our Monitoring setup]]></description>
+      <pubDate>Sat, 28 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/docker/2015/11/28/Icinga2-Docker/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Non Profit Hackproof Blog PDQ]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/11/28/Non-Profit-Hackproof-Blog-PDQ/</link>
+      <description><![CDATA[So I wanted to show a friend of mine that a static website can be a much better experience than starting out with a php/mysql based website.]]></description>
+      <pubDate>Sat, 28 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/11/28/Non-Profit-Hackproof-Blog-PDQ/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Facebook Comments and Jekyll]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/11/28/facebook-comments-and-jekyll/</link>
+      <description><![CDATA[Using jekyll with Facebook Comments was not quite as easy as disqus, but.....]]></description>
+      <pubDate>Sat, 28 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/11/28/facebook-comments-and-jekyll/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Docker Chef Solo]]></title>
+      <link>https://joshuacox.github.io/docker/2015/11/27/Docker-Chef-Solo/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Fri, 27 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/docker/2015/11/27/Docker-Chef-Solo/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Elksible]]></title>
+      <link>https://joshuacox.github.io/docker/2015/11/27/Elksible/</link>
+      <description><![CDATA[Do you need an ELK stack in a hurry....]]></description>
+      <pubDate>Fri, 27 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/docker/2015/11/27/Elksible/</guid>
+    </item>
+    <item>
+      <title><![CDATA[Disqus and Jekyll]]></title>
+      <link>https://joshuacox.github.io/jekyll/2015/11/27/disqus-and-jekyll/</link>
+      <description><![CDATA[Using jekyll with disqus is quite easy, you merely need to add some lines to your `_layouts/post.html`]]></description>
+      <pubDate>Fri, 27 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/jekyll/2015/11/27/disqus-and-jekyll/</guid>
+    </item>
+    <item>
+      <title><![CDATA[mkSwarm]]></title>
+      <link>https://joshuacox.github.io/docker/2015/11/26/mkSwarm/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/docker/2015/11/26/mkSwarm/</guid>
+    </item>
+  </channel>
+</rss>
