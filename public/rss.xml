@@ -5,6 +5,13 @@
     <link>https://joshuacox.github.io</link>
     <description>Joshua Cox Blog and Portfolio</description>
     <item>
+      <title><![CDATA[NastyMap - Interactive Network Topology, GeoIP, Diffing & Threat Visualization for Nmap]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/13/nastymap-interactive-nmap-network-topology-geoip-and-threat-visualization/</link>
+      <description><![CDATA[Transforming raw Nmap XML scans into interactive network topologies, geographic threat maps, scan diffs, and terminal TUIs with NastyMap.]]></description>
+      <pubDate>Tue, 13 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/13/nastymap-interactive-nmap-network-topology-geoip-and-threat-visualization/</guid>
+    </item>
+    <item>
       <title><![CDATA[Incantations - 3,371 Arcane Design Patterns Across 146 Languages & Latent Space Constructs]]></title>
       <link>https://joshuacox.github.io/blog/2026/10/12/incantations-polyglot-design-patterns-esoteric-grimoire-and-latent-space/</link>
       <description><![CDATA[A deep dive into incantations.tekromancy.com and the open-source Grimoire: exploring 3,371 design patterns implemented across 146 languages—from Whitespace and Malbolge to Lean, Rust, and AI prompt architectures.]]></description>
