@@ -5,6 +5,13 @@
     <link>https://joshuacox.github.io</link>
     <description>Joshua Cox Blog and Portfolio</description>
     <item>
+      <title><![CDATA[agy_turbo - Unleashing Turbo Mode in the Antigravity CLI]]></title>
+      <link>https://joshuacox.github.io/blog/2026/10/15/agy-turbo-unleashing-turbo-mode-in-the-antigravity-cli/</link>
+      <description><![CDATA[Configure the Google Antigravity CLI (agy) to run with unrestricted, frictionless Turbo mode—bringing autonomous agent workflows from the desktop IDE to headless terminal environments.]]></description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/10/15/agy-turbo-unleashing-turbo-mode-in-the-antigravity-cli/</guid>
+    </item>
+    <item>
       <title><![CDATA[NastyMap - Interactive Network Topology, GeoIP, Diffing & Threat Visualization for Nmap]]></title>
       <link>https://joshuacox.github.io/blog/2026/10/13/nastymap-interactive-nmap-network-topology-geoip-and-threat-visualization/</link>
       <description><![CDATA[Transforming raw Nmap XML scans into interactive network topologies, geographic threat maps, scan diffs, and terminal TUIs with NastyMap.]]></description>
