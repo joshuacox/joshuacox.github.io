@@ -5,6 +5,13 @@
     <link>https://joshuacox.github.io</link>
     <description>Joshua Cox Blog and Portfolio</description>
     <item>
+      <title><![CDATA[Wear OS Glucose Complications, Glyphrig Themes, and K3s Telemetry]]></title>
+      <link>https://joshuacox.github.io/blog/2026/11/23/daily-dev-log/</link>
+      <description><![CDATA[]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/11/23/daily-dev-log/</guid>
+    </item>
+    <item>
       <title><![CDATA[agy_turbo - Unleashing Turbo Mode in the Antigravity CLI]]></title>
       <link>https://joshuacox.github.io/blog/2026/10/15/agy-turbo-unleashing-turbo-mode-in-the-antigravity-cli/</link>
       <description><![CDATA[Configure the Google Antigravity CLI (agy) to run with unrestricted, frictionless Turbo mode—bringing autonomous agent workflows from the desktop IDE to headless terminal environments.]]></description>

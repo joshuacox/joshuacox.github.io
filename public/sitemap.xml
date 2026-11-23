@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://joshuacox.github.io</loc>
-    <lastmod>2026-10-15T09:37:27.396Z</lastmod>
+    <lastmod>2026-11-23T07:50:42.678Z</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://joshuacox.github.io/blog/</loc>
-    <lastmod>2026-10-15T09:37:27.396Z</lastmod>
+    <lastmod>2026-11-23T07:50:42.678Z</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joshuacox.github.io/blog/2026/11/23/daily-dev-log/</loc>
+    <lastmod>2026-11-23T00:00:00.000Z</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://joshuacox.github.io/blog/2026/10/15/agy-turbo-unleashing-turbo-mode-in-the-antigravity-cli/</loc>
