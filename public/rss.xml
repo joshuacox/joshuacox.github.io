@@ -12,6 +12,13 @@
       <guid>https://joshuacox.github.io/blog/2026/11/23/daily-dev-log/</guid>
     </item>
     <item>
+      <title><![CDATA[Topology Studio, Gryphon Crests, and Silencing Medical Sirens: 24 Hours in the Lab]]></title>
+      <link>https://joshuacox.github.io/blog/2026/11/23/topology-studio-gryphon-crests-and-silencing-medical-sirens/</link>
+      <description><![CDATA[From Axonwall v0.15.0's NetBox, LibreNMS, and Topology Studio fabric editor to Glyphrig's Gryphon Chrome Web Store launch kit, Killibre's Libre 3 siren override, and a flurry of Eluvix and DeployCoop PRs.]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/11/23/topology-studio-gryphon-crests-and-silencing-medical-sirens/</guid>
+    </item>
+    <item>
       <title><![CDATA[agy_turbo - Unleashing Turbo Mode in the Antigravity CLI]]></title>
       <link>https://joshuacox.github.io/blog/2026/10/15/agy-turbo-unleashing-turbo-mode-in-the-antigravity-cli/</link>
       <description><![CDATA[Configure the Google Antigravity CLI (agy) to run with unrestricted, frictionless Turbo mode—bringing autonomous agent workflows from the desktop IDE to headless terminal environments.]]></description>
