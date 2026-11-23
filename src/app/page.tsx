@@ -14,10 +14,10 @@ export default function HomePage() {
     <div>
       <PromoHero />
 
-      <div id="recent-posts" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div id="recent-posts" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Category Filter Pills */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-4 border-b border-[var(--border-color)]">
-          <div className="flex items-center space-x-2 text-sm font-mono text-[var(--neon-accent)] font-bold">
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-10 pb-5 border-b border-[var(--border-color)]">
+          <div className="flex items-center space-x-2 text-xs sm:text-sm font-mono text-[var(--neon-accent)] font-bold tracking-wider">
             <Layers className="w-4 h-4" />
             <span>TOPICS / CATEGORIES</span>
           </div>
@@ -26,9 +26,9 @@ export default function HomePage() {
               <Link
                 key={cat.name}
                 href={`/categories/${cat.name}/`}
-                className="px-3 py-1 rounded border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-muted)] hover:border-[var(--neon-accent)] hover:text-[var(--neon-accent)] transition-colors"
+                className="px-3 py-1.5 rounded-md border border-[var(--border-color)] bg-[var(--bg-card)] text-[var(--text-muted)] hover:border-[var(--neon-accent)] hover:text-[var(--neon-accent)] transition-all uppercase tracking-wide text-[11px]"
               >
-                {cat.name} ({cat.count})
+                {cat.name} <span className="text-[var(--neon-dim)]">({cat.count})</span>
               </Link>
             ))}
           </div>
@@ -36,18 +36,20 @@ export default function HomePage() {
 
         {/* Section Heading */}
         <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center space-x-2 font-mono">
-            <Terminal className="w-5 h-5 text-[var(--neon-accent)]" />
-            <h2 className="text-xl sm:text-2xl font-bold text-white tracking-wide">
+          <div className="flex items-center space-x-2.5 font-mono">
+            <span className="p-1 rounded bg-[var(--bg-secondary)] border border-[var(--border-color)]">
+              <Terminal className="w-4 h-4 text-[var(--neon-accent)]" />
+            </span>
+            <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] tracking-wide">
               RECENT_TRANSMISSIONS
             </h2>
           </div>
           <Link
             href="/archive/"
-            className="inline-flex items-center space-x-1 text-xs sm:text-sm font-mono text-[var(--neon-accent)] hover:underline"
+            className="inline-flex items-center space-x-1.5 text-xs sm:text-sm font-mono text-[var(--neon-accent)] hover:text-[var(--neon-hover)] group"
           >
             <span>View All ({posts.length})</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
 
@@ -60,10 +62,10 @@ export default function HomePage() {
 
         {/* Bottom CTA to Archive */}
         {posts.length > 12 && (
-          <div className="mt-12 text-center">
+          <div className="mt-14 text-center">
             <Link
               href="/archive/"
-              className="inline-flex items-center space-x-2 px-6 py-3 rounded border border-[var(--neon-accent)] bg-[var(--bg-secondary)] text-[var(--neon-accent)] hover:bg-[var(--neon-accent)] hover:text-black font-mono text-sm font-semibold transition-colors"
+              className="inline-flex items-center space-x-2 px-6 py-3 rounded-lg border border-[var(--neon-accent)] bg-[var(--bg-secondary)] text-[var(--neon-accent)] hover:bg-[var(--neon-accent)] hover:text-black font-mono text-sm font-semibold transition-all shadow-md hover:shadow-lg hover:shadow-[var(--glow-color)]"
             >
               <span>Explore All {posts.length} Posts in Archive</span>
               <ArrowRight className="w-4 h-4" />

@@ -13,11 +13,11 @@ export default function AboutPage() {
           <Terminal className="w-4 h-4" />
           <span>IDENTITY &bull; DOSSIER</span>
         </div>
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-white mb-6">
+        <h1 className="text-3xl sm:text-5xl font-extrabold text-[var(--text-primary)] mb-6">
           About {siteConfig.name}
         </h1>
 
-        <div className="p-6 sm:p-8 rounded-lg border border-[var(--border-color)] bg-[var(--bg-card)] space-y-6">
+        <div className="p-6 sm:p-8 rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] space-y-6 box-glow">
           <div className="text-xl sm:text-2xl text-[var(--neon-accent)] flex items-center space-x-2">
             <span>&gt;</span>
             <span className="font-bold">{siteConfig.orgSummary}</span>
@@ -39,8 +39,8 @@ export default function AboutPage() {
 
       {/* Mailing List Section */}
       <section id="join" className="mb-16">
-        <div className="p-6 sm:p-8 rounded-lg border border-[var(--border-color)] bg-[var(--bg-secondary)]">
-          <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
+        <div className="p-6 sm:p-8 rounded-xl border border-[var(--border-color)] bg-[var(--bg-secondary)]">
+          <h2 className="text-xl sm:text-2xl font-bold text-[var(--text-primary)] mb-2">
             Thoughts from Thoth
           </h2>
           <p className="text-sm text-[var(--text-muted)] mb-6 font-sans">
@@ -62,11 +62,11 @@ export default function AboutPage() {
               name="email"
               placeholder="operator@domain.org"
               required
-              className="flex-1 px-4 py-2.5 rounded border border-[var(--border-color)] bg-[var(--bg-primary)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--neon-accent)]"
+              className="flex-1 px-4 py-2.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-primary)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none focus:border-[var(--neon-accent)]"
             />
             <button
               type="submit"
-              className="px-5 py-2.5 rounded bg-[var(--neon-accent)] text-black font-bold text-sm hover:bg-[var(--neon-hover)] transition-colors"
+              className="px-5 py-2.5 rounded-lg bg-[var(--neon-accent)] text-black font-bold text-sm hover:bg-[var(--neon-hover)] transition-colors shadow-md shadow-[var(--glow-color)]"
             >
               Join List
             </button>
@@ -76,13 +76,13 @@ export default function AboutPage() {
 
       {/* Contact Section */}
       <section id="contact">
-        <h2 className="text-2xl font-bold text-white mb-6 flex items-center space-x-2">
+        <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-6 flex items-center space-x-2">
           <Mail className="w-5 h-5 text-[var(--neon-accent)]" />
           <span>Contact &amp; Coordinates</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="p-6 rounded-lg border border-[var(--border-color)] bg-[var(--bg-card)] space-y-4">
+          <div className="p-6 rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] space-y-4">
             <h3 className="text-sm uppercase tracking-wider text-[var(--neon-dim)] font-bold">Location</h3>
             <div className="flex items-start space-x-3 text-sm text-[var(--text-muted)] font-sans">
               <MapPin className="w-4 h-4 text-[var(--neon-accent)] shrink-0 mt-1" />
@@ -99,13 +99,13 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="p-6 rounded-lg border border-[var(--border-color)] bg-[var(--bg-card)] space-y-4">
+          <div className="p-6 rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] space-y-4">
             <h3 className="text-sm uppercase tracking-wider text-[var(--neon-dim)] font-bold">Social Matrix</h3>
             <ul className="space-y-3 text-sm font-sans">
               <li>
                 <a
                   href={`mailto:${siteConfig.social.email}`}
-                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)]"
+                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)] transition-colors"
                 >
                   <Mail className="w-4 h-4 text-[var(--neon-accent)]" />
                   <span>{siteConfig.social.email}</span>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                   href={`https://github.com/${siteConfig.social.github}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)]"
+                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)] transition-colors"
                 >
                   <Github className="w-4 h-4 text-[var(--neon-accent)]" />
                   <span>github.com/{siteConfig.social.github}</span>
@@ -127,7 +127,7 @@ export default function AboutPage() {
                   href={`https://twitter.com/${siteConfig.social.twitter}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)]"
+                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)] transition-colors"
                 >
                   <Twitter className="w-4 h-4 text-[var(--neon-accent)]" />
                   <span>twitter.com/{siteConfig.social.twitter}</span>
@@ -138,7 +138,7 @@ export default function AboutPage() {
                   href={`https://instagram.com/${siteConfig.social.instagram}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)]"
+                  className="flex items-center space-x-3 text-[var(--text-muted)] hover:text-[var(--neon-accent)] transition-colors"
                 >
                   <Instagram className="w-4 h-4 text-[var(--neon-accent)]" />
                   <span>instagram.com/{siteConfig.social.instagram}</span>

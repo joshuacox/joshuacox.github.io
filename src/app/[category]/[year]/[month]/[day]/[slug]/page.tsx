@@ -7,7 +7,7 @@ import { markdownToHtml } from '@/lib/markdown';
 import { siteConfig } from '@/config/site';
 import { ShareButtons } from '@/components/ShareButtons';
 import { DisqusComments } from '@/components/DisqusComments';
-import { Calendar, Folder, Tag, ArrowLeft, Terminal } from 'lucide-react';
+import { Calendar, Folder, ArrowLeft, Terminal } from 'lucide-react';
 import { format, parseISO } from 'date-fns';
 
 interface PageProps {
@@ -76,15 +76,15 @@ export default async function PostPage({ params }: PageProps) {
       <div className="mb-8">
         <Link
           href="/"
-          className="inline-flex items-center space-x-2 text-xs font-mono text-[var(--neon-accent)] hover:underline"
+          className="inline-flex items-center space-x-2 text-xs font-mono text-[var(--neon-accent)] hover:text-[var(--neon-hover)] group"
         >
-          <ArrowLeft className="w-3.5 h-3.5" />
+          <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
           <span>Back to Transmissions</span>
         </Link>
       </div>
 
       {/* Header */}
-      <header className="mb-8 pb-8 border-b border-[var(--border-color)]">
+      <header className="mb-10 pb-8 border-b border-[var(--border-color)]">
         <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-[var(--text-muted)] mb-4">
           <span className="flex items-center space-x-1.5">
             <Calendar className="w-3.5 h-3.5 text-[var(--neon-accent)]" />
@@ -105,7 +105,7 @@ export default async function PostPage({ params }: PageProps) {
           )}
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-mono text-white tracking-tight mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-mono text-[var(--text-primary)] tracking-tight mb-4 leading-tight">
           {post.title}
         </h1>
 
@@ -116,12 +116,12 @@ export default async function PostPage({ params }: PageProps) {
         )}
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mt-4">
+        <div className="flex flex-wrap gap-2 mt-6">
           {post.tags.map((tag) => (
             <Link
               key={tag}
               href={`/tags/${tag.toLowerCase()}/`}
-              className="text-xs font-mono px-2.5 py-1 rounded border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-muted)] hover:text-[var(--neon-accent)] hover:border-[var(--neon-accent)]"
+              className="text-xs font-mono px-2.5 py-1 rounded-md border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-muted)] hover:text-[var(--neon-accent)] hover:border-[var(--neon-accent)] transition-colors"
             >
               #{tag}
             </Link>
@@ -131,7 +131,7 @@ export default async function PostPage({ params }: PageProps) {
 
       {/* Optional Featured Image */}
       {post.photo_url && (
-        <div className="mb-10 rounded-lg overflow-hidden border border-[var(--border-color)] bg-[var(--bg-secondary)]">
+        <div className="mb-10 rounded-xl overflow-hidden border border-[var(--border-color)] bg-[var(--bg-secondary)] box-glow">
           <img
             src={post.photo_url}
             alt={post.title}
@@ -142,12 +142,12 @@ export default async function PostPage({ params }: PageProps) {
 
       {/* Main Content */}
       <div
-        className="prose prose-invert prose-cyber max-w-none font-sans leading-relaxed text-base prose-headings:font-mono prose-pre:p-0 prose-code:font-mono"
+        className="prose prose-invert prose-cyber max-w-none font-sans leading-relaxed text-base sm:text-lg prose-headings:font-mono prose-headings:font-bold prose-headings:text-[var(--heading-color)] prose-p:leading-8 prose-pre:my-6 prose-a:underline hover:prose-a:text-[var(--neon-hover)]"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       />
 
       {/* Share Buttons */}
-      <div className="mt-12 pt-6 border-t border-[var(--border-color)]">
+      <div className="mt-14 pt-6 border-t border-[var(--border-color)]">
         <ShareButtons title={post.title} url={canonicalUrl} />
       </div>
 

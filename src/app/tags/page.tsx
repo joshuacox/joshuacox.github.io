@@ -15,7 +15,7 @@ export default function TagsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
       <div className="mb-10 pb-6 border-b border-[var(--border-color)]">
-        <h1 className="text-3xl sm:text-4xl font-extrabold font-mono text-white mb-2">
+        <h1 className="text-3xl sm:text-4xl font-extrabold font-mono text-[var(--text-primary)] mb-2">
           Tags
         </h1>
         <p className="text-sm sm:text-base text-[var(--text-muted)] font-sans">
@@ -24,13 +24,13 @@ export default function TagsPage() {
       </div>
 
       {/* Tag Cloud */}
-      <div className="p-6 rounded-lg border border-[var(--border-color)] bg-[var(--bg-card)] mb-16">
+      <div className="p-6 rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] mb-16">
         <div className="flex flex-wrap gap-2.5">
           {tags.map((tag) => (
             <Link
               key={tag.name}
               href={`#tag-${tag.name}`}
-              className="text-xs sm:text-sm font-mono px-3 py-1.5 rounded border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-muted)] hover:border-[var(--neon-accent)] hover:text-[var(--neon-accent)] transition-colors flex items-center space-x-1.5"
+              className="text-xs sm:text-sm font-mono px-3 py-1.5 rounded-md border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-muted)] hover:border-[var(--neon-accent)] hover:text-[var(--neon-accent)] transition-colors flex items-center space-x-1.5"
             >
               <span>#{tag.name}</span>
               <span className="text-[10px] text-[var(--neon-dim)]">({tag.count})</span>
@@ -55,7 +55,7 @@ export default function TagsPage() {
                 </span>
               </div>
 
-              <div className="border border-[var(--border-color)] rounded-lg bg-[var(--bg-card)] divide-y divide-[var(--border-color)]">
+              <div className="border border-[var(--border-color)] rounded-xl bg-[var(--bg-card)] divide-y divide-[var(--border-color)] overflow-hidden">
                 {posts.map((post) => (
                   <div key={post.url} className="p-3.5 sm:p-4 hover:bg-[var(--bg-secondary)] transition-colors flex items-center justify-between">
                     <Link

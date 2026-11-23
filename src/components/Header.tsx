@@ -19,16 +19,18 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--border-color)] bg-[var(--bg-primary)]/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-[var(--border-color)] bg-[var(--bg-primary)]/95 backdrop-blur-md transition-colors duration-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 text-[var(--neon-accent)] hover:text-[var(--neon-hover)] transition-colors group">
-            <Terminal className="w-5 h-5 text-[var(--neon-accent)] group-hover:animate-pulse" />
-            <span className="font-bold text-lg tracking-wider font-mono">
+          <Link href="/" className="flex items-center space-x-2.5 text-[var(--neon-accent)] hover:text-[var(--neon-hover)] transition-colors group">
+            <span className="p-1.5 rounded border border-[var(--border-color)] bg-[var(--bg-secondary)] group-hover:border-[var(--neon-accent)] transition-colors">
+              <Terminal className="w-4 h-4 text-[var(--neon-accent)] group-hover:animate-pulse" />
+            </span>
+            <span className="font-bold text-lg tracking-wider font-mono text-[var(--text-primary)] group-hover:text-[var(--neon-accent)] transition-colors">
               {siteConfig.name}
             </span>
-            <span className="text-xs px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-muted)] font-mono hidden sm:inline-block">
+            <span className="text-[10px] px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--neon-dim)] font-mono uppercase tracking-widest hidden sm:inline-block">
               blog
             </span>
           </Link>
@@ -44,7 +46,7 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <div className="pl-2 border-l border-[var(--border-color)]">
+            <div className="pl-3 border-l border-[var(--border-color)]">
               <ThemeSwitcher />
             </div>
           </nav>
@@ -54,10 +56,10 @@ export function Header() {
             <ThemeSwitcher />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded text-[var(--text-muted)] hover:text-[var(--neon-accent)] focus:outline-none"
+              className="p-2 rounded border border-[var(--border-color)] bg-[var(--bg-secondary)] text-[var(--text-muted)] hover:text-[var(--neon-accent)] focus:outline-none"
               aria-label="Toggle Navigation Menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -65,7 +67,7 @@ export function Header() {
 
       {/* Mobile Nav dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-[var(--border-color)] bg-[var(--bg-secondary)] px-4 pt-2 pb-4 space-y-1 font-mono text-sm">
+        <div className="md:hidden border-b border-[var(--border-color)] bg-[var(--bg-secondary)] px-4 pt-3 pb-4 space-y-1 font-mono text-sm">
           {navLinks.map((link) => {
             const Icon = link.icon;
             return (
@@ -73,7 +75,7 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center space-x-3 px-3 py-2 rounded text-[var(--text-muted)] hover:text-[var(--neon-accent)] hover:bg-[var(--bg-card)] transition-colors"
+                className="flex items-center space-x-3 px-3 py-2.5 rounded text-[var(--text-muted)] hover:text-[var(--neon-accent)] hover:bg-[var(--bg-card)] transition-colors"
               >
                 <Icon className="w-4 h-4 text-[var(--neon-accent)]" />
                 <span>{link.label}</span>

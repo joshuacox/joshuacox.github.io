@@ -1,10 +1,23 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { JetBrains_Mono, Inter } from 'next/font/google';
 import '@/styles/globals.css';
 import { siteConfig } from '@/config/site';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -51,7 +64,7 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)] font-mono selection:bg-[var(--neon-accent)] selection:text-black">
+      <body className={`${jetbrainsMono.variable} ${inter.variable} min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)] font-mono selection:bg-[var(--neon-accent)] selection:text-black transition-colors duration-200 antialiased`}>
         <ThemeProvider>
           <Header />
           <main className="flex-1">

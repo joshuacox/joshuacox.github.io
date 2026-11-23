@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getAllCategories, getPostsByCategory } from '@/lib/posts';
-import { Folder, ArrowRight } from 'lucide-react';
+import { Folder } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Categories',
@@ -15,7 +15,7 @@ export default function CategoriesPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
       <div className="mb-10 pb-6 border-b border-[var(--border-color)]">
-        <h1 className="text-3xl sm:text-4xl font-extrabold font-mono text-white mb-2">
+        <h1 className="text-3xl sm:text-4xl font-extrabold font-mono text-[var(--text-primary)] mb-2">
           Categories
         </h1>
         <p className="text-sm sm:text-base text-[var(--text-muted)] font-sans">
@@ -29,7 +29,7 @@ export default function CategoriesPage() {
           <Link
             key={cat.name}
             href={`/categories/${cat.name}/`}
-            className="p-5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-card)] hover:border-[var(--neon-accent)] hover:shadow-lg hover:shadow-[var(--neon-accent)]/10 transition-all flex items-center justify-between group"
+            className="p-5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-card)] hover:border-[var(--neon-accent)] hover:bg-[var(--bg-card-hover)] hover:shadow-lg hover:shadow-[var(--glow-color)] transition-all flex items-center justify-between group"
           >
             <div className="flex items-center space-x-3">
               <Folder className="w-5 h-5 text-[var(--neon-accent)] group-hover:scale-110 transition-transform" />
@@ -59,7 +59,7 @@ export default function CategoriesPage() {
                 </span>
               </div>
 
-              <div className="border border-[var(--border-color)] rounded-lg bg-[var(--bg-card)] divide-y divide-[var(--border-color)]">
+              <div className="border border-[var(--border-color)] rounded-xl bg-[var(--bg-card)] divide-y divide-[var(--border-color)] overflow-hidden">
                 {posts.map((post) => (
                   <div key={post.url} className="p-3.5 sm:p-4 hover:bg-[var(--bg-secondary)] transition-colors flex items-center justify-between">
                     <Link
