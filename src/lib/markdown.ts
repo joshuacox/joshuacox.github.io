@@ -6,6 +6,7 @@ import rehypeRaw from 'rehype-raw';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import toc from '@jsdevtools/rehype-toc';
 import rehypeStringify from 'rehype-stringify';
 import { siteConfig } from '@/config/site';
 
@@ -45,6 +46,12 @@ export async function markdownToHtml(markdown: string): Promise<string> {
       properties: {
         className: ['heading-anchor'],
       },
+    })
+    .use(toc, {
+      cssClasses: {
+        toc: 'page-outline',
+        link: 'page-link text-[var(--neon-accent)] hover:underline',
+      }
     })
     .use(rehypeStringify)
     .process(cleaned);

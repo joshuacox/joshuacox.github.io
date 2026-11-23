@@ -70,8 +70,27 @@ export default async function PostPage({ params }: PageProps) {
   const formattedDate = post.date ? format(parseISO(post.date), 'MMMM dd, yyyy') : '';
   const canonicalUrl = `${siteConfig.url}${post.url}`;
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description || siteConfig.description,
+    image: post.photo_url ? [post.photo_url] : [],
+    datePublished: post.date ? new Date(post.date).toISOString() : undefined,
+    dateModified: post.date ? new Date(post.date).toISOString() : undefined,
+    author: [{
+      '@type': 'Person',
+      name: siteConfig.author,
+      url: siteConfig.url
+    }]
+  };
+
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Back button */}
       <div className="mb-8">
         <Link
@@ -89,6 +108,10 @@ export default async function PostPage({ params }: PageProps) {
           <span className="flex items-center space-x-1.5">
             <Calendar className="w-3.5 h-3.5 text-[var(--neon-accent)]" />
             <time dateTime={post.date}>{formattedDate}</time>
+          </span>
+          <span>&bull;</span>
+          <span className="flex items-center space-x-1.5">
+            <span>⏳ {post.readingTime}</span>
           </span>
           <span>&bull;</span>
           <Link

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { JetBrains_Mono, Inter } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import '@/styles/globals.css';
 import { siteConfig } from '@/config/site';
 import { ThemeProvider } from '@/components/ThemeProvider';
@@ -55,6 +56,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {siteConfig.googleAnalyticsId && (
+          <GoogleAnalytics gaId={siteConfig.googleAnalyticsId} />
+        )}
         {siteConfig.googleAdsenseId && (
           <Script
             async

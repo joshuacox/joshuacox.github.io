@@ -29,7 +29,7 @@ export default function AboutPage() {
 
           <div className="pt-4 border-t border-[var(--border-color)]/60 text-sm text-[var(--text-muted)] font-sans leading-relaxed space-y-3">
             <p>
-              I blog about Docker, Linux, containerization, cybersecurity, automation, and techromancy.
+              I blog about Docker, Linux, containerization, cybersecurity, automation, and tekromancy.
               From rolling custom kernel images to managing Kubernetes clusters and penetration testing rigs,
               this site is a live log of tools, experiments, and open-source recipes.
             </p>
