@@ -10,6 +10,7 @@ tags:
   - wearos
   - kubernetes
   - automation
+photo_url: /img/wearos-glyphrig-k3s-banner.png
 ---
 
 # Wear OS Glucose Complications, Glyphrig Themes, and K3s Telemetry

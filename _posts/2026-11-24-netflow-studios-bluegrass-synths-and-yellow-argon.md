@@ -16,6 +16,7 @@ tags:
   - glyphrig
   - android
   - kubernetes
+photo_url: /img/netflow-synths-yellow-argon-banner.png
 description: "Axonwall v0.15.1 ships a 5-phase NetFlow/IPFIX/sFlow Analytics Studio, three games simultaneously get procedural symphonies and visual overhauls, Tekromancy adopts the Sovereign Telemetry Deck, Glyphrig spars with Chrome Web Store's 'Yellow Argon' bot, and Killibre gets wireless ADB DND surgery."
 ---
 

@@ -14,6 +14,7 @@ tags:
   - android
   - eluvix
   - open-source
+photo_url: /img/topology-gryphon-killibre-banner.png
 description: "From Axonwall v0.15.0's NetBox, LibreNMS, and Topology Studio fabric editor to Glyphrig's Gryphon Chrome Web Store launch kit, Killibre's Libre 3 siren override, and a flurry of Eluvix and DeployCoop PRs."
 ---
 

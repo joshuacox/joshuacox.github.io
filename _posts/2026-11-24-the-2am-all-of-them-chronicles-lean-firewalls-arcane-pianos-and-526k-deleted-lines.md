@@ -15,6 +15,7 @@ tags:
   - helm
   - tekromancy
   - ai-agents
+photo_url: /img/2am-chronicles-lean-firewall-pianomancer-banner.png
 description: "What actually happens after midnight when you type 'all of them' across four parallel workspaces: Axonwall sheds 11,000+ lines to become a Lean NGFW Core with 47 modular plugins, Pianomancer grows acoustic mic pitch detection and arcane spellcasting, Pixie Patrol and BokBot undergo twin visual-and-gameplay renaissances, and DeployCoop swings the scythe through 526,000+ lines of vendored Helm charts."
 ---
 
