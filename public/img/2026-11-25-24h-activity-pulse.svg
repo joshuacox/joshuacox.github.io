@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" role="img" aria-label="24-Hour Engineering Pulse Timeline across Axonwall, BokBot, DeployCoop, Paperclip, Glyphrig, and Tekromancy (Nov 24 to Nov 25, 2026)">
+  <defs>
+    <linearGradient id="pulseBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0212"/>
+      <stop offset="100%" stop-color="#190527"/>
+    </linearGradient>
+    <linearGradient id="railGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#33dd00"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ff2a5f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="956" height="466" rx="16" fill="url(#pulseBg)" stroke="#4c1566" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="34" y="40" fill="#33dd00" font-family="ui-monospace, monospace" font-size="12" font-weight="700" letter-spacing="2">TELEMETRY PULSE // NOV 24 08:15 CST → NOV 25 08:56 CST</text>
+  <text x="34" y="68" fill="#f3f4f6" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800">24 Hours Across 7 Repositories &amp; 24 Active Agent Sessions</text>
+
+  <!-- Top KPI Cards (4 across) -->
+  <g transform="translate(34, 86)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="212" height="72" rx="10" fill="#150424" stroke="#ff2a5f" stroke-width="1.3"/>
+    <text x="14" y="22" fill="#fda4af" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">AXONWALL FORENSICS</text>
+    <text x="14" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="22" font-weight="800">290 <tspan font-size="12" fill="#ff5c8a">bugs logged</tspan></text>
+    <text x="14" y="63" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">8 subagents + 2,164 LOC rollback</text>
+
+    <!-- Card 2 -->
+    <rect x="226" y="0" width="212" height="72" rx="10" fill="#150424" stroke="#33dd00" stroke-width="1.3"/>
+    <text x="240" y="22" fill="#86efac" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">BOKBOT PHASES 1–3</text>
+    <text x="240" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="22" font-weight="800">166/166 <tspan font-size="12" fill="#33dd00">PASS</tspan></text>
+    <text x="240" y="63" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">76 files, +4,404 / -789 + Xvfb OpenGL3</text>
+
+    <!-- Card 3 -->
+    <rect x="452" y="0" width="212" height="72" rx="10" fill="#150424" stroke="#a855f7" stroke-width="1.3"/>
+    <text x="466" y="22" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">DEPLOYCOOP PR #5</text>
+    <text x="466" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="22" font-weight="800">-336,354 <tspan font-size="12" fill="#c084fc">LOC</tspan></text>
+    <text x="466" y="63" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">Merged! 526,076 vendored lines retired</text>
+
+    <!-- Card 4 -->
+    <rect x="678" y="0" width="214" height="72" rx="10" fill="#150424" stroke="#38bdf8" stroke-width="1.3"/>
+    <text x="692" y="22" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">GLYPHRIG CWS v2 CI</text>
+    <text x="692" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="22" font-weight="800">v0.4.5 <tspan font-size="12" fill="#38bdf8">AUTO</tspan></text>
+    <text x="692" y="63" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">3 releases in 31m → CWS upload green</text>
+  </g>
+
+  <!-- Central Timeline Rail -->
+  <rect x="56" y="303" width="848" height="4" rx="2" fill="url(#railGrad)"/>
+
+  <!-- Node 1 (Top): 08:15 CST Axonwall v0.16.0 -->
+  <circle cx="88" cy="305" r="7" fill="#38bdf8" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="88" y1="298" x2="88" y2="255" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="34" y="182" width="166" height="72" rx="8" fill="#120922" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="44" y="200" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NOV 24 · 08:15 CST</text>
+  <text x="44" y="217" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Axonwall v0.16.0</text>
+  <text x="44" y="233" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">Lean Core + 47 plugins</text>
+  <text x="44" y="246" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">&amp; axonwall.com docs</text>
+
+  <!-- Node 2 (Bottom): 09:08 CST Paperclip + OG fix -->
+  <circle cx="212" cy="305" r="7" fill="#60a5fa" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="212" y1="312" x2="212" y2="352" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="130" y="352" width="178" height="72" rx="8" fill="#120922" stroke="#60a5fa" stroke-width="1.2"/>
+  <text x="140" y="370" fill="#93c5fd" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NOV 24 · 09:05–09:08</text>
+  <text x="140" y="387" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Paperclip + Matrix OG</text>
+  <text x="140" y="403" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">agy branch @greptile loop</text>
+  <text x="140" y="416" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">&amp; raster PNG link previews</text>
+
+  <!-- Node 3 (Top): 09:30 CST BokBot Phases 1-3 -->
+  <circle cx="336" cy="305" r="7" fill="#33dd00" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="336" y1="298" x2="336" y2="255" stroke="#33dd00" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="242" y="182" width="188" height="72" rx="8" fill="#0d1e11" stroke="#33dd00" stroke-width="1.2"/>
+  <text x="252" y="200" fill="#33dd00" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NOV 24 · 09:30 CST</text>
+  <text x="252" y="217" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BokBot Phases 1–3 Green</text>
+  <text x="252" y="233" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">Anti-air, FirePatch, Trenches,</text>
+  <text x="252" y="246" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">166 headless + Xvfb tests</text>
+
+  <!-- Node 4 (Bottom): 09:37–09:41 CST Tekromancy + PR #5 + Banners -->
+  <circle cx="468" cy="305" r="7" fill="#a855f7" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="468" y1="312" x2="468" y2="352" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="356" y="352" width="224" height="72" rx="8" fill="#19082b" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="366" y="370" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NOV 24 · 09:37–09:41 CST</text>
+  <text x="366" y="387" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">The 4-Minute Publishing Blitz</text>
+  <text x="366" y="403" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">Tekromancy K8s post, urban-disco</text>
+  <text x="366" y="416" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">PR #5 merged, 4 devlog banners</text>
+
+  <!-- Node 5 (Top): 11:58–12:55 CST Glyphrig 0.4.3 -> 0.4.5 -->
+  <circle cx="604" cy="305" r="7" fill="#f59e0b" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="604" y1="298" x2="604" y2="255" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="498" y="182" width="212" height="72" rx="8" fill="#221406" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="508" y="200" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NOV 24 · 11:58–12:55 CST</text>
+  <text x="508" y="217" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Glyphrig v0.4.3 → v0.4.5</text>
+  <text x="508" y="233" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">Shared GitHub accounts, OAuth</text>
+  <text x="508" y="246" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">pop-out &amp; CWS API v2 auto-publish</text>
+
+  <!-- Node 6 (Bottom): 00:06–00:47 CST Midnight Audit -->
+  <circle cx="742" cy="305" r="7" fill="#ff2a5f" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="742" y1="312" x2="742" y2="352" stroke="#ff2a5f" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="614" y="352" width="212" height="72" rx="8" fill="#2a0817" stroke="#ff2a5f" stroke-width="1.2"/>
+  <text x="624" y="370" fill="#fda4af" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NOV 25 · 00:06–00:47 CST</text>
+  <text x="624" y="387" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">8-Agent Lockout Tribunal</text>
+  <text x="624" y="403" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">135 KB audit, 290 bugs found,</text>
+  <text x="624" y="416" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.5">Phase 1A net_rollback.go built</text>
+
+  <!-- Node 7 (Top): 08:56 CST Data Center Run -->
+  <circle cx="876" cy="305" r="8" fill="#ff4d6d" stroke="#ffffff" stroke-width="2"/>
+  <line x1="876" y1="297" x2="876" y2="255" stroke="#ff4d6d" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <rect x="742" y="182" width="184" height="72" rx="8" fill="#2e0a1c" stroke="#ff4d6d" stroke-width="1.5"/>
+  <text x="752" y="200" fill="#ff5c8a" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">NOV 25 · 08:56 CST</text>
+  <text x="752" y="217" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="800">Road Trip to the Rack</text>
+  <text x="752" y="233" fill="#fecdd3" font-family="system-ui, sans-serif" font-size="10.5">Serial console recovery run</text>
+  <text x="752" y="246" fill="#fecdd3" font-family="system-ui, sans-serif" font-size="10.5">&amp; morning devlogs spin up</text>
+
+  <!-- Footer -->
+  <text x="34" y="452" fill="#6b7280" font-family="ui-monospace, monospace" font-size="10.5">SOURCE: LOCAL ANTIGRAVITY BRAIN LOGS · GITHUB API EVENTS · /MNT/UNREAL/GIT DIFFS</text>
+  <text x="926" y="452" text-anchor="end" fill="#33dd00" font-family="ui-monospace, monospace" font-size="10.5">STATUS: TRANSMITTING</text>
+</svg>

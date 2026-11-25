@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-label="Before and After Comparison: How enp4s0 Locked Us Out versus the Phase 1A net_rollback.go Commit-Confirm Safety Net">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0212"/>
+      <stop offset="100%" stop-color="#170422"/>
+    </linearGradient>
+    <linearGradient id="redPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a0817"/>
+      <stop offset="100%" stop-color="#18040e"/>
+    </linearGradient>
+    <linearGradient id="greenPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#09220a"/>
+      <stop offset="100%" stop-color="#07150a"/>
+    </linearGradient>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#ff4d6d"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#33dd00"/>
+    </marker>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="956" height="536" rx="16" fill="url(#cardBg)" stroke="#4c1566" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="34" y="42" fill="#33dd00" font-family="ui-monospace, monospace" font-size="12.5" font-weight="700" letter-spacing="2">LOCKOUT POSTMORTEM // ARCHITECTURE DIFF</text>
+  <text x="34" y="70" fill="#f3f4f6" font-family="system-ui, -apple-system, sans-serif" font-size="21" font-weight="800">Why enp4s0 Earned a Trip to the Data Center — And How Phase 1A Stops It Cold</text>
+
+  <!-- LEFT PANEL: BEFORE (LOCKOUT TRAP) -->
+  <rect x="30" y="92" width="435" height="416" rx="12" fill="url(#redPanel)" stroke="#ff2a5f" stroke-width="1.5"/>
+  <rect x="46" y="106" width="178" height="24" rx="5" fill="#4c0d24" stroke="#ff4d6d" stroke-width="1"/>
+  <text x="135" y="122" text-anchor="middle" fill="#fda4af" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">BEFORE: THE LOCKOUT TRAP</text>
+
+  <!-- Red Step 1 -->
+  <rect x="52" y="144" width="390" height="50" rx="8" fill="#1e0611" stroke="#9f1239" stroke-width="1.2"/>
+  <text x="68" y="164" fill="#fda4af" font-family="ui-monospace, monospace" font-size="12" font-weight="700">1. WebUI writes /etc/axonwall/* BEFORE apply</text>
+  <text x="68" y="182" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">Candidate config overwrites disk first → poisons LKG snapshot!</text>
+  <line x1="247" y1="194" x2="247" y2="216" stroke="#ff4d6d" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Red Step 2 -->
+  <rect x="52" y="218" width="390" height="50" rx="8" fill="#1e0611" stroke="#9f1239" stroke-width="1.2"/>
+  <text x="68" y="238" fill="#fda4af" font-family="ui-monospace, monospace" font-size="12" font-weight="700">2. POST /v1/apply + instant localhost /v1/confirm</text>
+  <text x="68" y="256" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">Server auto-confirms over loopback → 120s timer bypassed cleanly</text>
+  <line x1="247" y1="268" x2="247" y2="290" stroke="#ff4d6d" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Red Step 3 -->
+  <rect x="52" y="292" width="390" height="56" rx="8" fill="#1e0611" stroke="#9f1239" stroke-width="1.2"/>
+  <text x="68" y="312" fill="#fda4af" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">3. Kernel links, routes &amp; Kea mutated (0 snapshot)</text>
+  <text x="68" y="330" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">Unassigned enp4s0 collides with live DHCP routes; no rollback of</text>
+  <text x="68" y="343" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">/etc/network/interfaces, kea-dhcp4.conf, or live kernel IPs</text>
+  <line x1="247" y1="348" x2="247" y2="370" stroke="#ff4d6d" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Red Step 4 (Failure Box) -->
+  <rect x="52" y="372" width="390" height="52" rx="8" fill="#3a0a1b" stroke="#ff2a5f" stroke-width="1.5"/>
+  <text x="68" y="393" fill="#ff5c8a" font-family="ui-monospace, monospace" font-size="11.5" font-weight="800">4. Empty nft aborts rollback &amp; wipes backups</text>
+  <text x="68" y="411" fill="#fecdd3" font-family="system-ui, sans-serif" font-size="11.5">executeRollback() returned early before restoring configs or routes</text>
+  <line x1="247" y1="424" x2="247" y2="444" stroke="#ff4d6d" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- Outcome Red -->
+  <rect x="74" y="446" width="346" height="44" rx="10" fill="#590d22" stroke="#ff4d6d" stroke-width="1.8"/>
+  <text x="247" y="465" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, monospace" font-size="12.5" font-weight="800">RESULT: TOTAL REMOTE LOCKOUT</text>
+  <text x="247" y="481" text-anchor="middle" fill="#fda4af" font-family="system-ui, sans-serif" font-size="11">"ok I'm headed back to the data center..."</text>
+
+  <!-- RIGHT PANEL: AFTER (PHASE 1A SAFETY NET) -->
+  <rect x="495" y="92" width="435" height="416" rx="12" fill="url(#greenPanel)" stroke="#33dd00" stroke-width="1.5"/>
+  <rect x="511" y="106" width="232" height="24" rx="5" fill="#103611" stroke="#33dd00" stroke-width="1"/>
+  <text x="627" y="122" text-anchor="middle" fill="#86efac" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700">AFTER: PHASE 1A SAFETY NET</text>
+
+  <!-- Green Step 1 -->
+  <rect x="517" y="144" width="390" height="50" rx="8" fill="#091b0b" stroke="#15803d" stroke-width="1.2"/>
+  <text x="533" y="164" fill="#86efac" font-family="ui-monospace, monospace" font-size="12" font-weight="700">1. In-memory candidate + live subnet overlap guard</text>
+  <text x="533" y="182" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">Zero pre-apply disk writes; gateway restricted strictly to WAN</text>
+  <line x1="712" y1="194" x2="712" y2="216" stroke="#33dd00" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Green Step 2 -->
+  <rect x="517" y="218" width="390" height="50" rx="8" fill="#091b0b" stroke="#15803d" stroke-width="1.2"/>
+  <text x="533" y="238" fill="#86efac" font-family="ui-monospace, monospace" font-size="12" font-weight="700">2. Full kernel &amp; file snapshot (net_rollback.go)</text>
+  <text x="533" y="256" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">Captures IPv4, ECMP nexthops, links &amp; skips overlay NICs (wg/ts)</text>
+  <line x1="712" y1="268" x2="712" y2="290" stroke="#33dd00" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Green Step 3 -->
+  <rect x="517" y="292" width="390" height="56" rx="8" fill="#091b0b" stroke="#15803d" stroke-width="1.2"/>
+  <text x="533" y="312" fill="#86efac" font-family="ui-monospace, monospace" font-size="12" font-weight="700">3. True Commit-Confirm (Zero auto-confirm bypass)</text>
+  <text x="533" y="330" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">Human browser must click Confirm inside 120s countdown banner</text>
+  <text x="533" y="343" fill="#d1d5db" font-family="system-ui, sans-serif" font-size="11.5">(plus stopDhcpClient avoids DHCPRELEASE &amp; systemd preserves IPC)</text>
+  <line x1="712" y1="348" x2="712" y2="370" stroke="#33dd00" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Green Step 4 -->
+  <rect x="517" y="372" width="390" height="52" rx="8" fill="#0d2b10" stroke="#33dd00" stroke-width="1.5"/>
+  <text x="533" y="393" fill="#33dd00" font-family="ui-monospace, monospace" font-size="12" font-weight="800">4. Timeout / Crash → Files &amp; Kernel restored FIRST</text>
+  <text x="533" y="411" fill="#dcfce7" font-family="system-ui, sans-serif" font-size="11.5">Restores LKG YAML, /etc/network, live IPs/routes even if nft fails</text>
+  <line x1="712" y1="424" x2="712" y2="444" stroke="#33dd00" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Outcome Green -->
+  <rect x="539" y="446" width="346" height="44" rx="10" fill="#144517" stroke="#33dd00" stroke-width="1.8"/>
+  <text x="712" y="465" text-anchor="middle" fill="#ffffff" font-family="ui-monospace, monospace" font-size="12.5" font-weight="800">RESULT: SELF-HEALING APPLIANCE</text>
+  <text x="712" y="481" text-anchor="middle" fill="#bbf7d0" font-family="system-ui, sans-serif" font-size="11">Connectivity returns automatically in ≤120s</text>
+
+  <!-- Center VS badge -->
+  <circle cx="480" cy="298" r="19" fill="#1a0626" stroke="#a855f7" stroke-width="2"/>
+  <text x="480" y="303" text-anchor="middle" fill="#e9d5ff" font-family="ui-monospace, monospace" font-size="12" font-weight="800">VS</text>
+</svg>

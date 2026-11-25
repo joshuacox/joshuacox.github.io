@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="960" height="560" role="img" aria-label="Axonwall v0.16.0 8-Subagent Full-Repository Adversarial Audit Findings by Domain and Severity">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0214"/>
+      <stop offset="100%" stop-color="#190526"/>
+    </linearGradient>
+    <linearGradient id="critGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff2a5f"/>
+      <stop offset="100%" stop-color="#ff5c8a"/>
+    </linearGradient>
+    <linearGradient id="highGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="medGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <linearGradient id="lowGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#33dd00"/>
+      <stop offset="100%" stop-color="#65f53d"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Card frame -->
+  <rect x="2" y="2" width="956" height="556" rx="16" fill="url(#bgGrad)" stroke="#4c1566" stroke-width="2"/>
+  <rect x="14" y="14" width="932" height="532" rx="12" fill="none" stroke="#3b104c" stroke-width="1" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Subtle gridlines in chart area (x=330 to x=860, width=530 -> 10px per finding up to 53) -->
+  <g stroke="#3b104c" stroke-width="1" opacity="0.45">
+    <line x1="330" y1="145" x2="330" y2="475"/>
+    <line x1="430" y1="145" x2="430" y2="475" stroke-dasharray="3 4"/>
+    <line x1="530" y1="145" x2="530" y2="475" stroke-dasharray="3 4"/>
+    <line x1="630" y1="145" x2="630" y2="475" stroke-dasharray="3 4"/>
+    <line x1="730" y1="145" x2="730" y2="475" stroke-dasharray="3 4"/>
+    <line x1="830" y1="145" x2="830" y2="475" stroke-dasharray="3 4"/>
+  </g>
+
+  <!-- Header -->
+  <text x="34" y="50" fill="#33dd00" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" letter-spacing="2">AXONWALL v0.16.0 // POST-LOCKOUT FORENSIC SWEEP</text>
+  <text x="34" y="78" fill="#f3f4f6" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800">8-Subagent Adversarial Codebase Audit: 290 Verified Findings</text>
+  <text x="34" y="99" fill="#a78bfa" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">100% of non-test source files audited in parallel + empirical nft -f validation in ephemeral netns</text>
+
+  <!-- Summary KPI Pills -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700">
+    <rect x="34" y="112" width="128" height="24" rx="6" fill="#2d091d" stroke="#ff2a5f" stroke-width="1.2"/>
+    <circle cx="48" cy="124" r="4.5" fill="#ff2a5f"/>
+    <text x="60" y="128" fill="#fda4af">73 CRITICAL</text>
+
+    <rect x="172" y="112" width="110" height="24" rx="6" fill="#2b1b06" stroke="#f59e0b" stroke-width="1.2"/>
+    <circle cx="186" cy="124" r="4.5" fill="#f59e0b"/>
+    <text x="198" y="128" fill="#fcd34d">131 HIGH</text>
+
+    <rect x="292" y="112" width="120" height="24" rx="6" fill="#082032" stroke="#38bdf8" stroke-width="1.2"/>
+    <circle cx="306" cy="124" r="4.5" fill="#38bdf8"/>
+    <text x="318" y="128" fill="#bae6fd">74 MEDIUM</text>
+
+    <rect x="422" y="112" width="96" height="24" rx="6" fill="#0d2608" stroke="#33dd00" stroke-width="1.2"/>
+    <circle cx="436" cy="124" r="4.5" fill="#33dd00"/>
+    <text x="448" y="128" fill="#bbf7d0">12 LOW</text>
+
+    <rect x="752" y="112" width="174" height="24" rx="6" fill="#1e0830" stroke="#a855f7" stroke-width="1.2"/>
+    <text x="839" y="128" text-anchor="middle" fill="#e9d5ff">290 RAW FINDINGS</text>
+  </g>
+
+  <!-- Bars: scale = 10px per finding, starting at x=330 -->
+  <!-- Row 1: Domain 8 — Daemon Engines, eBPF & Auth: 13C, 30H, 9M, 1L = 53 -->
+  <g transform="translate(0, 158)">
+    <text x="318" y="14" text-anchor="end" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="13" font-weight="700">8. Daemon Engines, eBPF &amp; Auth</text>
+    <text x="318" y="29" text-anchor="end" fill="#9ca3af" font-family="ui-monospace, monospace" font-size="10.5">68 files (engine/*.go, ebpf/*.c)</text>
+    <rect x="330" y="3" width="130" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="460" y="3" width="300" height="24" fill="url(#highGrad)"/>
+    <rect x="760" y="3" width="90" height="24" fill="url(#medGrad)"/>
+    <rect x="850" y="3" width="10" height="24" rx="2" fill="url(#lowGrad)"/>
+    <text x="395" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">13</text>
+    <text x="610" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">30</text>
+    <text x="805" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">9</text>
+    <text x="872" y="19" fill="#33dd00" font-family="ui-monospace, monospace" font-size="13" font-weight="800" filter="url(#glow)">53</text>
+  </g>
+
+  <!-- Row 2: Domain 6 — Vigilante & NastyMap: 10C, 22H, 17M, 1L = 50 -->
+  <g transform="translate(0, 198)">
+    <text x="318" y="14" text-anchor="end" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="13" font-weight="700">6. Vigilante &amp; NastyMap</text>
+    <text x="318" y="29" text-anchor="end" fill="#9ca3af" font-family="ui-monospace, monospace" font-size="10.5">packages/vigilante_lib &amp; nastymap</text>
+    <rect x="330" y="3" width="100" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="430" y="3" width="220" height="24" fill="url(#highGrad)"/>
+    <rect x="650" y="3" width="170" height="24" fill="url(#medGrad)"/>
+    <rect x="820" y="3" width="10" height="24" rx="2" fill="url(#lowGrad)"/>
+    <text x="380" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">10</text>
+    <text x="540" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">22</text>
+    <text x="735" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">17</text>
+    <text x="842" y="19" fill="#f3f4f6" font-family="ui-monospace, monospace" font-size="13" font-weight="800">50</text>
+  </g>
+
+  <!-- Row 3: Domain 7 — Compilers, Schemas & Lib: 13C, 23H, 4M, 2L = 42 -->
+  <g transform="translate(0, 238)">
+    <text x="318" y="14" text-anchor="end" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="13" font-weight="700">7. Compilers, Schemas &amp; Lib</text>
+    <text x="318" y="29" text-anchor="end" fill="#9ca3af" font-family="ui-monospace, monospace" font-size="10.5">69 TS files (nft, kea, suricata, ha)</text>
+    <rect x="330" y="3" width="130" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="460" y="3" width="230" height="24" fill="url(#highGrad)"/>
+    <rect x="690" y="3" width="40" height="24" fill="url(#medGrad)"/>
+    <rect x="730" y="3" width="20" height="24" rx="2" fill="url(#lowGrad)"/>
+    <text x="395" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">13</text>
+    <text x="575" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">23</text>
+    <text x="710" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">4</text>
+    <text x="762" y="19" fill="#f3f4f6" font-family="ui-monospace, monospace" font-size="13" font-weight="800">42</text>
+  </g>
+
+  <!-- Row 4: Domain 5 — Console, Installer & Packaging: 11C, 11H, 10M, 3L = 35 -->
+  <g transform="translate(0, 278)">
+    <text x="318" y="14" text-anchor="end" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="13" font-weight="700">5. Console, Installer &amp; Packaging</text>
+    <text x="318" y="29" text-anchor="end" fill="#9ca3af" font-family="ui-monospace, monospace" font-size="10.5">ISO, GRUB A/B, ZBM, Alpine, .deb</text>
+    <rect x="330" y="3" width="110" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="440" y="3" width="110" height="24" fill="url(#highGrad)"/>
+    <rect x="550" y="3" width="100" height="24" fill="url(#medGrad)"/>
+    <rect x="650" y="3" width="30" height="24" rx="2" fill="url(#lowGrad)"/>
+    <text x="385" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">11</text>
+    <text x="495" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">11</text>
+    <text x="600" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">10</text>
+    <text x="692" y="19" fill="#f3f4f6" font-family="ui-monospace, monospace" font-size="13" font-weight="800">35</text>
+  </g>
+
+  <!-- Row 5: Domain 3 — WebUI Frontend & UX: 7C, 16H, 10M, 2L = 35 -->
+  <g transform="translate(0, 318)">
+    <text x="318" y="14" text-anchor="end" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="13" font-weight="700">3. WebUI Frontend &amp; UX Footguns</text>
+    <text x="318" y="29" text-anchor="end" fill="#9ca3af" font-family="ui-monospace, monospace" font-size="10.5">(console)/** pages &amp; components</text>
+    <rect x="330" y="3" width="70" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="400" y="3" width="160" height="24" fill="url(#highGrad)"/>
+    <rect x="560" y="3" width="100" height="24" fill="url(#medGrad)"/>
+    <rect x="660" y="3" width="20" height="24" rx="2" fill="url(#lowGrad)"/>
+    <text x="365" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">7</text>
+    <text x="480" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">16</text>
+    <text x="610" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">10</text>
+    <text x="692" y="19" fill="#f3f4f6" font-family="ui-monospace, monospace" font-size="13" font-weight="800">35</text>
+  </g>
+
+  <!-- Row 6: Domain 2 — WebUI Server & API: 5C, 14H, 12M, 3L = 34 -->
+  <g transform="translate(0, 358)">
+    <text x="318" y="14" text-anchor="end" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="13" font-weight="700">2. WebUI Server &amp; 68 API Routes</text>
+    <text x="318" y="29" text-anchor="end" fill="#9ca3af" font-family="ui-monospace, monospace" font-size="10.5">server/**, middleware, auth/OIDC</text>
+    <rect x="330" y="3" width="50" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="380" y="3" width="140" height="24" fill="url(#highGrad)"/>
+    <rect x="520" y="3" width="120" height="24" fill="url(#medGrad)"/>
+    <rect x="640" y="3" width="30" height="24" rx="2" fill="url(#lowGrad)"/>
+    <text x="355" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">5</text>
+    <text x="450" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">14</text>
+    <text x="580" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">12</text>
+    <text x="682" y="19" fill="#f3f4f6" font-family="ui-monospace, monospace" font-size="13" font-weight="800">34</text>
+  </g>
+
+  <!-- Row 7: Domain 1 — Controller, CLI, TUI, MCP, Satellite, TF: 6C, 9H, 7M, 0L = 22 -->
+  <g transform="translate(0, 398)">
+    <text x="318" y="14" text-anchor="end" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="13" font-weight="700">1. Controller, CLI, TUI, MCP &amp; TF</text>
+    <text x="318" y="29" text-anchor="end" fill="#9ca3af" font-family="ui-monospace, monospace" font-size="10.5">axonwallctl, satellite, terraform</text>
+    <rect x="330" y="3" width="60" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="390" y="3" width="90" height="24" fill="url(#highGrad)"/>
+    <rect x="480" y="3" width="70" height="24" rx="2" fill="url(#medGrad)"/>
+    <text x="360" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">6</text>
+    <text x="435" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">9</text>
+    <text x="515" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">7</text>
+    <text x="562" y="19" fill="#f3f4f6" font-family="ui-monospace, monospace" font-size="13" font-weight="800">22</text>
+  </g>
+
+  <!-- Row 8: Domain 4 — Daemon Networking & Rollback: 8C, 6H, 5M, 0L = 19 -->
+  <g transform="translate(0, 438)">
+    <text x="318" y="14" text-anchor="end" fill="#33dd00" font-family="system-ui, sans-serif" font-size="13" font-weight="700">4. Daemon Networking &amp; Rollback</text>
+    <text x="318" y="29" text-anchor="end" fill="#86efac" font-family="ui-monospace, monospace" font-size="10.5">net_rollback.go, routes, prober ★</text>
+    <rect x="330" y="3" width="80" height="24" rx="3" fill="url(#critGrad)"/>
+    <rect x="410" y="3" width="60" height="24" fill="url(#highGrad)"/>
+    <rect x="470" y="3" width="50" height="24" rx="2" fill="url(#medGrad)"/>
+    <text x="370" y="19" text-anchor="middle" fill="#1a020a" font-family="ui-monospace, monospace" font-size="11" font-weight="800">8</text>
+    <text x="440" y="19" text-anchor="middle" fill="#211202" font-family="ui-monospace, monospace" font-size="11" font-weight="800">6</text>
+    <text x="495" y="19" text-anchor="middle" fill="#041826" font-family="ui-monospace, monospace" font-size="11" font-weight="800">5</text>
+    <text x="532" y="19" fill="#33dd00" font-family="ui-monospace, monospace" font-size="13" font-weight="800">19</text>
+    <rect x="562" y="4" width="166" height="22" rx="5" fill="#0d2608" stroke="#33dd00" stroke-width="1"/>
+    <text x="645" y="19" text-anchor="middle" fill="#86efac" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">Phase 1A FIXED NOW ✓</text>
+  </g>
+
+  <!-- X-axis labels -->
+  <g fill="#9ca3af" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle">
+    <text x="330" y="494">0</text>
+    <text x="430" y="494">10</text>
+    <text x="530" y="494">20</text>
+    <text x="630" y="494">30</text>
+    <text x="730" y="494">40</text>
+    <text x="830" y="494">50</text>
+  </g>
+
+  <!-- Footer annotation -->
+  <line x1="34" y1="510" x2="926" y2="510" stroke="#3b104c" stroke-width="1"/>
+  <text x="34" y="531" fill="#c4b5fd" font-family="ui-monospace, monospace" font-size="11">★ Phase 1A already landed 2,164 LOC of rollback &amp; tests (net_rollback.go + Go/TS suites)</text>
+  <text x="926" y="531" text-anchor="end" fill="#6b7280" font-family="ui-monospace, monospace" font-size="10.5">2026-11-25 // DEVLOG</text>
+</svg>

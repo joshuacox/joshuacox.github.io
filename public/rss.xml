@@ -5,6 +5,13 @@
     <link>https://joshuacox.github.io</link>
     <description>Joshua Cox Blog and Portfolio</description>
     <item>
+      <title><![CDATA[Blame the AI: A Data-Center Lockout, an 8-Agent Audit of 290 Bugs, Automated Gryphons, and Tactical Chickens]]></title>
+      <link>https://joshuacox.github.io/blog/2026/11/25/blame-the-ai-a-datacenter-lockout-290-bugs-automated-gryphons-and-tactical-chickens/</link>
+      <description><![CDATA[Twenty-four hours of peak engineering drama: Axonwall v0.16.0 ships Lean Core and promptly earns a trip to the data center, triggering an 8-subagent forensic audit (290 verified bugs) and a 2,164-line kernel rollback safety net—while Glyphrig automates Chrome Web Store v2 releases, BokBot clears 166/166 gameplay tests, and DeployCoop merges a -336,354-line red diff.]]></description>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/11/25/blame-the-ai-a-datacenter-lockout-290-bugs-automated-gryphons-and-tactical-chickens/</guid>
+    </item>
+    <item>
       <title><![CDATA[NetFlow Studios, Bluegrass Synths, and Fighting 'Yellow Argon': 24 Hours in the Lab]]></title>
       <link>https://joshuacox.github.io/blog/2026/11/24/netflow-studios-bluegrass-synths-and-yellow-argon/</link>
       <description><![CDATA[Axonwall v0.15.1 ships a 5-phase NetFlow/IPFIX/sFlow Analytics Studio, three games simultaneously get procedural symphonies and visual overhauls, Tekromancy adopts the Sovereign Telemetry Deck, Glyphrig spars with Chrome Web Store's 'Yellow Argon' bot, and Killibre gets wireless ADB DND surgery.]]></description>
