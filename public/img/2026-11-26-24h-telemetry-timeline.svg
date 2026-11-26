@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 490" width="960" height="490" role="img" aria-label="24-Hour Engineering Velocity Timeline across Axonwall v0.16.1-v0.16.2, Glyphrig v0.5.0, Tekromancy, BokBot, PixiePatrol, Eluvix, and DeployCoop (Nov 25 to Nov 26, 2026)">
+  <defs>
+    <linearGradient id="bg26" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0212"/>
+      <stop offset="100%" stop-color="#190527"/>
+    </linearGradient>
+    <linearGradient id="rail26" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="30%" stop-color="#38bdf8"/>
+      <stop offset="65%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#33dd00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="956" height="486" rx="16" fill="url(#bg26)" stroke="#4c1566" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="34" y="38" fill="#33dd00" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" letter-spacing="2">TELEMETRY PULSE // NOV 25 09:02 CST → NOV 26 08:40 CST</text>
+  <text x="34" y="66" fill="#f3f4f6" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800">24 Hours: Rack Rescue, Port Knocking, Gryphon v0.5.0 &amp; Living Worlds</text>
+
+  <!-- KPI Cards Row -->
+  <g transform="translate(34, 84)">
+    <!-- KPI 1 -->
+    <rect x="0" y="0" width="212" height="74" rx="10" fill="#150424" stroke="#38bdf8" stroke-width="1.3"/>
+    <text x="14" y="21" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">AXONWALL v0.16.1 → 0.16.2</text>
+    <text x="14" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="21" font-weight="800">+17,822 <tspan font-size="11.5" fill="#38bdf8">LOC</tspan></text>
+    <text x="14" y="64" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">5/5 hosts upgraded &amp; rebooted in order</text>
+
+    <!-- KPI 2 -->
+    <rect x="226" y="0" width="212" height="74" rx="10" fill="#150424" stroke="#a855f7" stroke-width="1.3"/>
+    <text x="240" y="21" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">GLYPHRIG v0.5.0</text>
+    <text x="240" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="21" font-weight="800">+9,552 <tspan font-size="11.5" fill="#c084fc">LOC</tspan></text>
+    <text x="240" y="64" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">60+ bugs fixed · 75 files · 3-store CI</text>
+
+    <!-- KPI 3 -->
+    <rect x="452" y="0" width="212" height="74" rx="10" fill="#150424" stroke="#33dd00" stroke-width="1.3"/>
+    <text x="466" y="21" fill="#86efac" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">GODOT LIVING WORLDS</text>
+    <text x="466" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="21" font-weight="800">24 <tspan font-size="11.5" fill="#33dd00">new idles</tspan></text>
+    <text x="466" y="64" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">BokBot (167/167) + PixiePatrol VFX</text>
+
+    <!-- KPI 4 -->
+    <rect x="678" y="0" width="214" height="74" rx="10" fill="#150424" stroke="#f59e0b" stroke-width="1.3"/>
+    <text x="692" y="21" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">GITHUB &amp; TEKROMANCY</text>
+    <text x="692" y="48" fill="#ffffff" font-family="ui-monospace, monospace" font-size="21" font-weight="800">2 PRs <tspan font-size="11.5" fill="#f59e0b">+ 2 ships</tspan></text>
+    <text x="692" y="64" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">Eluvix #37 (+4k) · Waffle #149 · Apps</text>
+  </g>
+
+  <!-- Central Timeline Rail -->
+  <rect x="52" y="316" width="856" height="4" rx="2" fill="url(#rail26)"/>
+
+  <!-- Node 1 (Top): 09:02-09:06 CST -->
+  <circle cx="96" cy="318" r="7" fill="#f59e0b" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="96" y1="311" x2="96" y2="262" stroke="#f59e0b" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="28" y="184" width="184" height="78" rx="8" fill="#120922" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="38" y="202" fill="#f59e0b" font-family="ui-monospace, monospace" font-size="10" font-weight="700">NOV 25 · 09:02–09:06 CST</text>
+  <text x="38" y="220" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">v0.16.1 &amp; Tekromancy</text>
+  <text x="38" y="236" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">Lockout hardening tagged</text>
+  <text x="38" y="250" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">+ rtnetlink rollback deep dive</text>
+
+  <!-- Node 2 (Bottom): 10:18-11:55 CST -->
+  <circle cx="212" cy="318" r="7" fill="#fb923c" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="212" y1="325" x2="212" y2="372" stroke="#fb923c" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="112" y="372" width="196" height="78" rx="8" fill="#120922" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="122" y="390" fill="#fb923c" font-family="ui-monospace, monospace" font-size="10" font-weight="700">10:18–11:55 CST · DATA CENTER</text>
+  <text x="122" y="408" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Serial Rescue &amp; Rosenpass</text>
+  <text x="122" y="424" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">picocom /dev/ttyUSB0 recovery</text>
+  <text x="122" y="438" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">+ Post-Quantum WireGuard PSK</text>
+
+  <!-- Node 3 (Top): 18:48-20:29 CST -->
+  <circle cx="348" cy="318" r="7" fill="#38bdf8" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="348" y1="311" x2="348" y2="262" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="242" y="184" width="208" height="78" rx="8" fill="#120922" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="252" y="202" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10" font-weight="700">18:48–20:29 CST · /GRILL-ME</text>
+  <text x="252" y="220" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Offload + Port Knocking</text>
+  <text x="252" y="236" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">VictoriaMetrics/Logs + IPFIX hub</text>
+  <text x="252" y="250" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">+ Zero-port WAN Headscale gate</text>
+
+  <!-- Node 4 (Bottom): 22:38-22:40 CST -->
+  <circle cx="478" cy="318" r="7" fill="#06b6d4" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="478" y1="325" x2="478" y2="372" stroke="#06b6d4" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="366" y="372" width="212" height="78" rx="8" fill="#120922" stroke="#06b6d4" stroke-width="1.2"/>
+  <text x="376" y="390" fill="#22d3ee" font-family="ui-monospace, monospace" font-size="10" font-weight="700">22:38–22:40 CST · RELEASE</text>
+  <text x="376" y="408" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Axonwall v0.16.2 Tagged</text>
+  <text x="376" y="424" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">108 files (+14,508 / -701)</text>
+  <text x="376" y="438" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">29 MCP tools + axonwall.com</text>
+
+  <!-- Node 5 (Top): 23:14-23:40 CST -->
+  <circle cx="614" cy="318" r="7" fill="#33dd00" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="614" y1="311" x2="614" y2="262" stroke="#33dd00" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="484" y="184" width="222" height="78" rx="8" fill="#120922" stroke="#33dd00" stroke-width="1.2"/>
+  <text x="494" y="202" fill="#33dd00" font-family="ui-monospace, monospace" font-size="10" font-weight="700">23:14–23:40 CST · GAME JUICE</text>
+  <text x="494" y="220" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">BokBot &amp; PixiePatrol Polish</text>
+  <text x="494" y="236" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">24 idle behaviors, emotes &amp; clouds</text>
+  <text x="494" y="250" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">+ Glyphrig added to Tekromancy</text>
+
+  <!-- Node 6 (Bottom): 23:22-23:55 CST -->
+  <circle cx="732" cy="318" r="7" fill="#ff2a5f" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="732" y1="325" x2="732" y2="372" stroke="#ff2a5f" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="614" y="372" width="220" height="78" rx="8" fill="#120922" stroke="#ff2a5f" stroke-width="1.2"/>
+  <text x="624" y="390" fill="#fda4af" font-family="ui-monospace, monospace" font-size="10" font-weight="700">23:22–23:55 CST · FLEET ROLLOUT</text>
+  <text x="624" y="408" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">5-Host Sequential Reboot</text>
+  <text x="624" y="424" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">saxon → klaxon → checkpoint1</text>
+  <text x="624" y="438" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">Caught ZFS etcd WAL &amp; dhcpcd -G</text>
+
+  <!-- Node 7 (Top): 23:41-00:25 CST -->
+  <circle cx="858" cy="318" r="7" fill="#a855f7" stroke="#0b0212" stroke-width="2.5"/>
+  <line x1="858" y1="311" x2="858" y2="262" stroke="#a855f7" stroke-width="1.4" stroke-dasharray="3 2"/>
+  <rect x="726" y="184" width="206" height="78" rx="8" fill="#120922" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="736" y="202" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="10" font-weight="700">NOV 26 · 00:06–00:25 CST</text>
+  <text x="736" y="220" fill="#f3f4f6" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Glyphrig v0.5.0 &amp; 2 PRs</text>
+  <text x="736" y="236" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">Collab suite + 60+ bug hunt</text>
+  <text x="736" y="250" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10.2">Eluvix #37 + DeployCoop #149</text>
+
+  <!-- Footer legend -->
+  <text x="34" y="472" fill="#6b7280" font-family="ui-monospace, monospace" font-size="10">SOURCE: LOCAL GIT REPOS (/mnt/unreal/git) · ANTIGRAVITY BRAIN TRANSCRIPTS · PUBLIC GITHUB EVENTS API</text>
+</svg>

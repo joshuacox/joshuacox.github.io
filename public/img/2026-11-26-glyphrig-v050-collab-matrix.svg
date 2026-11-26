@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" role="img" aria-label="Glyphrig v0.5.0 Team Collaboration Suite, 6 Universal Importers, 60+ Security Bug-Hunt Shield, and 3-Store Parallel Release CI">
+  <defs>
+    <linearGradient id="glBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d051a"/>
+      <stop offset="100%" stop-color="#1c0830"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="436" rx="16" fill="url(#glBg)" stroke="#7e22ce" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="32" y="36" fill="#c084fc" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" letter-spacing="2">GLYPHRIG v0.5.0 // "ALL OF THE ABOVE!" + 60+ BUG HUNT (75 FILES · +9,552 / -782)</text>
+  <text x="32" y="64" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="800">From Solo Bookmark Sync to Hardened Team Knowledge Gardens</text>
+
+  <!-- Panel 1: 4 Sync Modes -->
+  <rect x="28" y="84" width="294" height="176" rx="12" fill="#160a2b" stroke="#a855f7" stroke-width="1.3"/>
+  <text x="44" y="106" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="11" font-weight="700">4 TEAM SYNC MODES (@glyphrig/core)</text>
+
+  <rect x="44" y="118" width="126" height="58" rx="7" fill="#21103d" stroke="#38bdf8" stroke-width="1"/>
+  <text x="54" y="136" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">two-way</text>
+  <text x="54" y="152" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">Asymmetric 3-way</text>
+  <text x="54" y="165" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">browser ↔ MD merge</text>
+
+  <rect x="180" y="118" width="126" height="58" rx="7" fill="#21103d" stroke="#33dd00" stroke-width="1"/>
+  <text x="190" y="136" fill="#86efac" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">contribute-only</text>
+  <text x="190" y="152" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">Push curated finds</text>
+  <text x="190" y="165" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">without pulling noise</text>
+
+  <rect x="44" y="186" width="126" height="58" rx="7" fill="#21103d" stroke="#f59e0b" stroke-width="1"/>
+  <text x="54" y="204" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">subscribe-only</text>
+  <text x="54" y="220" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">Read-only mirror of</text>
+  <text x="54" y="233" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">team garden folders</text>
+
+  <rect x="180" y="186" width="126" height="58" rx="7" fill="#21103d" stroke="#ec4899" stroke-width="1"/>
+  <text x="190" y="204" fill="#f9a8d4" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">propose-pr</text>
+  <text x="190" y="220" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">Fork-safe PR flow on</text>
+  <text x="190" y="233" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.4">GitHub/GitLab/Forgejo</text>
+
+  <!-- Panel 2: CLI & Site Superpowers -->
+  <rect x="336" y="84" width="296" height="176" rx="12" fill="#10182d" stroke="#38bdf8" stroke-width="1.3"/>
+  <text x="352" y="106" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="11" font-weight="700">CLI + GARDEN SITE SUPERPOWERS</text>
+  <text x="352" y="128" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="10.8" font-weight="700">6 Universal Importers (855 LOC)</text>
+  <text x="352" y="144" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="9.6">Netscape · Raindrop · Pinboard</text>
+  <text x="352" y="158" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="9.6">Pocket · Linkding · Karakeep</text>
+
+  <text x="352" y="180" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="10.8" font-weight="700">Wayback Link Health + Weekly Digests</text>
+  <text x="352" y="196" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="9.6">Slack · Discord · Matrix · MD · JSON</text>
+
+  <text x="352" y="218" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="10.8" font-weight="700">1-Click Join + Granular RSS Feeds</text>
+  <text x="352" y="234" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="9.6">/glyphrig.json · /feeds/{f,tags,u}/*</text>
+  <text x="352" y="248" fill="#86efac" font-family="ui-monospace, monospace" font-size="9.6">Alt+Shift+B Save &amp; Annotate · @notes</text>
+
+  <!-- Panel 3: 60+ Bug-Hunt Security Shield -->
+  <rect x="646" y="84" width="286" height="176" rx="12" fill="#210b19" stroke="#ff2a5f" stroke-width="1.3"/>
+  <text x="662" y="106" fill="#fda4af" font-family="ui-monospace, monospace" font-size="11" font-weight="700">60+ ADVERSARIAL BUG-HUNT SHIELD</text>
+  <text x="662" y="128" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="10">✓ Stored DOM XSS Eliminated</text>
+  <text x="674" y="142" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.4">Replaced innerHTML + escaped JSON</text>
+
+  <text x="662" y="162" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="10">✓ isSafeHttpUrl() Everywhere</text>
+  <text x="674" y="176" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.4">Blocks javascript: URLs + OAuth hashes</text>
+
+  <text x="662" y="196" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="10">✓ Fail-Closed SVG Sanitizer</text>
+  <text x="674" y="210" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.4">Strict allowlist + build overlap guard</text>
+
+  <text x="662" y="230" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="10">✓ MV3 Storage Locks &amp; Echo Guard</text>
+  <text x="674" y="244" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.4">Firefox separators + 4-kind conflict UI</text>
+
+  <!-- Bottom Banner: Parallel Release Pipeline + Tekromancy Sponsorship -->
+  <rect x="28" y="276" width="904" height="134" rx="12" fill="#121c19" stroke="#33dd00" stroke-width="1.4"/>
+  <text x="44" y="300" fill="#33dd00" font-family="ui-monospace, monospace" font-size="11" font-weight="700">ZERO-TOUCH TAG-TO-STORE PIPELINE (v0.5.0) + TEKROMANCY SPONSORSHIP</text>
+
+  <!-- Pipeline Boxes -->
+  <rect x="44" y="314" width="144" height="58" rx="8" fill="#1b2a24" stroke="#86efac" stroke-width="1"/>
+  <text x="56" y="336" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="11" font-weight="700">git tag v0.5.0</text>
+  <text x="56" y="354" fill="#86efac" font-family="system-ui, sans-serif" font-size="9.8">Commit c4ad0f5</text>
+
+  <text x="198" y="348" fill="#33dd00" font-family="ui-monospace, monospace" font-size="18" font-weight="800">→</text>
+
+  <rect x="222" y="314" width="150" height="58" rx="8" fill="#162235" stroke="#38bdf8" stroke-width="1"/>
+  <text x="234" y="336" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">npm + GitHub</text>
+  <text x="234" y="354" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">core · cli · site pkgs</text>
+
+  <text x="382" y="348" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="18" font-weight="800">+</text>
+
+  <rect x="404" y="314" width="150" height="58" rx="8" fill="#251a12" stroke="#f59e0b" stroke-width="1"/>
+  <text x="416" y="336" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">Chrome Web Store</text>
+  <text x="416" y="354" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">CWS API v2 (≤132c)</text>
+
+  <text x="564" y="348" fill="#f59e0b" font-family="ui-monospace, monospace" font-size="18" font-weight="800">+</text>
+
+  <rect x="586" y="314" width="150" height="58" rx="8" fill="#26132b" stroke="#c084fc" stroke-width="1"/>
+  <text x="598" y="336" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">Firefox &amp; Edge</text>
+  <text x="598" y="354" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">AMO MV3 + Edge Addons</text>
+
+  <text x="746" y="348" fill="#c084fc" font-family="ui-monospace, monospace" font-size="18" font-weight="800">★</text>
+
+  <rect x="768" y="314" width="148" height="58" rx="8" fill="#142921" stroke="#33dd00" stroke-width="1.2"/>
+  <text x="778" y="336" fill="#33dd00" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">Tekromancy</text>
+  <text x="778" y="354" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.5">Sponsored App (f7b071b)</text>
+
+  <text x="44" y="395" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="9.8">Also caught at 08:41 AM CST: packages/cli/test/build.test.ts verifying .archived/ HTML exclusion in CI</text>
+</svg>

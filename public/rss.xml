@@ -5,6 +5,13 @@
     <link>https://joshuacox.github.io</link>
     <description>Joshua Cox Blog and Portfolio</description>
     <item>
+      <title><![CDATA[Port Knocking, Post-Quantum Tunnels, Gryphon v0.5.0, and Butterfly-Chasing Hens]]></title>
+      <link>https://joshuacox.github.io/blog/2026/11/26/port-knocking-post-quantum-tunnels-gryphon-v050-and-butterfly-chasing-hens/</link>
+      <description><![CDATA[Picking up straight from the data-center serial cable cliffhanger: Axonwall v0.16.1 rescues the Check Point rack, v0.16.2 ships edge-to-central analytics offload + zero-port-at-rest WAN port knocking across a 5-host rolling reboot, Glyphrig v0.5.0 drops 9,552 lines and a 60+ bug hunt, and BokBot + PixiePatrol come alive with 24 new idle behaviors.]]></description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/11/26/port-knocking-post-quantum-tunnels-gryphon-v050-and-butterfly-chasing-hens/</guid>
+    </item>
+    <item>
       <title><![CDATA[Blame the AI: A Data-Center Lockout, an 8-Agent Audit of 290 Bugs, Automated Gryphons, and Tactical Chickens]]></title>
       <link>https://joshuacox.github.io/blog/2026/11/25/blame-the-ai-a-datacenter-lockout-290-bugs-automated-gryphons-and-tactical-chickens/</link>
       <description><![CDATA[Twenty-four hours of peak engineering drama: Axonwall v0.16.0 ships Lean Core and promptly earns a trip to the data center, triggering an 8-subagent forensic audit (290 verified bugs) and a 2,164-line kernel rollback safety net—while Glyphrig automates Chrome Web Store v2 releases, BokBot clears 166/166 gameplay tests, and DeployCoop merges a -336,354-line red diff.]]></description>

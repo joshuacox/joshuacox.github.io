@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-label="Axonwall v0.16.2 Dual Architecture: Edge-to-Central Telemetry Offload and Zero-Port-At-Rest WAN Headscale Invite Gate with Stateful Port Knocking">
+  <defs>
+    <linearGradient id="axBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a14"/>
+      <stop offset="100%" stop-color="#130921"/>
+    </linearGradient>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#33dd00"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#c084fc"/>
+    </marker>
+  </defs>
+
+  <rect x="2" y="2" width="956" height="536" rx="16" fill="url(#axBg)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="32" y="36" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" letter-spacing="2">AXONWALL v0.16.2 ARCHITECTURE // +14,508 LOC ACROSS 108 FILES</text>
+  <text x="32" y="62" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="21" font-weight="800">Plane 1: Edge-to-Central Telemetry Offload  ·  Plane 2: Zero-Port-At-Rest WAN Invites</text>
+
+  <!-- ==================== PLANE 1: TELEMETRY OFFLOAD ==================== -->
+  <rect x="24" y="80" width="912" height="206" rx="12" fill="#0d1324" stroke="#1e3a5f" stroke-width="1.5"/>
+  <text x="40" y="102" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="11" font-weight="700">PLANE 1 // EDGE-TO-CENTRAL ANALYTICS OFFLOAD (ZERO OVERHEAD WHEN UNCONFIGURED)</text>
+
+  <!-- Edge Collectors -->
+  <rect x="40" y="116" width="212" height="154" rx="10" fill="#101a30" stroke="#38bdf8" stroke-width="1.3"/>
+  <text x="54" y="136" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="11" font-weight="700">EDGE APPLIANCE (axonwalld)</text>
+  <text x="54" y="156" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="10.2">• eBPF flow_tracker.c</text>
+  <text x="64" y="170" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">16,384 flows + ingress_ifindex</text>
+  <text x="54" y="188" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="10.2">• NETLINK_NETFILTER NFLOG</text>
+  <text x="64" y="202" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Token-bucket guard (50/s default)</text>
+  <text x="54" y="220" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="10.2">• Suricata · CrowdSec · Kea</text>
+  <text x="54" y="238" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="10.2">• SD-WAN RTT/Jitter/Loss</text>
+  <text x="54" y="256" fill="#86efac" font-family="ui-monospace, monospace" font-size="9.8">netflow.mode: exporter | both</text>
+
+  <!-- Buffer & Shipper -->
+  <line x1="252" y1="192" x2="294" y2="192" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  <rect x="298" y="116" width="212" height="154" rx="10" fill="#13162b" stroke="#a855f7" stroke-width="1.3"/>
+  <text x="312" y="136" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="11" font-weight="700">NON-BLOCKING SHIPPER</text>
+  <rect x="312" y="148" width="184" height="32" rx="6" fill="#1e1338" stroke="#7e22ce" stroke-width="1"/>
+  <text x="322" y="162" fill="#f3e8ff" font-family="ui-monospace, monospace" font-size="10" font-weight="700">Bounded RAM Ring Buffer</text>
+  <text x="322" y="174" fill="#c4b5fd" font-family="system-ui, sans-serif" font-size="9.2">+ Opt-in zstd Disk Spool</text>
+
+  <text x="312" y="198" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="9.8">→ Prom Remote-Write (snappy)</text>
+  <text x="312" y="215" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="9.8">→ VictoriaLogs NDJSON/gzip</text>
+  <text x="312" y="232" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="9.8">→ IPFIX PEN 62999 (258/259)</text>
+  <text x="312" y="254" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="9.6">Auth: Scoped axw_svc_* (scrypt)</text>
+
+  <!-- Central Analytics Hub -->
+  <line x1="510" y1="192" x2="552" y2="192" stroke="#c084fc" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <rect x="556" y="116" width="364" height="154" rx="10" fill="#0f1d24" stroke="#33dd00" stroke-width="1.3"/>
+  <text x="570" y="136" fill="#33dd00" font-family="ui-monospace, monospace" font-size="11" font-weight="700">CENTRAL K3S / STORAGE ANALYTICS HUB</text>
+
+  <!-- 3 Data Stores -->
+  <rect x="570" y="148" width="104" height="48" rx="6" fill="#12272f" stroke="#22d3ee" stroke-width="1"/>
+  <text x="580" y="166" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10" font-weight="700">VictoriaMetrics</text>
+  <text x="580" y="182" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.2">PromQL Health</text>
+
+  <rect x="684" y="148" width="104" height="48" rx="6" fill="#12272f" stroke="#a855f7" stroke-width="1"/>
+  <text x="694" y="166" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="10" font-weight="700">VictoriaLogs</text>
+  <text x="694" y="182" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.2">LogsQL Explorer</text>
+
+  <rect x="798" y="148" width="108" height="48" rx="6" fill="#12272f" stroke="#f59e0b" stroke-width="1"/>
+  <text x="808" y="166" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10" font-weight="700">ClickHouse</text>
+  <text x="808" y="182" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.2">node: FQL Flows</text>
+
+  <!-- Controller & MCP -->
+  <rect x="570" y="206" width="336" height="52" rx="6" fill="#13291b" stroke="#22c55e" stroke-width="1"/>
+  <text x="582" y="224" fill="#86efac" font-family="ui-monospace, monospace" font-size="10.2" font-weight="700">axonwall-controller + 29-Tool MCP Server</text>
+  <text x="582" y="240" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.6">18 resources · AI Copilot context · Opt-in XDP remoteEdgeMitigation</text>
+  <text x="582" y="252" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="9">ModeCollector (--mode=collector) · protectedCidrs anti-lockout</text>
+
+  <!-- ==================== PLANE 2: WAN HEADSCALE INVITE GATE ==================== -->
+  <rect x="24" y="302" width="912" height="214" rx="12" fill="#160c1d" stroke="#581c87" stroke-width="1.5"/>
+  <text x="40" y="324" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="11" font-weight="700">PLANE 2 // ZERO-PORT-AT-REST WAN HEADSCALE INVITE GATE (headscale_wan_gate.go)</text>
+
+  <!-- Step 1: WAN Client -->
+  <rect x="40" y="340" width="150" height="156" rx="10" fill="#1f1129" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="52" y="360" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">1. WAN CLIENT</text>
+  <text x="52" y="382" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="10.5">Untrusted Internet</text>
+  <text x="52" y="402" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="9.5">At Rest:</text>
+  <text x="52" y="416" fill="#fb7185" font-family="ui-monospace, monospace" font-size="9.8" font-weight="700">0 OPEN WAN PORTS</text>
+  <text x="52" y="440" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Optional:</text>
+  <text x="52" y="454" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="9.5">• allowedCidrs</text>
+  <text x="52" y="470" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="9.5">• UDP/TCP Knock</text>
+
+  <line x1="190" y1="418" x2="222" y2="418" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)"/>
+
+  <!-- Step 2: nftables Stateful Knock & Window -->
+  <rect x="226" y="340" width="218" height="156" rx="10" fill="#1d122b" stroke="#ec4899" stroke-width="1.3"/>
+  <text x="238" y="360" fill="#f9a8d4" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">2. KERNEL nftables GATE</text>
+  <rect x="238" y="370" width="194" height="48" rx="6" fill="#2c1026" stroke="#db2777" stroke-width="1"/>
+  <text x="248" y="387" fill="#fbcfe8" font-family="ui-monospace, monospace" font-size="9.6" font-weight="700">Stateful Port Knock (Opt)</text>
+  <text x="248" y="403" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="9.2">knock_s0 → s1 → allow_v4/v6</text>
+
+  <rect x="238" y="426" width="194" height="58" rx="6" fill="#172038" stroke="#38bdf8" stroke-width="1"/>
+  <text x="248" y="443" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="9.6" font-weight="700">headscale_wan_window_ports</text>
+  <text x="248" y="458" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="9.2">Opens only with active invite</text>
+  <text x="248" y="472" fill="#86efac" font-family="ui-monospace, monospace" font-size="9">15s expiry ticker + nft -f sync</text>
+
+  <line x1="444" y1="418" x2="476" y2="418" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)"/>
+
+  <!-- Step 3: HAProxy Strict Allowlist -->
+  <rect x="480" y="340" width="222" height="156" rx="10" fill="#15192e" stroke="#38bdf8" stroke-width="1.3"/>
+  <text x="492" y="360" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">3. HAPROXY PATH ALLOWLIST</text>
+  <text x="492" y="380" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="9.5">fe_headscale_wan_invite</text>
+  <text x="492" y="398" fill="#86efac" font-family="ui-monospace, monospace" font-size="9.5">ALLOW: /invite/[token]</text>
+  <text x="492" y="413" fill="#86efac" font-family="ui-monospace, monospace" font-size="9.5">ALLOW: /api/v1/vpn/mesh/invites</text>
+  <text x="492" y="432" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="9.4">Strict TLS SNI + Host match</text>
+  <text x="492" y="446" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="9.4">Blocks .. / %2e / %2f traversal</text>
+  <rect x="492" y="456" width="198" height="28" rx="5" fill="#2e1018" stroke="#fb7185" stroke-width="1"/>
+  <text x="500" y="474" fill="#fda4af" font-family="ui-monospace, monospace" font-size="9.2" font-weight="700">silent-drop: /login /admin /metrics</text>
+
+  <line x1="702" y1="418" x2="734" y2="418" stroke="#33dd00" stroke-width="2" marker-end="url(#arrowGreen)"/>
+
+  <!-- Step 4: Redeem & Mesh Join -->
+  <rect x="738" y="340" width="182" height="156" rx="10" fill="#10251c" stroke="#33dd00" stroke-width="1.3"/>
+  <text x="750" y="360" fill="#86efac" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">4. PIN &amp; ONBOARD</text>
+  <text x="750" y="382" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="10.4" font-weight="700">Optional 6-Digit PIN</text>
+  <text x="750" y="398" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.4">scrypt hashed · 5-attempt</text>
+  <text x="750" y="411" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.4">auto-revocation</text>
+  <rect x="750" y="424" width="158" height="58" rx="6" fill="#163325" stroke="#22c55e" stroke-width="1"/>
+  <text x="760" y="442" fill="#86efac" font-family="ui-monospace, monospace" font-size="9.6" font-weight="700">Single-Page Redeem</text>
+  <text x="760" y="457" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="9.3">CLI command + QR code</text>
+  <text x="760" y="471" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="9">Window auto-closes ✓</text>
+</svg>
