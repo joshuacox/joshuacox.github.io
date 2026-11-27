@@ -5,6 +5,13 @@
     <link>https://joshuacox.github.io</link>
     <description>Joshua Cox Blog and Portfolio</description>
     <item>
+      <title><![CDATA[Five Waves at Once, 228 Squashed Bugs, 12-Bone Painted Foxes, and a 2-Character Helm Fix]]></title>
+      <link>https://joshuacox.github.io/blog/2026/11/27/five-waves-228-bugs-and-12-bone-foxes/</link>
+      <description><![CDATA[An 8-track Axonwall audit uncovers 228 verified bugs and remediates all 5 waves in one 379-file mega-commit (+25,910 / -6,781) before wrestling CI to ship v0.16.3; PixiePatrol locks in an Arthur Rackham × Brian Froud art style with a 12-bone 2D fox rig (no 3D required); plus Glyphrig v0.5.1, Killibre clinical alert hardening, Eluvix MCP Phase (e), and a legendary 2-character Helm fix.]]></description>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/11/27/five-waves-228-bugs-and-12-bone-foxes/</guid>
+    </item>
+    <item>
       <title><![CDATA[Port Knocking, Post-Quantum Tunnels, Gryphon v0.5.0, and Butterfly-Chasing Hens]]></title>
       <link>https://joshuacox.github.io/blog/2026/11/26/port-knocking-post-quantum-tunnels-gryphon-v050-and-butterfly-chasing-hens/</link>
       <description><![CDATA[Picking up straight from the data-center serial cable cliffhanger: Axonwall v0.16.1 rescues the Check Point rack, v0.16.2 ships edge-to-central analytics offload + zero-port-at-rest WAN port knocking across a 5-host rolling reboot, Glyphrig v0.5.0 drops 9,552 lines and a 60+ bug hunt, and BokBot + PixiePatrol come alive with 24 new idle behaviors.]]></description>
