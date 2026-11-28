@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 540" width="1160" height="540" role="img" aria-label="24-Hour Engineering Telemetry Pulse from Nov 27 08:25 CST to Nov 28 08:15 CST across Axonwall, PixiePatrol, Glyphrig, Tekromancy, CrewsAIdarr, Eluvix, Vigilante, and Paperclip">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#090f1d"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="28%" stop-color="#10b981"/>
+      <stop offset="55%" stop-color="#f59e0b"/>
+      <stop offset="80%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1160" height="540" rx="16" fill="url(#bg)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Subtle background horizontal guides -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.45">
+    <line x1="40" y1="120" x2="1120" y2="120"/>
+    <line x1="40" y1="205" x2="1120" y2="205"/>
+    <line x1="40" y1="365" x2="1120" y2="365"/>
+    <line x1="40" y1="455" x2="1120" y2="455"/>
+  </g>
+
+  <!-- Title Header -->
+  <text x="36" y="42" fill="#f8fafc" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700">24-HOUR ENGINEERING TELEMETRY PULSE</text>
+  <text x="36" y="65" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Nov 27, 2026 08:25 CST → Nov 28, 2026 08:15 CST  •  8 Repositories • 2 Parallel /teamwork Swarms • 2 Fleet Rollouts</text>
+
+  <!-- Top KPI Pills -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" font-weight="700">
+    <rect x="612" y="22" width="124" height="32" rx="8" fill="#4c0519" stroke="#f43f5e" stroke-width="1.2"/>
+    <text x="674" y="42" fill="#fda4af" text-anchor="middle">120 FLAWS FIXED</text>
+
+    <rect x="746" y="22" width="122" height="32" rx="8" fill="#451a03" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="807" y="42" fill="#fcd34d" text-anchor="middle">82 PAINTED RIGS</text>
+
+    <rect x="878" y="22" width="124" height="32" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+    <text x="940" y="42" fill="#6ee7b7" text-anchor="middle">57 ARTICLES LIVE</text>
+
+    <rect x="1012" y="22" width="116" height="32" rx="8" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2"/>
+    <text x="1070" y="42" fill="#c7d2fe" text-anchor="middle">5 NODES v0.16.4</text>
+  </g>
+
+  <!-- Central Timeline Rail (rect avoids 0-height gradient bounding box on horizontal line) -->
+  <rect x="52" y="279.5" width="1056" height="5" rx="2.5" fill="url(#rail)" filter="url(#glow)"/>
+
+  <!-- Time Axis Markers (alternating above/below so no dashed connector crosses a timestamp) -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" fill="#94a3b8" text-anchor="middle">
+    <text x="115" y="305">08:55</text>
+    <text x="245" y="266">10:22</text>
+    <text x="385" y="305">11:00</text>
+    <text x="520" y="266">12:33</text>
+    <text x="655" y="305">14:23</text>
+    <text x="795" y="266">15:56</text>
+    <text x="930" y="266">16:52</text>
+    <text x="1050" y="305">07:44*</text>
+  </g>
+
+  <!-- UPPER ROW (4 CARDS) -->
+  <!-- U1: Tekromancy 57 Articles (08:56-10:22) -->
+  <line x1="115" y1="282" x2="115" y2="200" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="115" cy="282" r="7" fill="#38bdf8" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="28" y="96" width="244" height="104" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="40" y="116" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">08:56–10:22 CST • TEKROMANCY</text>
+  <text x="40" y="135" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">eBPF Deep Dive + 57 Live Posts</text>
+  <text x="40" y="153" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">703-line Ring-0 verifier article</text>
+  <text x="40" y="169" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">All 57 drafts audited &amp; published</text>
+  <text x="40" y="187" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10">caf8976 → c167de5 • 57 unique dates</text>
+
+  <!-- U2: Glyphrig Chrome Web Store (10:04-11:00) -->
+  <line x1="385" y1="282" x2="385" y2="200" stroke="#10b981" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="385" cy="282" r="7" fill="#10b981" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="292" y="96" width="248" height="104" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="304" y="116" fill="#34d399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">10:04–11:00 CST • GLYPHRIG</text>
+  <text x="304" y="135" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">v0.5.2 → v0.5.3 Chrome Store</text>
+  <text x="304" y="153" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">release-tagger.sh + hidden .output fix</text>
+  <text x="304" y="169" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Cleared CWS 400 Privacy Practices</text>
+  <text x="304" y="187" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="10">c9718b1 • CWS PENDING_REVIEW</text>
+
+  <!-- U3: Axonwall 120-Bug Audit & Swarm (11:01-14:23) -->
+  <line x1="655" y1="282" x2="655" y2="200" stroke="#f43f5e" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="655" cy="282" r="8" fill="#f43f5e" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="560" y="96" width="268" height="104" rx="10" fill="#0f172a" stroke="#f43f5e" stroke-width="1.5"/>
+  <text x="572" y="116" fill="#fb7185" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">11:01–14:23 CST • AXONWALL AUDIT</text>
+  <text x="572" y="135" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">6-Track Audit → 120 Flaws Fixed</text>
+  <text x="572" y="153" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">9 Crit • 41 High • 49 Med • 21 Low</text>
+  <text x="572" y="169" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">3-wave /teamwork swarm (BPF_NEG=0)</text>
+  <text x="572" y="187" fill="#fda4af" font-family="ui-monospace, monospace" font-size="10">12148678 • 367 files (+37.6k/-5.4k)</text>
+
+  <!-- U4: Vigilante SOC & OpenCTI + Eluvix #41 (16:24-07:44) -->
+  <line x1="1050" y1="282" x2="1050" y2="200" stroke="#a855f7" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="1050" cy="282" r="8" fill="#a855f7" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="848" y="96" width="284" height="104" rx="10" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="860" y="116" fill="#c084fc" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">16:12 CST → 07:44 CST* • GITHUB</text>
+  <text x="860" y="135" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">Eluvix #40/#41 &amp; Vigilante OpenCTI</text>
+  <text x="860" y="153" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Eluvix Hunt-3 (65/66) + Shared MCP</text>
+  <text x="860" y="169" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Vigilante #25/#26 + OpenCTI PR #27</text>
+  <text x="860" y="187" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="10">+9,857 lines across 5 major PRs</text>
+
+  <!-- LOWER ROW (4 CARDS) -->
+  <!-- L1: Axonwall v0.16.3 Rollout + Website Submodule (08:54-10:30) -->
+  <line x1="245" y1="282" x2="245" y2="338" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="245" cy="282" r="7" fill="#38bdf8" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="28" y="338" width="268" height="114" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="40" y="358" fill="#38bdf8" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">08:54–10:35 CST • AXONWALL FLEET #1</text>
+  <text x="40" y="377" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">v0.16.3 Live + axonwall.com Sync</text>
+  <text x="40" y="395" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Built single-source releases.json</text>
+  <text x="40" y="411" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Automated sync-website-release.mjs</text>
+  <text x="40" y="427" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Rolled v0.16.3 across 5 appliances</text>
+  <text x="40" y="443" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="10">bb3eee7 → 3c5ebcc • AGENTS.md rule</text>
+
+  <!-- L2: PixiePatrol Body-Type Swarm (11:32-12:33) -->
+  <line x1="520" y1="282" x2="520" y2="338" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="520" cy="282" r="8" fill="#f59e0b" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="314" y="338" width="276" height="114" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="326" y="358" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">11:32–12:33 CST • PIXIE PATROL SWARM</text>
+  <text x="326" y="377" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">82 Painted Units &amp; 6 Skeletal Rigs</text>
+  <text x="326" y="395" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">9-agent body-type parallel swarm</text>
+  <text x="326" y="411" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">100% Quadrupeds, Bipeds &amp; Avians</text>
+  <text x="326" y="427" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Paused at 429 quota (70 fallbacks)</text>
+  <text x="326" y="443" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10">39/39 Godot headless scenes PASS</text>
+
+  <!-- L3: CrewsAIdarr + Paperclip (11:01-15:57) -->
+  <line x1="795" y1="282" x2="795" y2="338" stroke="#ec4899" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="795" cy="282" r="7" fill="#ec4899" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="608" y="338" width="256" height="114" rx="10" fill="#0f172a" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="620" y="358" fill="#f472b6" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">11:01–15:57 CST • AI AGENT FORKS</text>
+  <text x="620" y="377" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">CrewsAIdarr + Paperclip agy</text>
+  <text x="620" y="395" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Synced 2,299 cecli + 84 aider commits</text>
+  <text x="620" y="411" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Migrated coder/prompts to cecli/</text>
+  <text x="620" y="427" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">Paperclip greptile loop rounds 1 &amp; 2</text>
+  <text x="620" y="443" fill="#f9a8d4" font-family="ui-monospace, monospace" font-size="10">90dfcdd02 • b4acf4c → 4dd8cb4</text>
+
+  <!-- L4: Axonwall v0.16.4 Release & Fleet Rollout #2 (15:07-16:05) -->
+  <line x1="930" y1="282" x2="930" y2="338" stroke="#10b981" stroke-width="2" stroke-dasharray="4 3"/>
+  <circle cx="930" cy="282" r="8" fill="#10b981" stroke="#070b14" stroke-width="2.5"/>
+  <rect x="882" y="338" width="250" height="114" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="894" y="358" fill="#34d399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">15:07–16:05 CST • AXONWALL FLEET #2</text>
+  <text x="894" y="377" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="13" font-weight="700">v0.16.4 Tagged &amp; Rolled Live!</text>
+  <text x="894" y="395" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">One-shot release-tagger + website</text>
+  <text x="894" y="411" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">4 ZFSBootMenu + 1 Btrfs appliance</text>
+  <text x="894" y="427" fill="#cbd5e1" font-family="ui-sans-serif, sans-serif" font-size="11">4/4 K3s Ready • HA VRRP Healthy</text>
+  <text x="894" y="443" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="10">55ff5d1d • 100% live on v0.16.4</text>
+
+  <!-- Footer Note -->
+  <text x="36" y="514" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">* 07:44 CST = Nov 28 morning merge of Eluvix PR #41 (shared MCP context for Multica + Paperclip)  |  +18 Dependabot PRs merged across Axonwall &amp; Eluvix</text>
+</svg>

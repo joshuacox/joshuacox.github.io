@@ -5,6 +5,13 @@
     <link>https://joshuacox.github.io</link>
     <description>Joshua Cox Blog and Portfolio</description>
     <item>
+      <title><![CDATA[Ring-0 Exorcisms, 82 Painted Monsters, 57 Published Grimoires, and a Chrome Web Store Boss Fight]]></title>
+      <link>https://joshuacox.github.io/blog/2026/11/28/ring-0-exorcisms-82-painted-monsters-57-grimoires-and-chrome-store-boss-fight/</link>
+      <description><![CDATA[Axonwall rolls v0.16.3 live, automates axonwall.com single-source releases, runs a 6-track adversarial security audit (120 flaws fixed in a 3-wave swarm, +37,620 / -5,386), and rolls v0.16.4 across all 5 appliances; Pixie Patrol unleashes a 9-agent body-type swarm landing 82 painted animated sprites across 6 Godot 4 2D skeletal rigs; Tekromancy publishes all 57 articles; Glyphrig v0.5.3 conquers the Chrome Web Store; plus CrewsAIdarr's 2,383-commit sync, Eluvix Hunt-3 & Shared MCP, and Vigilante's OpenCTI integration.]]></description>
+      <pubDate>Sat, 28 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://joshuacox.github.io/blog/2026/11/28/ring-0-exorcisms-82-painted-monsters-57-grimoires-and-chrome-store-boss-fight/</guid>
+    </item>
+    <item>
       <title><![CDATA[Five Waves at Once, 228 Squashed Bugs, 12-Bone Painted Foxes, and a 2-Character Helm Fix]]></title>
       <link>https://joshuacox.github.io/blog/2026/11/27/five-waves-228-bugs-and-12-bone-foxes/</link>
       <description><![CDATA[An 8-track Axonwall audit uncovers 228 verified bugs and remediates all 5 waves in one 379-file mega-commit (+25,910 / -6,781) before wrestling CI to ship v0.16.3; PixiePatrol locks in an Arthur Rackham × Brian Froud art style with a 12-bone 2D fox rig (no 3D required); plus Glyphrig v0.5.1, Killibre clinical alert hardening, Eluvix MCP Phase (e), and a legendary 2-character Helm fix.]]></description>

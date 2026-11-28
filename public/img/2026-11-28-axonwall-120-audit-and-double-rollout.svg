@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 560" width="1160" height="560" role="img" aria-label="Axonwall v0.16.4 Defensive Security Audit: 120 Verified Findings, 3-Wave Parallel Swarm, and 5-Node Live Fleet Rollout">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="55%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a101d"/>
+    </linearGradient>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="45%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1160" height="560" rx="16" fill="url(#bg2)" stroke="#1e293b" stroke-width="2"/>
+
+  <!-- Header -->
+  <text x="36" y="42" fill="#f8fafc" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" font-weight="700">AXONWALL v0.16.4 — 6-TRACK SECURITY AUDIT, 3-WAVE SWARM &amp; 5-NODE ROLLOUT</text>
+  <text x="36" y="64" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Post-v0.16.3 adversarial sweep verified against disk &amp; llvm-objdump → commit 12148678 (367 files, +37,620 / -5,386) → 5/5 live appliances</text>
+
+  <!-- Severity Stacked Bar Section -->
+  <rect x="36" y="84" width="1088" height="84" rx="12" fill="#0b1220" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="54" y="108" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="12" font-weight="700">120 VERIFIED AUDIT FINDINGS REMEDIATED (0 LEFT OPEN)</text>
+  <text x="1104" y="108" fill="#34d399" font-family="ui-monospace, monospace" font-size="12" font-weight="700" text-anchor="end">100% REMEDIATED</text>
+
+  <!-- Stacked proportional bar: total width = 1052 (9/120=79, 41/120=359, 49/120=430, 21/120=184) -->
+  <g transform="translate(54, 120)">
+    <rect x="0" y="0" width="79" height="28" rx="6" fill="#e11d48"/>
+    <text x="39.5" y="18" fill="#fff1f2" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" text-anchor="middle">9 CRIT</text>
+
+    <rect x="83" y="0" width="355" height="28" rx="6" fill="#ea580c"/>
+    <text x="260.5" y="18" fill="#fff7ed" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" text-anchor="middle">41 HIGH (Tier-2→Root, mTLS, SSRF, CSP)</text>
+
+    <rect x="442" y="0" width="426" height="28" rx="6" fill="#ca8a04"/>
+    <text x="655" y="18" fill="#fefce8" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" text-anchor="middle">49 MEDIUM (RBAC, Compilers, K8s Policies, Importers)</text>
+
+    <rect x="872" y="0" width="180" height="28" rx="6" fill="#0284c7"/>
+    <text x="962" y="18" fill="#f0f9ff" font-family="ui-monospace, monospace" font-size="11.5" font-weight="700" text-anchor="middle">21 LOW (Hardening)</text>
+  </g>
+
+  <!-- 3-Wave Swarm Columns -->
+  <!-- Wave 1 -->
+  <rect x="36" y="188" width="348" height="206" rx="12" fill="#0f172a" stroke="#f43f5e" stroke-width="1.5"/>
+  <rect x="36" y="188" width="348" height="34" rx="12" fill="#4c0519"/>
+  <text x="52" y="210" fill="#fda4af" font-family="ui-monospace, monospace" font-size="12.5" font-weight="700">WAVE 1 • RING-0 &amp; ROOT BOUNDARIES</text>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5" fill="#cbd5e1">
+    <text x="52" y="244"><tspan fill="#fb7185" font-weight="700">• ebpf-lsm:</tspan> Eliminated BPF_NEG (0x84/0x87)</text>
+    <text x="64" y="260" fill="#94a3b8">NEG_MATCH_COUNT=0 on Linux 6.12 LSM</text>
+    <text x="52" y="280"><tspan fill="#fb7185" font-weight="700">• updater-hardening:</tspan> Wrapped in main()</text>
+    <text x="64" y="296" fill="#94a3b8">Atomic mv -f, 0700 /run, 58 unit tests</text>
+    <text x="52" y="316"><tspan fill="#fb7185" font-weight="700">• k3s-bundle &amp; daemon:</tspan> yaml.Node AST,</text>
+    <text x="64" y="332" fill="#94a3b8">sticky bit 1777, http_safe.go SSRF guard</text>
+    <text x="52" y="352"><tspan fill="#fb7185" font-weight="700">• systemd &amp; CI:</tspan> LimitCORE=0 across units,</text>
+    <text x="64" y="368" fill="#94a3b8">release signing key isolated to tag job</text>
+  </g>
+  <text x="52" y="386" fill="#34d399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">7 parallel authors + verifier-w1 → GREEN</text>
+
+  <!-- Arrow 1->2 -->
+  <path d="M 388 290 L 404 290" stroke="#64748b" stroke-width="2.5" fill="none"/>
+  <polygon points="402,285 410,290 402,295" fill="#64748b"/>
+
+  <!-- Wave 2 -->
+  <rect x="406" y="188" width="348" height="206" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="406" y="188" width="348" height="34" rx="12" fill="#451a03"/>
+  <text x="422" y="210" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="12.5" font-weight="700">WAVE 2 • FLEET, WEB &amp; COMPILERS</text>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5" fill="#cbd5e1">
+    <text x="422" y="244"><tspan fill="#fbbf24" font-weight="700">• satellite-imds:</tspan> Fail-closed nft pre-DHCP</text>
+    <text x="434" y="260" fill="#94a3b8">Tailscale authkey via 0600 file descriptor</text>
+    <text x="422" y="280"><tspan fill="#fbbf24" font-weight="700">• controller + MCP:</tspan> mTLS SAN/CN binding</text>
+    <text x="434" y="296" fill="#94a3b8">Central MCP RBAC • 136/136 tests pass</text>
+    <text x="422" y="316"><tspan fill="#fbbf24" font-weight="700">• web backend/UI:</tspan> OIDC S256 PKCE, CSP</text>
+    <text x="434" y="332" fill="#94a3b8">No 'unsafe-eval' • 143/143 UI tests pass</text>
+    <text x="422" y="352"><tspan fill="#fbbf24" font-weight="700">• axonwall-lib &amp; K8s:</tspan> 8 hardened importers</text>
+    <text x="434" y="368" fill="#94a3b8">361/361 lib tests • CSPRNG firstboot keys</text>
+  </g>
+  <text x="422" y="386" fill="#34d399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">7 tracks + next build + helm lint → GREEN</text>
+
+  <!-- Arrow 2->3 -->
+  <path d="M 758 290 L 774 290" stroke="#64748b" stroke-width="2.5" fill="none"/>
+  <polygon points="772,285 780,290 772,295" fill="#64748b"/>
+
+  <!-- Wave 3 -->
+  <rect x="776" y="188" width="348" height="206" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="776" y="188" width="348" height="34" rx="12" fill="#064e3b"/>
+  <text x="792" y="210" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="12.5" font-weight="700">WAVE 3 • SOC, RELEASE &amp; SUBMODULE</text>
+  <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5" fill="#cbd5e1">
+    <text x="792" y="244"><tspan fill="#34d399" font-weight="700">• vigilante_lib:</tspan> Restricted /proc/&lt;pid&gt;/mem</text>
+    <text x="804" y="260" fill="#94a3b8">RFC 6962 Merkle domain separation</text>
+    <text x="792" y="280"><tspan fill="#34d399" font-weight="700">• nastymap:</tspan> XML depth &amp; 25 MB caps</text>
+    <text x="804" y="296" fill="#94a3b8">Scoped K8s NetworkPolicies on charts</text>
+    <text x="792" y="316"><tspan fill="#34d399" font-weight="700">• axonwall.com:</tspan> Single-source releases.json</text>
+    <text x="804" y="332" fill="#94a3b8">sync-website-release.mjs + release-tagger</text>
+    <text x="792" y="352"><tspan fill="#34d399" font-weight="700">• Release v0.16.4:</tspan> 55ff5d1d + 733b7ad</text>
+    <text x="804" y="368" fill="#94a3b8">ci-preflight.sh --require-build PASS</text>
+  </g>
+  <text x="792" y="386" fill="#34d399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">All 5 workspaces + tsc --noEmit → GREEN</text>
+
+  <!-- Live 5-Node Fleet Rollout Matrix -->
+  <rect x="36" y="414" width="1088" height="122" rx="12" fill="#0b1220" stroke="#10b981" stroke-width="1.5"/>
+  <text x="54" y="438" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="12.5" font-weight="700">LIVE FLEET ROLLOUT #2 COMPLETE (15:54–16:05 CST)  •  ALL 5 LIVE APPLIANCES ON v0.16.4</text>
+
+  <!-- 5 Appliance Cards -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <!-- Node 1 -->
+    <rect x="54" y="452" width="198" height="68" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+    <circle cx="70" cy="470" r="5" fill="#10b981"/>
+    <text x="82" y="474" fill="#f8fafc" font-size="11.5" font-weight="700">suburban-hello</text>
+    <text x="66" y="492" fill="#94a3b8" font-size="10">10.80.0.213 • ZFSBootMenu</text>
+    <text x="66" y="508" fill="#34d399" font-size="10">k3s Ready • v0.16.4</text>
+
+    <!-- Node 2 -->
+    <rect x="266" y="452" width="198" height="68" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1.2"/>
+    <circle cx="282" cy="470" r="5" fill="#10b981"/>
+    <text x="294" y="474" fill="#f8fafc" font-size="11.5" font-weight="700">prize-hammer</text>
+    <text x="278" y="492" fill="#94a3b8" font-size="10">10.80.0.214 • ZFSBootMenu</text>
+    <text x="278" y="508" fill="#34d399" font-size="10">k3s Ready • v0.16.4</text>
+
+    <!-- Node 3 -->
+    <rect x="478" y="452" width="198" height="68" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <circle cx="494" cy="470" r="5" fill="#38bdf8"/>
+    <text x="506" y="474" fill="#f8fafc" font-size="11.5" font-weight="700">saxon (HA VRRP)</text>
+    <text x="490" y="492" fill="#94a3b8" font-size="10">10.80.0.203 • ZFSBootMenu</text>
+    <text x="490" y="508" fill="#7dd3fc" font-size="10">keepalived+k3s • v0.16.4</text>
+
+    <!-- Node 4 -->
+    <rect x="690" y="452" width="198" height="68" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2"/>
+    <circle cx="706" cy="470" r="5" fill="#38bdf8"/>
+    <text x="718" y="474" fill="#f8fafc" font-size="11.5" font-weight="700">klaxon (HA VRRP)</text>
+    <text x="702" y="492" fill="#94a3b8" font-size="10">10.80.0.202 • ZFSBootMenu</text>
+    <text x="702" y="508" fill="#7dd3fc" font-size="10">keepalived+k3s • v0.16.4</text>
+
+    <!-- Node 5 -->
+    <rect x="902" y="452" width="204" height="68" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1.2"/>
+    <circle cx="918" cy="470" r="5" fill="#a855f7"/>
+    <text x="930" y="474" fill="#f8fafc" font-size="11.5" font-weight="700">checkpoint1</text>
+    <text x="914" y="492" fill="#94a3b8" font-size="10">/dev/sda3[/@] • Btrfs</text>
+    <text x="914" y="508" fill="#d8b4fe" font-size="10">Snapper OK • v0.16.4</text>
+  </g>
+</svg>

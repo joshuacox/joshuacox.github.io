@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 520" width="1160" height="520" role="img" aria-label="Pixie Patrol Full-Roster 2D Painted Art and Skeletal Rig Progress Dashboard: 82 of 152 units painted across 6 custom Godot 4 rigs">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1310"/>
+      <stop offset="50%" stop-color="#111d18"/>
+      <stop offset="100%" stop-color="#0a1019"/>
+    </linearGradient>
+    <linearGradient id="goldBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+    <linearGradient id="emeraldBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="violetBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1160" height="520" rx="16" fill="url(#bg3)" stroke="#1e3a2f" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="36" y="42" fill="#fef3c7" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" font-weight="700">PIXIE PATROL — FULL-ROSTER 2D RIG SWARM PROGRESS (MILESTONE 1)</text>
+  <text x="36" y="64" fill="#a7f3d0" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">9-agent /teamwork swarm • Arthur Rackham × Brian Froud art style • 82 / 152 painted units live • 39/39 Godot scenes PASS</text>
+
+  <!-- Right Badge -->
+  <rect x="910" y="22" width="214" height="36" rx="8" fill="#451a03" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="1017" y="45" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12" font-weight="700" text-anchor="middle">82 / 152 LIVE (53.9%)</text>
+
+  <!-- LEFT PANEL: Horizontal Progress Bars by Family -->
+  <rect x="36" y="88" width="628" height="332" rx="12" fill="#0d1714" stroke="#1e3a2f" stroke-width="1.5"/>
+  <text x="54" y="114" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12.5" font-weight="700">PAINTED &amp; RIGGED COVERAGE BY BODY-TYPE FAMILY</text>
+
+  <!-- Bars: max bar width = 340 starting at x=240 -->
+  <!-- 1. Wild Quadrupeds: 19/19 = 100% -->
+  <text x="54" y="148" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="12.5" font-weight="600">Wild Quadrupeds</text>
+  <text x="54" y="163" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="10">QuadrupedSpriteRig.gd</text>
+  <rect x="240" y="138" width="340" height="22" rx="6" fill="#172822"/>
+  <rect x="240" y="138" width="340" height="22" rx="6" fill="url(#emeraldBar)"/>
+  <text x="592" y="153" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="12" font-weight="700">19/19</text>
+
+  <!-- 2. Bipeds & Constructs: 27/27 = 100% -->
+  <text x="54" y="196" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="12.5" font-weight="600">Bipeds &amp; Constructs</text>
+  <text x="54" y="211" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="10">BipedSpriteRig.gd</text>
+  <rect x="240" y="186" width="340" height="22" rx="6" fill="#172822"/>
+  <rect x="240" y="186" width="340" height="22" rx="6" fill="url(#emeraldBar)"/>
+  <text x="592" y="201" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="12" font-weight="700">27/27</text>
+
+  <!-- 3. Avians, Serpents & Hydras: 22/22 = 100% -->
+  <text x="54" y="244" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="12.5" font-weight="600">Avians &amp; Serpents</text>
+  <text x="54" y="259" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="10">Avian + SerpentineRigs</text>
+  <rect x="240" y="234" width="340" height="22" rx="6" fill="#172822"/>
+  <rect x="240" y="234" width="340" height="22" rx="6" fill="url(#emeraldBar)"/>
+  <text x="592" y="249" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="12" font-weight="700">22/22</text>
+
+  <!-- 4. Towers, Avatars & Traps: 6/29 = 20.7% (70px) -->
+  <text x="54" y="292" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="12.5" font-weight="600">Towers, Avatars, Traps</text>
+  <text x="54" y="307" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10">TowerProfiles + TrapPulse</text>
+  <rect x="240" y="282" width="340" height="22" rx="6" fill="#172822"/>
+  <rect x="240" y="282" width="70" height="22" rx="6" fill="url(#goldBar)"/>
+  <text x="592" y="297" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="12" font-weight="700">6/29</text>
+
+  <!-- 5. Small Critters: 4/23 = 17.4% (59px) -->
+  <text x="54" y="340" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="12.5" font-weight="600">Small Critters (Wave 1)</text>
+  <text x="54" y="355" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="10">CritterArthropodRig.gd</text>
+  <rect x="240" y="330" width="340" height="22" rx="6" fill="#172822"/>
+  <rect x="240" y="330" width="59" height="22" rx="6" fill="url(#goldBar)"/>
+  <text x="592" y="345" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="12" font-weight="700">4/23</text>
+
+  <!-- 6. Drakes & Monstrosities: 4/32 = 12.5% (43px) -->
+  <text x="54" y="388" fill="#f8fafc" font-family="ui-sans-serif, sans-serif" font-size="12.5" font-weight="600">Drakes &amp; Eldritch (W1)</text>
+  <text x="54" y="403" fill="#c084fc" font-family="ui-monospace, monospace" font-size="10">DragonEldritchRig.gd</text>
+  <rect x="240" y="378" width="340" height="22" rx="6" fill="#172822"/>
+  <rect x="240" y="378" width="43" height="22" rx="6" fill="url(#violetBar)"/>
+  <text x="592" y="393" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="12" font-weight="700">4/32</text>
+
+  <!-- RIGHT PANEL: 6 Articulated 2D Rig Engines -->
+  <rect x="684" y="88" width="440" height="332" rx="12" fill="#0d1714" stroke="#1e3a2f" stroke-width="1.5"/>
+  <text x="702" y="114" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12.5" font-weight="700">6 LIVE 2D SKELETAL RIG ARCHITECTURES</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <!-- Rig 1 -->
+    <rect x="702" y="130" width="196" height="84" rx="8" fill="#13221d" stroke="#10b981" stroke-width="1"/>
+    <text x="714" y="150" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="11" font-weight="700">QuadrupedSpriteRig</text>
+    <text x="714" y="168" fill="#cbd5e1" font-size="11">12-bone split-leg trot</text>
+    <text x="714" y="184" fill="#94a3b8" font-size="10.5">Fox, Wolves, Elk, Centaur</text>
+    <text x="714" y="202" fill="#34d399" font-family="ui-monospace, monospace" font-size="10">✓ 19/19 COMPLETE</text>
+
+    <!-- Rig 2 -->
+    <rect x="910" y="130" width="196" height="84" rx="8" fill="#13221d" stroke="#10b981" stroke-width="1"/>
+    <text x="922" y="150" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="11" font-weight="700">BipedSpriteRig</text>
+    <text x="922" y="168" fill="#cbd5e1" font-size="11">Stride, weapon &amp; hover</text>
+    <text x="922" y="184" fill="#94a3b8" font-size="10.5">Goblins, Golems, Lich King</text>
+    <text x="922" y="202" fill="#34d399" font-family="ui-monospace, monospace" font-size="10">✓ 27/27 COMPLETE</text>
+
+    <!-- Rig 3 -->
+    <rect x="702" y="226" width="196" height="84" rx="8" fill="#13221d" stroke="#10b981" stroke-width="1"/>
+    <text x="714" y="246" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="11" font-weight="700">AvianSpriteRig</text>
+    <text x="714" y="264" fill="#cbd5e1" font-size="11">Wingbeat &amp; talon dive</text>
+    <text x="714" y="280" fill="#94a3b8" font-size="10.5">Owls, Phoenix, Griffin</text>
+    <text x="714" y="298" fill="#34d399" font-family="ui-monospace, monospace" font-size="10">✓ 14/14 COMPLETE</text>
+
+    <!-- Rig 4 -->
+    <rect x="910" y="226" width="196" height="84" rx="8" fill="#13221d" stroke="#10b981" stroke-width="1"/>
+    <text x="922" y="246" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="11" font-weight="700">SerpentineSpriteRig</text>
+    <text x="922" y="264" fill="#cbd5e1" font-size="11">Sine-wave slither &amp; coil</text>
+    <text x="922" y="280" fill="#94a3b8" font-size="10.5">Viper, Sandworm, Hydra</text>
+    <text x="922" y="298" fill="#34d399" font-family="ui-monospace, monospace" font-size="10">✓ 8/8 COMPLETE</text>
+
+    <!-- Rig 5 -->
+    <rect x="702" y="322" width="196" height="84" rx="8" fill="#13221d" stroke="#f59e0b" stroke-width="1"/>
+    <text x="714" y="342" fill="#fcd34d" font-family="ui-monospace, monospace" font-size="11" font-weight="700">CritterArthropodRig</text>
+    <text x="714" y="360" fill="#cbd5e1" font-size="11">Hop, scuttle &amp; stinger</text>
+    <text x="714" y="376" fill="#94a3b8" font-size="10.5">Squirrel, Rabbit, Mouse</text>
+    <text x="714" y="394" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="10">⏳ Wave 1 (4/23) + Auto</text>
+
+    <!-- Rig 6 -->
+    <rect x="910" y="322" width="196" height="84" rx="8" fill="#13221d" stroke="#a855f7" stroke-width="1"/>
+    <text x="922" y="342" fill="#d8b4fe" font-family="ui-monospace, monospace" font-size="11" font-weight="700">DragonEldritchRig</text>
+    <text x="922" y="360" fill="#cbd5e1" font-size="11">Wing flap &amp; breath roar</text>
+    <text x="922" y="376" fill="#94a3b8" font-size="10.5">Wyvern, Storm Drake</text>
+    <text x="922" y="394" fill="#c084fc" font-family="ui-monospace, monospace" font-size="10">⏳ Wave 1 (4/32) + Auto</text>
+  </g>
+
+  <!-- Bottom Banner: Auto-Discovery & Quota Boss -->
+  <rect x="36" y="438" width="1088" height="58" rx="10" fill="#1c1917" stroke="#f59e0b" stroke-width="1.3"/>
+  <text x="54" y="463" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="12" font-weight="700">ZERO-CODE WAVE 2 READY  •  PAUSED ONLY BY HTTP 429 RESOURCE_EXHAUSTED</text>
+  <text x="54" y="483" fill="#d6d3d1" font-family="ui-sans-serif, system-ui, sans-serif" font-size="11.5">SpriteArt.gd auto-discovers new PNG cutouts and binds them to pre-wired rigs/shaders automatically — remaining 70 units run cleanly on procedural fallbacks.</text>
+</svg>
